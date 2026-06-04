@@ -71,27 +71,6 @@ export default function OrangeSchemeNavigation() {
       })
       .catch(() => { });
 
-    // Handle audio for the selected route
-    if (isOrangeSchemeActive) {
-      if (currentRouteName && ORANGE_AUDIO_MAP[currentRouteName]) {
-        if (typeof window !== "undefined") {
-          if ((window as any).activeScenarioAudio) {
-            (window as any).activeScenarioAudio.pause();
-            (window as any).activeScenarioAudio.ontimeupdate = null;
-            (window as any).activeScenarioAudio.currentTime = 0;
-          }
-          (window as any).activeScenarioAudio = new Audio(ORANGE_AUDIO_MAP[currentRouteName]);
-          (window as any).activeScenarioAudio.play().catch((e: any) => console.error("Audio play failed:", e));
-        }
-      } else {
-        if (typeof window !== "undefined" && (window as any).activeScenarioAudio) {
-          (window as any).activeScenarioAudio.pause();
-          (window as any).activeScenarioAudio.ontimeupdate = null;
-          (window as any).activeScenarioAudio.currentTime = 0;
-        }
-      }
-    }
-
     // Poll for the map container so we can get mapInstance (without useMap crashing)
     let mapInstance: L.Map | null = null;
     const intervalId = setInterval(() => {
@@ -170,6 +149,29 @@ export default function OrangeSchemeNavigation() {
       }
     };
   }, []);
+
+  useEffect(() => {
+    // Handle audio for the selected route
+    if (isOrangeSchemeActive) {
+      if (currentRouteName && ORANGE_AUDIO_MAP[currentRouteName]) {
+        if (typeof window !== "undefined") {
+          if ((window as any).activeScenarioAudio) {
+            (window as any).activeScenarioAudio.pause();
+            (window as any).activeScenarioAudio.ontimeupdate = null;
+            (window as any).activeScenarioAudio.currentTime = 0;
+          }
+          (window as any).activeScenarioAudio = new Audio(ORANGE_AUDIO_MAP[currentRouteName]);
+          (window as any).activeScenarioAudio.play().catch((e: any) => console.error("Audio play failed:", e));
+        }
+      } else {
+        if (typeof window !== "undefined" && (window as any).activeScenarioAudio) {
+          (window as any).activeScenarioAudio.pause();
+          (window as any).activeScenarioAudio.ontimeupdate = null;
+          (window as any).activeScenarioAudio.currentTime = 0;
+        }
+      }
+    }
+  }, [currentRouteName, isOrangeSchemeActive]);
 
   if (!isOrangeSchemeActive) return null;
 

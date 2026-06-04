@@ -62,27 +62,6 @@ export default function GreenSchemeNavigation() {
       })
       .catch(() => { });
 
-    // Handle audio for the selected route
-    if (isGreenSchemeActive) {
-      if (currentRouteName && GREEN_AUDIO_MAP[currentRouteName]) {
-        if (typeof window !== "undefined") {
-          if ((window as any).activeScenarioAudio) {
-            (window as any).activeScenarioAudio.pause();
-            (window as any).activeScenarioAudio.ontimeupdate = null;
-            (window as any).activeScenarioAudio.currentTime = 0;
-          }
-          (window as any).activeScenarioAudio = new Audio(GREEN_AUDIO_MAP[currentRouteName]);
-          (window as any).activeScenarioAudio.play().catch((e: any) => console.error("Audio play failed:", e));
-        }
-      } else {
-        if (typeof window !== "undefined" && (window as any).activeScenarioAudio) {
-          (window as any).activeScenarioAudio.pause();
-          (window as any).activeScenarioAudio.ontimeupdate = null;
-          (window as any).activeScenarioAudio.currentTime = 0;
-        }
-      }
-    }
-
     let mapInstance: L.Map | null = null;
     const intervalId = setInterval(() => {
       const container = document.querySelector('.leaflet-container');
@@ -158,6 +137,29 @@ export default function GreenSchemeNavigation() {
       }
     };
   }, []);
+
+  useEffect(() => {
+    // Handle audio for the selected route
+    if (isGreenSchemeActive) {
+      if (currentRouteName && GREEN_AUDIO_MAP[currentRouteName]) {
+        if (typeof window !== "undefined") {
+          if ((window as any).activeScenarioAudio) {
+            (window as any).activeScenarioAudio.pause();
+            (window as any).activeScenarioAudio.ontimeupdate = null;
+            (window as any).activeScenarioAudio.currentTime = 0;
+          }
+          (window as any).activeScenarioAudio = new Audio(GREEN_AUDIO_MAP[currentRouteName]);
+          (window as any).activeScenarioAudio.play().catch((e: any) => console.error("Audio play failed:", e));
+        }
+      } else {
+        if (typeof window !== "undefined" && (window as any).activeScenarioAudio) {
+          (window as any).activeScenarioAudio.pause();
+          (window as any).activeScenarioAudio.ontimeupdate = null;
+          (window as any).activeScenarioAudio.currentTime = 0;
+        }
+      }
+    }
+  }, [currentRouteName, isGreenSchemeActive]);
 
   const navigateTo = (index: number) => {
     const routeName = GREEN_SCHEME_ROUTES[index];
