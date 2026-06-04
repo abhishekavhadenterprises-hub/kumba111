@@ -356,19 +356,10 @@ export const PROCESSION_TIMINGS: ProcessionTiming[] = [
 ];
 
 export const PROCESSION_GROUPS = [
-  // =======================================================================
-  // 🎨 DESIGNER INSTRUCTIONS FOR SVG ANIMATIONS:
-  // To create custom glowing routes for each procession:
-  // 1. Give your designer the original "R3 Core-1 Plan (08-05-2026).svg" file.
-  // 2. Ask them to create 6 new SVG files. In each file, they should manually 
-  //    highlight/color the specific route for that procession.
-  // 3. Put those 6 new SVG files into the `public/svg/` folder.
-  // 4. Update the `svgFile` paths below to point to your new highlighted files!
-  // =======================================================================
-  { id: "procession-1", label: "Procession 1 (Juna, Avahan, Agni)", keys: ["juna", "avahan", "avhan", "agni"], svgFile: "/svg/R3 Core-1 Plan (08-05-2026).svg" },
-  { id: "procession-2", label: "Procession 2 (Niranjani, Anand)", keys: ["niranjani", "niranajni", "anand"], svgFile: "/svg/R3 Core-1 Plan (08-05-2026).svg" },
-  { id: "procession-3", label: "Procession 3 (Mahanirvani, Atal)", keys: ["mahanirvani", "atal"], svgFile: "/svg/R3 Core-1 Plan (08-05-2026).svg" },
-  { id: "procession-4", label: "Procession 4 (Bada Udasin)", keys: ["bada-udasin"], svgFile: "/svg/R3 Core-1 Plan (08-05-2026).svg" },
-  { id: "procession-5", label: "Procession 5 (Naya Udasin)", keys: ["naya-udasin"], svgFile: "/svg/R3 Core-1 Plan (08-05-2026).svg" },
-  { id: "procession-6", label: "Procession 6 (Nirmal)", keys: ["nirmal"], svgFile: "/svg/R3 Core-1 Plan (08-05-2026).svg" },
+  { id: "procession-1", label: "Procession 1 (Juna, Avahan, Agni)", keys: ["juna", "avahan", "avhan", "agni"] },
+  { id: "procession-2", label: "Procession 2 (Niranjani, Anand)", keys: ["niranjani", "niranajni", "anand"] },
+  { id: "procession-3", label: "Procession 3 (Mahanirvani, Atal)", keys: ["mahanirvani", "atal"] },
+  { id: "procession-4", label: "Procession 4 (Bada Udasin)", keys: ["bada-udasin"] },
+  { id: "procession-5", label: "Procession 5 (Naya Udasin)", keys: ["naya-udasin"] },
+  { id: "procession-6", label: "Procession 6 (Nirmal)", keys: ["nirmal"] },
 ];

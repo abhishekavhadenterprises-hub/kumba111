@@ -269,66 +269,6 @@ function AkhadaHighlighter() {
   return null;
 }
 
-// ── Dynamic SVG Overlay ──────────────────────────────────────
-function DynamicSVGOverlay({ url, bounds, className }: { url: string, bounds: L.LatLngBoundsExpression, className?: string }) {
-  const map = useMap();
-
-  useEffect(() => {
-    let overlay: L.SVGOverlay | null = null;
-    let isMounted = true;
-    
-    // Encode URL to handle spaces in filename
-    const fetchUrl = encodeURI(url);
-    
-    fetch(fetchUrl)
-      .then(res => {
-        if (!res.ok) throw new Error(`HTTP error! status: ${res.status} for URL: ${fetchUrl}`);
-        return res.text();
-      })
-      .then(text => {
-        if (!isMounted) return;
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(text, "image/svg+xml");
-        const svgElem = doc.documentElement as unknown as SVGElement;
-        
-        if (className) svgElem.classList.add(...className.split(" "));
-        svgElem.setAttribute("preserveAspectRatio", "xMidYMid meet");
-
-        overlay = L.svgOverlay(svgElem, bounds, { interactive: true }).addTo(map);
-        
-        // Wait for Leaflet and browser layout to mount it to the DOM
-        setTimeout(() => {
-          if (!isMounted || !svgElem.isConnected) return;
-          try {
-            const bbox = svgElem.getBBox();
-            console.log("Calculated SVG BBox:", bbox);
-            if (bbox && bbox.width > 0 && bbox.height > 0) {
-              // Add a 5% padding around the drawing
-              const padX = bbox.width * 0.05;
-              const padY = bbox.height * 0.05;
-              svgElem.setAttribute("viewBox", `${bbox.x - padX} ${bbox.y - padY} ${bbox.width + padX * 2} ${bbox.height + padY * 2}`);
-            }
-          } catch(e) {
-            console.error("Could not compute SVG bounding box", e);
-          }
-        }, 200); // Increased timeout to ensure layout is calculated
-        
-        // Auto-center and zoom to perfectly fit the SVG bounds
-        map.fitBounds(bounds, { padding: [20, 20], animate: true });
-      })
-      .catch(err => console.error("Failed to load SVG overlay:", err));
-
-    return () => {
-      isMounted = false;
-      if (overlay) {
-        map.removeLayer(overlay);
-      }
-    };
-  }, [url, map, bounds, className]);
-
-  return null;
-}
-
 // ── Data Layer Renderer ─────────────────────────────────────
 function DataLayerRenderer() {
   const { visibleLayers, activeScheme, activeScenarios, activeKmlFolders, highlightedAkhada, selectedProcessionRoute, selectFeature, selectedFeature } = useDashboard();
@@ -498,20 +438,6 @@ function DataLayerRenderer() {
       map.flyToBounds(bounds, { duration: 1.5, padding: [30, 30], maxZoom: 17 });
     }
   }, [activeKmlFolders, activeScenarios, tunnelParsed, newghatParsed, dproadsParsed, trimbakParsed, parkingZones, parkingForTrimbak, map, trimbakParkingRoute]);
-
-
-  
-  // Force map background color since React-Leaflet ignores style updates on MapContainer
-  useEffect(() => {
-    const mapEl = document.getElementById('map');
-    if (mapEl) {
-      if (visibleLayers.has("procession-route")) {
-        mapEl.style.setProperty('background-color', '#050505', 'important');
-      } else {
-        mapEl.style.setProperty('background-color', '#f8f9fa', 'important');
-      }
-    }
-  }, [visibleLayers]);
 
   // Auto Fly-To Toggled Operational Layers
   const [prevVisibleLayers, setPrevVisibleLayers] = useState<Set<string>>(new Set());
@@ -1377,21 +1303,82 @@ function DataLayerRenderer() {
       )}
 
       {/* Procession Route */}
-      {visibleLayers.has("procession-route") && (() => {
-        const activeGroup = PROCESSION_GROUPS.find(g => g.id === activeAkhadaForKml);
-        const svgFile = activeGroup?.svgFile;
-        
-        if (!svgFile) return null;
+      {visibleLayers.has("procession-route") && processionRoute && (
+        <>
+          {(() => {
+            const activeFeatures = processionRoute.features.filter((f: any) => !activeAkhadaForKml || isAkhadaMatch(f.properties.name, activeAkhadaForKml));
 
-        return (
-          <DynamicSVGOverlay 
-            url={svgFile}
-            // Use much larger bounds so the small drawing inside the 800x600 viewBox appears larger
-            bounds={[[19.90, 73.50], [19.96, 73.56]]} 
-            className="procession-blueprint-overlay"
-          />
-        );
-      })()}
+            const isAnyProcessionActive = !!activeAkhadaForKml;
+
+            const returnRoutes = activeFeatures.filter((f: any) => (f.properties.name || "").toLowerCase().includes("return"));
+
+            // Only animate the main "in route" lines, and only if a procession is actually actively selected
+            const animatedInRoutes = activeFeatures.filter((f: any) => {
+              const name = (f.properties.name || "").toLowerCase();
+              return isAnyProcessionActive && name.includes("in route");
+            });
+
+            // Everything else that is not a return route or an actively animated route is rendered statically
+            const staticInRoutes = activeFeatures.filter((f: any) => {
+              const name = (f.properties.name || "").toLowerCase();
+              return !name.includes("return") && !(isAnyProcessionActive && name.includes("in route"));
+            });
+
+            return (
+              <>
+                {/* Static Return Routes (Dashed) */}
+                {returnRoutes.length > 0 && (
+                  <GeoJSON
+                    key={`procession-return-${geoKey}`}
+                    data={{ ...processionRoute, features: returnRoutes }}
+                    style={(feature: any) => {
+                      const name = (feature.properties.name || "").toLowerCase();
+                      let color = "#ef4444";
+                      if (name.includes("niranjani") || name.includes("niranajni")) color = "#059669";
+                      else if (name.includes("anand")) color = "#2563eb";
+                      return { color, weight: 5, opacity: 0.9, dashArray: "8, 6" };
+                    }}
+                    onEachFeature={(f, l) => bindFeaturePopup(f, l, "procession-route")}
+                  />
+                )}
+
+                {/* Static In Routes (Solid but not animated - for unselected processions or tiny segments) */}
+                {staticInRoutes.length > 0 && (
+                  <GeoJSON
+                    key={`procession-static-in-${geoKey}`}
+                    data={{ ...processionRoute, features: staticInRoutes }}
+                    style={(feature: any) => {
+                      const name = (feature.properties.name || "").toLowerCase();
+                      let color = "#ec4899";
+                      if (name.includes("niranjani") || name.includes("niranajni")) color = "#10b981";
+                      else if (name.includes("anand")) color = "#3b82f6";
+                      return { color, weight: 5, opacity: 0.9 };
+                    }}
+                    onEachFeature={(f, l) => bindFeaturePopup(f, l, "procession-route")}
+                  />
+                )}
+
+                {/* Animated In Routes (Only for actively selected procession's main route) */}
+                {animatedInRoutes.map((feature: any, idx: number) => {
+                  const name = (feature.properties.name || "").toLowerCase();
+                  let color = "#ec4899";
+                  if (name.includes("niranjani") || name.includes("niranajni")) color = "#10b981";
+                  else if (name.includes("anand")) color = "#3b82f6";
+
+                  return (
+                    <AnimatedRoute
+                      key={`animated-route-${name.replace(/\s+/g, '-')}-${geoKey}`}
+                      feature={feature}
+                      color={color}
+                      duration={60}
+                      trackCamera={true} />
+                  );
+                })}
+              </>
+            );
+          })()}
+        </>
+      )}
 
 
       {/* Green Corridor Scenario */}
@@ -3921,7 +3908,7 @@ function LandmarkMarkers() {
 
 // ── Main Component ──────────────────────────────────────────
 export default function MapComponent() {
-  const { searchLocation, tileStyle, showLabels, visibleLayers } = useDashboard();
+  const { searchLocation, tileStyle, showLabels } = useDashboard();
   const [mounted, setMounted] = useState(false);
   const [playingVideo, setPlayingVideo] = useState<string | null>(null);
   const [isVideoLoading, setIsVideoLoading] = useState(false);
@@ -4027,37 +4014,39 @@ export default function MapComponent() {
         center={TRIMBAKESHWAR_CENTER}
         zoom={DEFAULT_ZOOM}
         zoomControl={false}
-        className="w-full h-full transition-colors duration-500"
+        className="w-full h-full"
+        style={{ background: "#f8f9fa" }}
       >
         <MapResizeManager />
         <MapUpdater />
         <MapBackgroundClickHandler />
-        {!visibleLayers.has("procession-route") && (
-          <>
-            <AkhadaHighlighter />
-            <TileLayer
-              key={`${tileStyle}-${showLabels}`}
-              attribution='&copy; <a href="https://www.google.com/intl/en_us/help/terms_maps.html">Google Maps</a>'
-              url={activeTileUrl}
-            />
-            <DataLayerRenderer />
-            
-            {/* Search result marker */}
-            {searchLocation && (
-              <Marker
-                position={[searchLocation.lat, searchLocation.lon]}
-                icon={searchPinIcon}
-                ref={(r) => {
-                  if (r) setTimeout(() => r.openPopup(), 1500);
-                }}
-              >
-                <Popup className="font-sans">
-                  <div className="font-bold text-gray-800 text-sm mb-1">{searchLocation.name}</div>
-                  <div className="text-gray-700 font-medium text-xs">{searchLocation.lat.toFixed(4)}, {searchLocation.lon.toFixed(4)}</div>
-                </Popup>
-              </Marker>
-            )}
-          </>
+        <AkhadaHighlighter />
+
+
+        {/* Tile Layer */}
+        <TileLayer
+          key={`${tileStyle}-${showLabels}`}
+          attribution='&copy; <a href="https://www.google.com/intl/en_us/help/terms_maps.html">Google Maps</a>'
+          url={activeTileUrl}
+        />
+
+        {/* All data layers */}
+        <DataLayerRenderer />
+
+        {/* Search result marker */}
+        {searchLocation && (
+          <Marker
+            position={[searchLocation.lat, searchLocation.lon]}
+            icon={searchPinIcon}
+            ref={(r) => {
+              if (r) setTimeout(() => r.openPopup(), 1500);
+            }}
+          >
+            <Popup className="font-sans">
+              <div className="font-bold text-gray-800 text-sm mb-1">{searchLocation.name}</div>
+              <div className="text-gray-700 font-medium text-xs">{searchLocation.lat.toFixed(4)}, {searchLocation.lon.toFixed(4)}</div>
+            </Popup>
+          </Marker>
         )}
 
 
