@@ -53,6 +53,15 @@ export default function OrangeSchemeNavigation() {
   const [features, setFeatures] = useState<any[]>([]);
 
   useEffect(() => {
+    // Preload audio files
+    if (typeof window !== "undefined") {
+      Object.values(ORANGE_AUDIO_MAP).forEach(url => {
+        const audio = new Audio();
+        audio.preload = "auto";
+        audio.src = url;
+      });
+    }
+
     fetch('/data/trimbak-parsed.geojson')
       .then(r => r.json())
       .then(data => {
