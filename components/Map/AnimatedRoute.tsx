@@ -104,7 +104,14 @@ export default function AnimatedRoute({ feature, color, duration = 12, showArrow
         }
       } else {
         // Constant speed
-        p = elapsed / (duration * 1000);
+        let actualDuration = duration;
+        const audio = typeof window !== "undefined" ? (window as any).activeScenarioAudio : null;
+        if (audio && !isNaN(audio.duration) && audio.duration > 0) {
+          actualDuration = audio.duration;
+        }
+
+        p = elapsed / (actualDuration * 1000);
+        
         if (loop) {
           p = p % 1;
         } else {
