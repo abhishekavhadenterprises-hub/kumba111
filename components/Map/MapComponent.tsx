@@ -22,7 +22,6 @@ import { X } from "lucide-react";
 import type { MapLayerId } from "@/lib/types";
 import GreenCorridorPopups from "./GreenCorridorPopups";
 import SaputaraPopups from "./SaputaraPopups";
-import SubtitleOverlay from "../UI/SubtitleOverlay";
 import { GREEN_CORRIDOR_TIMINGS } from "./green-corridor-timings";
 import { SAPUTARA_TIMINGS } from "./saputara-timings";
 const AKHADA_KML_MAPPING: Record<string, string[]> = {
@@ -4056,7 +4055,6 @@ export default function MapComponent() {
       {/* Overlay controls */}
       <MapControls />
       <MapLegend />
-      <SubtitleOverlay />
     </div>
   );
 }

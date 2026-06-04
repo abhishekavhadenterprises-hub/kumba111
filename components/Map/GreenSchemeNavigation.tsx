@@ -20,6 +20,17 @@ export const GREEN_SCHEME_ROUTES = [
 
 import { ORANGE_WAYPOINTS as GREEN_WAYPOINTS } from "./orange-waypoints";
 
+const GREEN_AUDIO_MAP: Record<string, string> = {
+  "Nashik - Laddha Inner Parking - Trimabkeshwar - In and Out": "/audio/green nashik.mp3.mpeg",
+  "Pune Sangmner Sinnar Nashik Trimabkeshwar - In and Out": "/audio/green pune vo.mp3.mpeg",
+  "Dhule Malegaon Nashik Trimbak - In and Out": "/audio/green dhule vo.mp3.mpeg",
+  "NAndurbar Stanaa Sogras phata Nashik Trimbak - In & Out": "/audio/green nandurbar.mp3.mpeg",
+  "Saputara Vani Dindori Nashik Trimbak - In and Out": "/data/audio for the green scheme saputara/green saputara.mp3.mpeg",
+  "Dharampur Peth Karanjali Kohor Waghera Amboli Trimabkeshwar - In and Out": "/audio/green Dharampur peth.mp3.mpeg",
+  "Javhar Mokhada Amboli Trimabkeswar - In and Out": "/audio/green javar mokhada.mp3.mpeg",
+  "Mumbai Igatpuri Vaitarana Phata Saturli Ahurli Pegalwadi Trimabakehswar - In and Out": "/audio/green mumbai.mp3.mpeg",
+};
+
 export default function GreenSchemeNavigation() {
   const { activeKmlFolders, selectedFeature, selectFeature } = useDashboard();
 
@@ -41,6 +52,27 @@ export default function GreenSchemeNavigation() {
         }
       })
       .catch(() => { });
+
+    // Handle audio for the selected route
+    if (isGreenSchemeActive) {
+      if (currentRouteName && GREEN_AUDIO_MAP[currentRouteName]) {
+        if (typeof window !== "undefined") {
+          if ((window as any).activeScenarioAudio) {
+            (window as any).activeScenarioAudio.pause();
+            (window as any).activeScenarioAudio.ontimeupdate = null;
+            (window as any).activeScenarioAudio.currentTime = 0;
+          }
+          (window as any).activeScenarioAudio = new Audio(GREEN_AUDIO_MAP[currentRouteName]);
+          (window as any).activeScenarioAudio.play().catch((e: any) => console.error("Audio play failed:", e));
+        }
+      } else {
+        if (typeof window !== "undefined" && (window as any).activeScenarioAudio) {
+          (window as any).activeScenarioAudio.pause();
+          (window as any).activeScenarioAudio.ontimeupdate = null;
+          (window as any).activeScenarioAudio.currentTime = 0;
+        }
+      }
+    }
 
     let mapInstance: L.Map | null = null;
     const intervalId = setInterval(() => {

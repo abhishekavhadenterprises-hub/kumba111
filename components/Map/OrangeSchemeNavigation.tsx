@@ -24,6 +24,22 @@ export const ORANGE_SCHEME_ROUTES = [
 
 import { ORANGE_WAYPOINTS } from "./orange-waypoints";
 
+const ORANGE_AUDIO_MAP: Record<string, string> = {
+  "Nashik - Laddha Inner Parking - Trimabkeshwar - In and Out": "/audio/orange nashik.mp3.mpeg",
+  "Route A - In Chh Sambhaji Nagar - Sinnar - Pandhurli VTC Phata - Sarul Phata - Outer Parking - Trimbak": "/audio/orange chh. sambhaji nagar.mp3.mpeg",
+  "Route B - Chh Sambhaji Nagar - Sinnar - Pnadhurli VTC Phata Sarul Phata - Outer Parking - Trimbak Outer Parking - Belgaon Dhaga Sarul Phata VTC Phata - Pandhurli Sinnar Chh Sambhaji Nagar": "/audio/orange chh. sambhaji nagar.mp3.mpeg",
+  "Route A - In Chh Sambhaji Nagar - Sinnar - Pandhurli VTC Phata - Sarul Phata - Outer Parking - Trimbak_red": "/audio/orange chh. sambhaji nagar.mp3.mpeg",
+  "Route B - Chh Sambhaji Nagar - Sinnar - Pnadhurli VTC Phata Sarul Phata - Outer Parking - Trimbak Outer Parking - Belgaon Dhaga Sarul Phata VTC Phata - Pandhurli Sinnar Chh Sambhaji Nagar_red": "/audio/orange chh. sambhaji nagar.mp3.mpeg",
+  "Dhule Malegaon Nashik Trimbak - In and Out": "/audio/orange dhule.mp3.mpeg",
+  "NAndurbar Stanaa Sogras phata Nashik Trimbak - In & Out": "/audio/orange nandurbar.mp3.mpeg",
+  "Saputara Vani Dindori Nashik Trimbak - In and Out": "/audio/orange saputara.mp3.mpeg",
+  "Dharampur Peth Karanjali Kohor Waghera Amboli Trimabkeshwar - In and Out": "/audio/orange dharmapur pit.mp3.mpeg",
+  "Javhar Mokhada Amboli Trimabkeswar - In and Out": "/audio/orange javhar.mp3.mpeg",
+  "Mumbai Igatpuri Vaitarana Phata Saturli Ahurli Pegalwadi Trimabakehswar - In and Out": "/audio/orange mumbai.mp3.mpeg",
+  "In Route - Mumbai Igatpuri Vaitarna Saturli Met chandrachi Nirgudpada Pahine Bhilmal Outer Parking": "/audio/orange mumbai.mp3.mpeg",
+  "In Route - Mumbai Igatpuri Vaitarna Saturli Met chandrachi Nirgudpada Pahine Bhilmal Outer Parking_red": "/audio/orange mumbai.mp3.mpeg",
+};
+
 export default function OrangeSchemeNavigation() {
   const { activeKmlFolders, selectedFeature, selectFeature } = useDashboard();
 
@@ -45,6 +61,27 @@ export default function OrangeSchemeNavigation() {
         }
       })
       .catch(() => { });
+
+    // Handle audio for the selected route
+    if (isOrangeSchemeActive) {
+      if (currentRouteName && ORANGE_AUDIO_MAP[currentRouteName]) {
+        if (typeof window !== "undefined") {
+          if ((window as any).activeScenarioAudio) {
+            (window as any).activeScenarioAudio.pause();
+            (window as any).activeScenarioAudio.ontimeupdate = null;
+            (window as any).activeScenarioAudio.currentTime = 0;
+          }
+          (window as any).activeScenarioAudio = new Audio(ORANGE_AUDIO_MAP[currentRouteName]);
+          (window as any).activeScenarioAudio.play().catch((e: any) => console.error("Audio play failed:", e));
+        }
+      } else {
+        if (typeof window !== "undefined" && (window as any).activeScenarioAudio) {
+          (window as any).activeScenarioAudio.pause();
+          (window as any).activeScenarioAudio.ontimeupdate = null;
+          (window as any).activeScenarioAudio.currentTime = 0;
+        }
+      }
+    }
 
     // Poll for the map container so we can get mapInstance (without useMap crashing)
     let mapInstance: L.Map | null = null;

@@ -101,8 +101,7 @@ export const SCENARIOS = [
   }
 ];
 
-// Singleton audio instance for Green Corridor
-let greenCorridorAudio: HTMLAudioElement | null = null;
+// Global audio instance is managed via (window as any).activeScenarioAudio
 
 export default function ScenariosPanel() {
   const {
@@ -156,8 +155,8 @@ export default function ScenariosPanel() {
       setTimeout(() => setShowMultiTabAlert(false), 4000);
 
       // Stop audio
-      if (greenCorridorAudio) {
-        greenCorridorAudio.pause();
+      if (typeof window !== "undefined" && (window as any).activeScenarioAudio) {
+        (window as any).activeScenarioAudio.pause();
       }
     }
 
@@ -203,13 +202,19 @@ export default function ScenariosPanel() {
         if (isCurrentlyActive) {
           // Turning off: collapse just this specific node
           setExpandedKmlNodes(expandedKmlNodes.filter(id => id !== targetNode.id));
+
+          // Stop audio if turning off Green Scheme or Orange Scheme
+          if (scenario.id === "Green Scheme - For Non Parvani Days" || scenario.id === "Orange Scheme - Parvani Days") {
+            if (typeof window !== "undefined" && (window as any).activeScenarioAudio) {
+              (window as any).activeScenarioAudio.pause();
+              (window as any).activeScenarioAudio.ontimeupdate = null;
+              (window as any).activeScenarioAudio.currentTime = 0;
+            }
+          }
         } else {
           // Turning on: Expand all nodes in the path in sidebar
           const newExpanded = new Set([...expandedKmlNodes, ...pathIds]);
           setExpandedKmlNodes(Array.from(newExpanded));
-
-          // Ensure the layers tab is open
-          // setLeftTab("layers"); // Removed automatic tab switching to prevent jump
         }
       }
     } else {
@@ -221,21 +226,21 @@ export default function ScenariosPanel() {
           // Play audio when Green Corridor is turned ON, but only if it's the only active scenario
           if (currentlyActiveCount === 0) {
             if (typeof window !== 'undefined') {
-              if (greenCorridorAudio) {
-                greenCorridorAudio.pause();
-                greenCorridorAudio.ontimeupdate = null;
-                greenCorridorAudio.currentTime = 0;
+              if ((window as any).activeScenarioAudio) {
+                (window as any).activeScenarioAudio.pause();
+                (window as any).activeScenarioAudio.ontimeupdate = null;
+                (window as any).activeScenarioAudio.currentTime = 0;
               }
-              greenCorridorAudio = new Audio('/audio/green-corridor.mpeg');
+              (window as any).activeScenarioAudio = new Audio('/audio/green-corridor.mpeg');
               
               // Dispatch time update for syncing animations and subtitles
-              greenCorridorAudio.ontimeupdate = () => {
+              (window as any).activeScenarioAudio.ontimeupdate = () => {
                 window.dispatchEvent(new CustomEvent('green-corridor-audio-time', {
-                  detail: { time: greenCorridorAudio?.currentTime || 0 }
+                  detail: { time: (window as any).activeScenarioAudio?.currentTime || 0 }
                 }));
               };
               
-              greenCorridorAudio.play().catch(() => {});
+              (window as any).activeScenarioAudio.play().catch(() => {});
             }
           }
           selectFeature({
@@ -251,10 +256,10 @@ export default function ScenariosPanel() {
           });
         } else {
           // Stop audio when Green Corridor is turned OFF
-          if (greenCorridorAudio) {
-            greenCorridorAudio.pause();
-            greenCorridorAudio.ontimeupdate = null;
-            greenCorridorAudio.currentTime = 0;
+          if (typeof window !== "undefined" && (window as any).activeScenarioAudio) {
+            (window as any).activeScenarioAudio.pause();
+            (window as any).activeScenarioAudio.ontimeupdate = null;
+            (window as any).activeScenarioAudio.currentTime = 0;
             window.dispatchEvent(new CustomEvent('green-corridor-audio-time', { detail: { time: 0 } }));
           }
           selectFeature(null);
@@ -344,10 +349,17 @@ export default function ScenariosPanel() {
       </div>
 
       {/* Clear all */}
-      {activeScenarios.length > 0 && (
+      {(activeScenarios.length > 0 || activeKmlFolders.length > 0) && (
         <div className="text-center mt-5">
           <button
-            onClick={clearScenarios}
+            onClick={() => {
+              clearScenarios();
+              if (typeof window !== "undefined" && (window as any).activeScenarioAudio) {
+                (window as any).activeScenarioAudio.pause();
+                (window as any).activeScenarioAudio.ontimeupdate = null;
+                (window as any).activeScenarioAudio.currentTime = 0;
+              }
+            }}
             className="text-[10px] text-red-400 font-bold uppercase tracking-wider transition-colors hover:text-red-300"
           >
             ✕ Clear All Scenarios
