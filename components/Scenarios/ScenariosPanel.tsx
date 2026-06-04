@@ -145,7 +145,7 @@ export default function ScenariosPanel() {
       return activeScenarios.includes(s.id);
     }).length;
 
-    const isCurrentlyActive = scenario.type === "kml" 
+    const isCurrentlyActive = scenario.type === "kml"
       ? activeKmlFolders.some(id => typeof id === 'string' && id.includes(scenario.id))
       : activeScenarios.includes(scenario.id);
 
@@ -232,15 +232,15 @@ export default function ScenariosPanel() {
                 (window as any).activeScenarioAudio.currentTime = 0;
               }
               (window as any).activeScenarioAudio = new Audio('/audio/green-corridor.mpeg');
-              
+
               // Dispatch time update for syncing animations and subtitles
               (window as any).activeScenarioAudio.ontimeupdate = () => {
                 window.dispatchEvent(new CustomEvent('green-corridor-audio-time', {
                   detail: { time: (window as any).activeScenarioAudio?.currentTime || 0 }
                 }));
               };
-              
-              (window as any).activeScenarioAudio.play().catch(() => {});
+
+              (window as any).activeScenarioAudio.play().catch(() => { });
             }
           }
           selectFeature({
@@ -271,20 +271,19 @@ export default function ScenariosPanel() {
   return (
     <div className="pb-4">
       {/* Multi-tab Notification */}
-      <div 
-        className={`fixed top-24 left-1/2 -translate-x-1/2 z-[100] transition-all duration-700 ease-out ${
-          showMultiTabAlert 
-            ? "opacity-100 translate-y-0 scale-100" 
+      <div
+        className={`fixed top-24 left-1/2 -translate-x-1/2 z-[100] transition-all duration-700 ease-out ${showMultiTabAlert
+            ? "opacity-100 translate-y-0 scale-100"
             : "opacity-0 -translate-y-8 scale-95 pointer-events-none"
-        }`}
+          }`}
       >
         <div className="bg-black/40 backdrop-blur-xl border border-white/20 shadow-[0_16px_40px_rgba(0,0,0,0.5),0_0_20px_rgba(212,175,55,0.15)] rounded-2xl p-3.5 flex items-center gap-4 overflow-hidden relative group">
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
-          
+
           <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-amber-500/20 to-orange-500/10 border border-amber-500/30 shadow-[0_0_15px_rgba(245,158,11,0.2)]">
             <Activity className="w-5 h-5 text-amber-400" />
           </div>
-          
+
           <div className="pr-4">
             <h3 className="text-white/95 font-semibold text-[14px] tracking-wide mb-0.5 drop-shadow-sm">Multi-tab Active</h3>
             <p className="text-white/60 text-[12px] font-medium tracking-wide">Audio simulation paused for clarity</p>
