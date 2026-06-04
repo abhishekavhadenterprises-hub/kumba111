@@ -45,7 +45,8 @@ export default function AnimatedRoute({ feature, color, duration = 12, showArrow
   }, [latLngs]);
 
   useEffect(() => {
-    let startTime: number | null = null;
+    let lastTimestamp: number | null = null;
+    let elapsedTime = 0;
     let animationFrameId: number;
     let audioTime = 0;
 
@@ -58,8 +59,21 @@ export default function AnimatedRoute({ feature, color, duration = 12, showArrow
     }
 
     const animate = (timestamp: number) => {
-      if (!startTime) startTime = timestamp;
-      const elapsed = timestamp - startTime;
+      if (lastTimestamp === null) lastTimestamp = timestamp;
+      const dt = timestamp - lastTimestamp;
+      lastTimestamp = timestamp;
+
+      // Check global audio for play/pause state syncing
+      const audio = typeof window !== "undefined" ? (window as any).activeScenarioAudio : null;
+      const isAudioPlaying = audio && !audio.paused && audio.currentTime > 0;
+      const hasAudio = !!audio && !!audio.src;
+
+      // Only advance time if there's no audio, or if the audio is actively playing
+      if (!hasAudio || isAudioPlaying) {
+        elapsedTime += dt;
+      }
+
+      const elapsed = elapsedTime;
 
       let p = 0;
       let isFinished = false;
