@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>tunnel location.kml</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>tunnel location</name>
+		<open>1</open>
+		<Placemark>
+			<name>tunnel</name>
+			<LookAt>
+				<longitude>73.55239454323832</longitude>
+				<latitude>19.94480652047991</latitude>
+				<altitude>0</altitude>
+				<heading>-28.71063623486638</heading>
+				<tilt>28.62600563560596</tilt>
+				<range>724.86517800697</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>73.55357651909542,19.94545201942488,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>tunel 2</name>
+			<LookAt>
+				<longitude>73.54851201123009</longitude>
+				<latitude>19.9436957664835</latitude>
+				<altitude>0</altitude>
+				<heading>-28.71196057835655</heading>
+				<tilt>28.62600430572126</tilt>
+				<range>724.5561222033047</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>73.54778000065889,19.94381392325969,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>tunel 3</name>
+			<LookAt>
+				<longitude>73.54598930462474</longitude>
+				<latitude>19.94307394702563</latitude>
+				<altitude>0</altitude>
+				<heading>-28.71197097954788</heading>
+				<tilt>22.5191448985887</tilt>
+				<range>679.3168695865533</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>73.54590972580699,19.94311894013843,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>tunel 4</name>
+			<LookAt>
+				<longitude>73.54187867645149</longitude>
+				<latitude>19.94236722305181</latitude>
+				<altitude>0</altitude>
+				<heading>-28.71337305817186</heading>
+				<tilt>22.52272074376258</tilt>
+				<range>1718.903803080198</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>73.54189927281845,19.9412586180913,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>tunel 5</name>
+			<LookAt>
+				<longitude>73.54103942969992</longitude>
+				<latitude>19.94137523378631</latitude>
+				<altitude>0</altitude>
+				<heading>-28.7136592725461</heading>
+				<tilt>22.52270605044253</tilt>
+				<range>1714.633238932244</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>73.53335310746256,19.94078844787046,0</coordinates>
+			</Point>
+		</Placemark>
+		<atom:link rel="app" href="https://www.google.com/earth/about/versions/#earth-pro" title="Google Earth Pro 7.3.7.1094"></atom:link>
+	</Folder>
+</Document>
+</kml>

@@ -1,0 +1,9 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type":"Feature","properties":{"name":"Sapkal Knowledge Hub Helipad","type":"helipad","status":"operational"},"geometry":{"type":"Point","coordinates":[73.599167,19.941944]}},
+    {"type":"Feature","properties":{"name":"Bramha Vally College Helipad","type":"helipad","status":"operational"},"geometry":{"type":"Point","coordinates":[73.576667,19.950278]}},
+    {"type":"Feature","properties":{"name":"Police Land Anjaneri Helipad","type":"helipad","status":"operational"},"geometry":{"type":"Point","coordinates":[73.576667,19.955833]}},
+    {"type":"Feature","properties":{"name":"Sachin Daptari (Land) Helipad","type":"helipad","status":"standby"},"geometry":{"type":"Point","coordinates":[73.9025,19.9329]}}
+  ]
+}

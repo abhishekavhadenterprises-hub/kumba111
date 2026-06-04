@@ -1,0 +1,265 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "1 आहिल्या गोदा संगम (नाथ आखाडया जवळ)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.53225626656076,
+          19.93207193990163
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "2 लढढा अंर्तगत वाहनतळ"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.56089783264946,
+          19.94562932577723
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "3 पेगलवाडी टी पॉइंट"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.55144931967484,
+          19.94470156917742
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "4 साधुग्राम  1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.53502777920056,
+          19.95101140859997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "5 साधुग्राम 2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.54059399176704,
+          19.95032654769656
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "6 साधुग्राम 3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.5487776371943,
+          19.94981454934057
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "7 नवीन घाट 1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.54090990636811,
+          19.94488352048456
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "8 नवीन घाट 2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.54768399951284,
+          19.94723356463649
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "9 खंबाळे बाहय वाहनतळ 1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.64147946067231,
+          19.96118951154155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "10 खंबाळे बाहय वाहनतळ 2 (गावालगत)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6404580993054,
+          19.9591696049634
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "11 संदीप फाउंडेशन मागे, बाहय वाहनतळ"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.67785804435559,
+          19.96010361600665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "12 चक्रतीर्थ बेझे"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.59418898261855,
+          19.99661571108123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "13 सापगाव टी पॉइंट, सापगाव फाटा"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.51383300139665,
+          19.95827624483022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "14 अंबोली बाहय वाहन पार्किंग"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.4970243092701,
+          19.96977663683037
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "15 भिलमाळ बाहय वाहनतळ (घोटी खोडाळा रोड)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.54695914063102,
+          19.90055073566334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "16 बी जी फार्म, अंर्तगत वाहनतळ"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.55421000055524,
+          19.92858249863467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "17 कसबे सुकेणे रेल्वे स्टेशन"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.03031162899427,
+          20.0732383566406
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "18 खेरवाडी रेल्वे स्टेशन"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.97504760084598,
+          20.04380282431774
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "19 कावनई तीर्थ"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.61401689354237,
+          19.77345880729283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "20 सर्वतीर्थ टाकेद  देवस्थान परिसर"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.77614657491553,
+          19.70047224328595
+        ]
+      }
+    }
+  ]
+}

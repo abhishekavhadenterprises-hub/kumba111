@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Laddha Land.kml</name>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>c4ff0000</color>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<PolyStyle>
+			<color>c4ff0000</color>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Laddha Land</name>
+		<open>1</open>
+		<Placemark>
+			<name>Bus Stand </name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							73.56096190634925,19.94610190983207,0 73.56085832658754,19.94614398611301,0 73.5606057998443,19.94622941625935,0 73.56059964774713,19.94622981610348,0 73.56028332062482,19.94628660338953,0 73.56002945603116,19.94629131675363,0 73.55972824898517,19.94605526379935,0 73.55940751269128,19.94568908731292,0 73.55912815876654,19.94486388502501,0 73.5611075602895,19.94435627574989,0 73.56126156759268,19.9446935060944,0 73.56168622163597,19.94575464587013,0 73.56096190634925,19.94610190983207,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>accomodation </name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							73.55916066046534,19.94483516204218,0 73.5591147324678,19.94404668810142,0 73.55928206322962,19.94376690866019,0 73.55926470111859,19.94278477342351,0 73.56049208405905,19.94299441654358,0 73.56062034860668,19.94366216386279,0 73.56108644395111,19.94435018372794,0 73.55916066046534,19.94483516204218,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>goraksha dairy</name>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							73.56286155770131,19.95273217908891,0 73.56094701488796,19.95210674098718,0 73.55996644266047,19.95145382887496,0 73.55996358974866,19.94899558557858,0 73.56389614225758,19.95067308624792,0 73.56286155770131,19.95273217908891,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<atom:link rel="app" href="https://www.google.com/earth/about/versions/#earth-pro" title="Google Earth Pro 7.3.7.1155"></atom:link>
+	</Folder>
+</Document>
+</kml>

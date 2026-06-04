@@ -1,0 +1,1456 @@
+[
+    {
+        "id": "Trimbak Parking & Routes as Per Colour Scheme",
+        "name": "Trimbak Parking & Routes as Per Colour Scheme",
+        "type": "folder",
+        "children": [
+            {
+                "id": "Trimbak Boundary.kmz_3",
+                "name": "Trimbak Boundary.kmz",
+                "type": "folder",
+                "children": [
+                    {
+                        "id": "Polyline [1164E]:0",
+                        "name": "Polyline [1164E]:0",
+                        "type": "placemark",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "id": "Green Scheme - For Non Parvani Days_5",
+                "name": "Green Scheme - For Non Parvani Days",
+                "type": "folder",
+                "children": [
+                    {
+                        "id": "Nashik - Laddha Inner Parking - Trimabkeshwar - In and Out",
+                        "name": "Nashik - Laddha Inner Parking - Trimabkeshwar - In and Out",
+                        "type": "placemark",
+                        "description": ""
+                    },
+                    {
+                        "id": "Pune Sangmner Sinnar Nashik Trimabkeshwar - In and Out",
+                        "name": "Pune Sangmner Sinnar Nashik Trimabkeshwar - In and Out",
+                        "type": "placemark",
+                        "description": ""
+                    },
+                    {
+                        "id": "Chh Sambhaji nagar Yeola Niffad Nashik Trimbak - In and Out",
+                        "name": "Chh Sambhaji nagar Yeola Niffad Nashik Trimbak - In and Out",
+                        "type": "placemark",
+                        "description": ""
+                    },
+                    {
+                        "id": "Dhule Malegaon Nashik Trimbak - In and Out",
+                        "name": "Dhule Malegaon Nashik Trimbak - In and Out",
+                        "type": "placemark",
+                        "description": ""
+                    },
+                    {
+                        "id": "NAndurbar Stanaa Sogras phata Nashik Trimbak - In & Out",
+                        "name": "NAndurbar Stanaa Sogras phata Nashik Trimbak - In & Out",
+                        "type": "placemark",
+                        "description": ""
+                    },
+                    {
+                        "id": "Saputara Vani Dindori Nashik Trimbak - In and Out",
+                        "name": "Saputara Vani Dindori Nashik Trimbak - In and Out",
+                        "type": "placemark",
+                        "description": ""
+                    },
+                    {
+                        "id": "Dharampur Peth Karanjali Kohor Waghera Amboli Trimabkeshwar - In and Out",
+                        "name": "Dharampur Peth Karanjali Kohor Waghera Amboli Trimabkeshwar - In and Out",
+                        "type": "placemark",
+                        "description": ""
+                    },
+                    {
+                        "id": "Javhar Mokhada Amboli Trimabkeswar - In and Out",
+                        "name": "Javhar Mokhada Amboli Trimabkeswar - In and Out",
+                        "type": "placemark",
+                        "description": ""
+                    },
+                    {
+                        "id": "Mumbai Igatpuri Vaitarana Phata Saturli Ahurli Pegalwadi Trimabakehswar - In and Out",
+                        "name": "Mumbai Igatpuri Vaitarana Phata Saturli Ahurli Pegalwadi Trimabakehswar - In and Out",
+                        "type": "placemark",
+                        "description": ""
+                    },
+                    {
+                        "id": "Inner Parking Hubs",
+                        "name": "Inner Parking Hubs",
+                        "type": "placemark",
+                        "description": "Inner parking zones"
+                    }
+                ]
+            },
+            {
+                "id": "Orange Scheme - Parvani Days_7",
+                "name": "Orange Scheme - Parvani Days",
+                "type": "folder",
+                "children": [
+                    {
+                        "id": "Pune Route_3",
+                        "name": "Pune Route",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "id": "Khambale Outer Parking - Belgaon Dhaga Sarul Phata VTC Phata Pandhurli Sinnar  Pune - Out Route [1:LineString]",
+                                "name": "Khambale Outer Parking - Belgaon Dhaga Sarul Phata VTC Phata Pandhurli Sinnar  Pune - Out Route [1:LineString]",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Khambale Outer Parking - Belgaon Dhaga Sarul Phata VTC Phata Pandhurli Sinnar  Pune - Out Route [2:LineString]",
+                                "name": "Khambale Outer Parking - Belgaon Dhaga Sarul Phata VTC Phata Pandhurli Sinnar  Pune - Out Route [2:LineString]",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Pune Sinnar Pandhurli VTC Phata Sarul Phata Khambale Outer Parking- In Route",
+                                "name": "Pune Sinnar Pandhurli VTC Phata Sarul Phata Khambale Outer Parking- In Route",
+                                "type": "placemark",
+                                "description": ""
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Nashik Route_5",
+                        "name": "Nashik Route",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "id": "Nashik Khambale Outer Parking Trimabakeshwar - In and out",
+                                "name": "Nashik Khambale Outer Parking Trimabakeshwar - In and out",
+                                "type": "placemark",
+                                "description": ""
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Chh. Sambhaji Nagar Route_7",
+                        "name": "Chh. Sambhaji Nagar Route",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "id": "Route A - In Chh Sambhaji Nagar - Sinnar - Pandhurli VTC Phata - Sarul Phata - Outer Parking - Trimbak",
+                                "name": "Route A - In Chh Sambhaji Nagar - Sinnar - Pandhurli VTC Phata - Sarul Phata - Outer Parking - Trimbak",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Route A - Out",
+                                "name": "Route A - Out",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Route B - Chh Sambhaji Nagar - Sinnar - Pnadhurli VTC Phata Sarul Phata - Outer Parking - Trimbak Outer Parking - Belgaon Dhaga Sarul Phata VTC Phata - Pandhurli Sinnar Chh Sambhaji Nagar",
+                                "name": "Route B - Chh Sambhaji Nagar - Sinnar - Pnadhurli VTC Phata Sarul Phata - Outer Parking - Trimbak Outer Parking - Belgaon Dhaga Sarul Phata VTC Phata - Pandhurli Sinnar Chh Sambhaji Nagar",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Route B Out",
+                                "name": "Route B Out",
+                                "type": "placemark",
+                                "description": ""
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Dhule Route_9",
+                        "name": "Dhule Route",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "id": "In Route - Dhule-chandwad-pimplagaon-kokangaon-sakore mig -kurnoli- mohadi -Dindori - Umrale - vilwandi -Waghera - Amboli",
+                                "name": "In Route - Dhule-chandwad-pimplagaon-kokangaon-sakore mig -kurnoli- mohadi -Dindori - Umrale - vilwandi -Waghera - Amboli",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Out Route - Dhule-chandwad-pimplagaon-kokangaon-sakore mig -kurnoli- mohadi -Dindori - Umrale - vilwandi -Waghera - Amboli",
+                                "name": "Out Route - Dhule-chandwad-pimplagaon-kokangaon-sakore mig -kurnoli- mohadi -Dindori - Umrale - vilwandi -Waghera - Amboli",
+                                "type": "placemark",
+                                "description": ""
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Nandurbar Route_11",
+                        "name": "Nandurbar Route",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "id": "Out Route - Rohile Phata Dugaon Ramshej Janore Ozar  Malegaon Dhule",
+                                "name": "Out Route - Rohile Phata Dugaon Ramshej Janore Ozar  Malegaon Dhule",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "In Route Nandurbar Satana Sogras Phata Agra Mumbai - Janore Ramshej Dugaon Rohile Phaata Talwade - Trimbak",
+                                "name": "In Route Nandurbar Satana Sogras Phata Agra Mumbai - Janore Ramshej Dugaon Rohile Phaata Talwade - Trimbak",
+                                "type": "placemark",
+                                "description": ""
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Saputara Vani_13",
+                        "name": "Saputara Vani",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "id": "Out Route - Talwade Rohile Phata Ladachi Vilvandi Kochargaon Nalegaon Umarale Dindori Vani Saputara",
+                                "name": "Out Route - Talwade Rohile Phata Ladachi Vilvandi Kochargaon Nalegaon Umarale Dindori Vani Saputara",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "In Route - Saputara Vani DIndori Umrale Nalegaon Kochargaon Vilvandi Ladachi Rohile Phata -Talwade",
+                                "name": "In Route - Saputara Vani DIndori Umrale Nalegaon Kochargaon Vilvandi Ladachi Rohile Phata -Talwade",
+                                "type": "placemark",
+                                "description": ""
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Dharampur Peth - Pending_15",
+                        "name": "Dharampur Peth - Pending",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "id": "Dharampur Peth Karanjali Kohor Waghera Amboli Trimabkeshwar - In and Out",
+                                "name": "Dharampur Peth Karanjali Kohor Waghera Amboli Trimabkeshwar - In and Out",
+                                "type": "placemark",
+                                "description": ""
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Javhar Mokhada Route - Pending_17",
+                        "name": "Javhar Mokhada Route - Pending",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "id": "Javhar Mokhada Amboli Trimabkeswar - In and Out",
+                                "name": "Javhar Mokhada Amboli Trimabkeswar - In and Out",
+                                "type": "placemark",
+                                "description": ""
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Mumbai Route_19",
+                        "name": "Mumbai Route",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "id": "Mumbai Igatpuri Vaitarana Phata Saturli Ahurli Pegalwadi Trimabakehswar - In and Out",
+                                "name": "Mumbai Igatpuri Vaitarana Phata Saturli Ahurli Pegalwadi Trimabakehswar - In and Out",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "In Route - Mumbai Igatpuri Vaitarna Saturli Met chandrachi Nirgudpada Pahine Bhilmal Outer Parking",
+                                "name": "In Route - Mumbai Igatpuri Vaitarna Saturli Met chandrachi Nirgudpada Pahine Bhilmal Outer Parking",
+                                "type": "placemark",
+                                "description": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Red Scheme - Emergency Days_8",
+                "name": "Red Scheme - Emergency Days",
+                "type": "folder",
+                "children": [
+                    {
+                        "id": "Pune Route_3_red",
+                        "name": "Pune Route",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "id": "Khambale Outer Parking - Belgaon Dhaga Sarul Phata VTC Phata Pandhurli Sinnar  Pune - Out Route [1:LineString]_red",
+                                "name": "Khambale Outer Parking - Belgaon Dhaga Sarul Phata VTC Phata Pandhurli Sinnar  Pune - Out Route [1:LineString]_red",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Khambale Outer Parking - Belgaon Dhaga Sarul Phata VTC Phata Pandhurli Sinnar  Pune - Out Route [2:LineString]_red",
+                                "name": "Khambale Outer Parking - Belgaon Dhaga Sarul Phata VTC Phata Pandhurli Sinnar  Pune - Out Route [2:LineString]_red",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Pune Sinnar Pandhurli VTC Phata Sarul Phata Khambale Outer Parking- In Route_red",
+                                "name": "Pune Sinnar Pandhurli VTC Phata Sarul Phata Khambale Outer Parking- In Route_red",
+                                "type": "placemark",
+                                "description": ""
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Nashik Route_5_red",
+                        "name": "Nashik Route",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "id": "Nashik Khambale Outer Parking Trimabakeshwar - In and out_red",
+                                "name": "Nashik Khambale Outer Parking Trimabakeshwar - In and out_red",
+                                "type": "placemark",
+                                "description": ""
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Chh. Sambhaji Nagar Route_7_red",
+                        "name": "Chh. Sambhaji Nagar Route",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "id": "Route A - In Chh Sambhaji Nagar - Sinnar - Pandhurli VTC Phata - Sarul Phata - Outer Parking - Trimbak_red",
+                                "name": "Route A - In Chh Sambhaji Nagar - Sinnar - Pandhurli VTC Phata - Sarul Phata - Outer Parking - Trimbak_red",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Route A - Out_red",
+                                "name": "Route A - Out_red",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Route B - Chh Sambhaji Nagar - Sinnar - Pnadhurli VTC Phata Sarul Phata - Outer Parking - Trimbak Outer Parking - Belgaon Dhaga Sarul Phata VTC Phata - Pandhurli Sinnar Chh Sambhaji Nagar_red",
+                                "name": "Route B - Chh Sambhaji Nagar - Sinnar - Pnadhurli VTC Phata Sarul Phata - Outer Parking - Trimbak Outer Parking - Belgaon Dhaga Sarul Phata VTC Phata - Pandhurli Sinnar Chh Sambhaji Nagar_red",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Route B Out_red",
+                                "name": "Route B Out_red",
+                                "type": "placemark",
+                                "description": ""
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Dhule Route_9_red",
+                        "name": "Dhule Route",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "id": "In Route - Dhule-chandwad-pimplagaon-kokangaon-sakore mig -kurnoli- mohadi -Dindori - Umrale - vilwandi -Waghera - Amboli_red",
+                                "name": "In Route - Dhule-chandwad-pimplagaon-kokangaon-sakore mig -kurnoli- mohadi -Dindori - Umrale - vilwandi -Waghera - Amboli_red",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Out Route - Dhule-chandwad-pimplagaon-kokangaon-sakore mig -kurnoli- mohadi -Dindori - Umrale - vilwandi -Waghera - Amboli_red",
+                                "name": "Out Route - Dhule-chandwad-pimplagaon-kokangaon-sakore mig -kurnoli- mohadi -Dindori - Umrale - vilwandi -Waghera - Amboli_red",
+                                "type": "placemark",
+                                "description": ""
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Nandurbar Route_11_red",
+                        "name": "Nandurbar Route",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "id": "Out Route - Rohile Phata Dugaon Ramshej Janore Ozar  Malegaon Dhule_red",
+                                "name": "Out Route - Rohile Phata Dugaon Ramshej Janore Ozar  Malegaon Dhule_red",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "In Route Nandurbar Satana Sogras Phata Agra Mumbai - Janore Ramshej Dugaon Rohile Phaata Talwade - Trimbak_red",
+                                "name": "In Route Nandurbar Satana Sogras Phata Agra Mumbai - Janore Ramshej Dugaon Rohile Phaata Talwade - Trimbak_red",
+                                "type": "placemark",
+                                "description": ""
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Saputara Vani_13_red",
+                        "name": "Saputara Vani",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "id": "Out Route - Talwade Rohile Phata Ladachi Vilvandi Kochargaon Nalegaon Umarale Dindori Vani Saputara_red",
+                                "name": "Out Route - Talwade Rohile Phata Ladachi Vilvandi Kochargaon Nalegaon Umarale Dindori Vani Saputara_red",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "In Route - Saputara Vani DIndori Umrale Nalegaon Kochargaon Vilvandi Ladachi Rohile Phata -Talwade_red",
+                                "name": "In Route - Saputara Vani DIndori Umrale Nalegaon Kochargaon Vilvandi Ladachi Rohile Phata -Talwade_red",
+                                "type": "placemark",
+                                "description": ""
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Dharampur Peth - Pending_15_red",
+                        "name": "Dharampur Peth - Pending",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "id": "Dharampur Peth Karanjali Kohor Waghera Amboli Trimabkeshwar - In and Out_red",
+                                "name": "Dharampur Peth Karanjali Kohor Waghera Amboli Trimabkeshwar - In and Out_red",
+                                "type": "placemark",
+                                "description": ""
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Javhar Mokhada Route - Pending_17_red",
+                        "name": "Javhar Mokhada Route - Pending",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "id": "Javhar Mokhada Amboli Trimabkeswar - In and Out_red",
+                                "name": "Javhar Mokhada Amboli Trimabkeswar - In and Out_red",
+                                "type": "placemark",
+                                "description": ""
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Mumbai Route_19_red",
+                        "name": "Mumbai Route",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "id": "Mumbai Igatpuri Vaitarana Phata Saturli Ahurli Pegalwadi Trimabakehswar - In and Out_red",
+                                "name": "Mumbai Igatpuri Vaitarana Phata Saturli Ahurli Pegalwadi Trimabakehswar - In and Out_red",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "In Route - Mumbai Igatpuri Vaitarna Saturli Met chandrachi Nirgudpada Pahine Bhilmal Outer Parking_red",
+                                "name": "In Route - Mumbai Igatpuri Vaitarna Saturli Met chandrachi Nirgudpada Pahine Bhilmal Outer Parking_red",
+                                "type": "placemark",
+                                "description": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Trimbak Parking Location_9",
+                "name": "Trimbak Parking Location",
+                "type": "folder",
+                "children": [
+                    {
+                        "id": "Inner Parking_5",
+                        "name": "Inner Parking",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "id": "Talwade Parking - 6.07 Ha",
+                                "name": "Talwade Parking - 6.07 Ha",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Talwade 2015 Parking",
+                                "name": "Talwade 2015 Parking",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Talwade Parking",
+                                "name": "Talwade Parking",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Talwade Parking",
+                                "name": "Talwade Parking",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "talwade gao parking",
+                                "name": "talwade gao parking",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Chinoy Parking - 11.52 Ha.",
+                                "name": "Chinoy Parking - 11.52 Ha.",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "BG Farm Parking - 6Ha",
+                                "name": "BG Farm Parking - 6Ha",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "BG Farm Parking",
+                                "name": "BG Farm Parking",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Sapgaon Parking - 0.60 Ha",
+                                "name": "Sapgaon Parking - 0.60 Ha",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "sapgav parking",
+                                "name": "sapgav parking",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Laddha Parking - 36 Acres Appx.",
+                                "name": "Laddha Parking - 36 Acres Appx.",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Laddha Parking",
+                                "name": "Laddha Parking",
+                                "type": "placemark",
+                                "description": ""
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Outer Parking_3",
+                        "name": "Outer Parking",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "id": "Belgaon Dhaga (Behind Sandeep Foundation) - 257 Ha",
+                                "name": "Belgaon Dhaga (Behind Sandeep Foundation) - 257 Ha",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Amboli Parking - 12Ha",
+                                "name": "Amboli Parking - 12Ha",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Amboli Parking - 4.45Ha",
+                                "name": "Amboli Parking - 4.45Ha",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Amboli Parking Polygon A",
+                                "name": "Amboli Parking Polygon A",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Rohile Phata Devargaon Parking - 14.08 Ha",
+                                "name": "Rohile Phata Devargaon Parking - 14.08 Ha",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Khambale Parking - 132.94 Ha (4 Locations)",
+                                "name": "Khambale Parking - 132.94 Ha (4 Locations)",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Pahine Parking - 7.32 Ha",
+                                "name": "Pahine Parking - 7.32 Ha",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Bhilmal Parking - 9.71 Ha",
+                                "name": "Bhilmal Parking - 9.71 Ha",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Bhilmal Parking (Khadakwadi) - 10.01 Ha",
+                                "name": "Bhilmal Parking (Khadakwadi) - 10.01 Ha",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Bhilmal Parking (Khadakwadi)",
+                                "name": "Bhilmal Parking (Khadakwadi)",
+                                "type": "placemark",
+                                "description": ""
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Near ITI Anjaneri Grampanchayat",
+                        "name": "Near ITI Anjaneri Grampanchayat",
+                        "type": "placemark",
+                        "description": ""
+                    },
+                    {
+                        "id": "Beze Parking - 2 Ha",
+                        "name": "Beze Parking - 2 Ha",
+                        "type": "placemark",
+                        "description": ""
+                    },
+                    {
+                        "id": "Tupadevi Parking - ~8 Ha",
+                        "name": "Tupadevi Parking - ~8 Ha",
+                        "type": "placemark",
+                        "description": ""
+                    },
+                    {
+                        "id": "Holding Area_13",
+                        "name": "Holding Area",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "id": "Gayatri Holding Area - 17.48 HA",
+                                "name": "Gayatri Holding Area - 17.48 HA",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Pegalwadi - Holding Area",
+                                "name": "Pegalwadi - Holding Area",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Velunje (Patrecha Pada) Holding Area- 2Ha",
+                                "name": "Velunje (Patrecha Pada) Holding Area- 2Ha",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Nandgaon Koli Phata (Holding Area)- 5.82 Ha",
+                                "name": "Nandgaon Koli Phata (Holding Area)- 5.82 Ha",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Gorthan Holding Area - 2 Ha",
+                                "name": "Gorthan Holding Area - 2 Ha",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Waghera Holding Area - 17.79 Ha",
+                                "name": "Waghera Holding Area - 17.79 Ha",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Dhondegaon Holding Area - 2.88 Ha",
+                                "name": "Dhondegaon Holding Area - 2.88 Ha",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Jategaon Infront of Govt. Hospital - 1.75 Ha",
+                                "name": "Jategaon Infront of Govt. Hospital - 1.75 Ha",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Jategaon T Junction - 4.88 Ha",
+                                "name": "Jategaon T Junction - 4.88 Ha",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Pimpalad Shivar Left and Right Side - 26.01 Ha",
+                                "name": "Pimpalad Shivar Left and Right Side - 26.01 Ha",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Chh. Sambhaji Nagar Route_23",
+                                "name": "Chh. Sambhaji Nagar Route",
+                                "type": "folder",
+                                "children": [
+                                    {
+                                        "id": "Khmagaon Yeola - Tentative Holidng Area - to be vrified on site",
+                                        "name": "Khmagaon Yeola - Tentative Holidng Area - to be vrified on site",
+                                        "type": "placemark",
+                                        "description": ""
+                                    },
+                                    {
+                                        "id": "Angangaon Behind Bhujbal Office - Yeola - 15.1 Ha",
+                                        "name": "Angangaon Behind Bhujbal Office - Yeola - 15.1 Ha",
+                                        "type": "placemark",
+                                        "description": ""
+                                    },
+                                    {
+                                        "id": "Kothure Tal Niphaad - Niphad Pimpalas Route - Tentative Holding Area",
+                                        "name": "Kothure Tal Niphaad - Niphad Pimpalas Route - Tentative Holding Area",
+                                        "type": "placemark",
+                                        "description": ""
+                                    },
+                                    {
+                                        "id": "Vishnunagar Vinchur Niffad - 8.59 Ha",
+                                        "name": "Vishnunagar Vinchur Niffad - 8.59 Ha",
+                                        "type": "placemark",
+                                        "description": ""
+                                    },
+                                    {
+                                        "id": "Fatehpur Naka - 5.43 Ha",
+                                        "name": "Fatehpur Naka - 5.43 Ha",
+                                        "type": "placemark",
+                                        "description": ""
+                                    },
+                                    {
+                                        "id": "Khamgaon Yeola - 2.28",
+                                        "name": "Khamgaon Yeola - 2.28",
+                                        "type": "placemark",
+                                        "description": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "Shirdi Vavi Sinnar_25",
+                                "name": "Shirdi Vavi Sinnar",
+                                "type": "folder",
+                                "children": [
+                                    {
+                                        "id": "Musalgaon - India Bulls Sinnar - 39.56 Ha",
+                                        "name": "Musalgaon - India Bulls Sinnar - 39.56 Ha",
+                                        "type": "placemark",
+                                        "description": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "Pune-SInnar Route_27",
+                                "name": "Pune-SInnar Route",
+                                "type": "folder",
+                                "children": [
+                                    {
+                                        "id": "Bhatwadi Sinnar - 7.12 ha",
+                                        "name": "Bhatwadi Sinnar - 7.12 ha",
+                                        "type": "placemark",
+                                        "description": ""
+                                    },
+                                    {
+                                        "id": "Sonambe - Sinnar - 22.94 ha",
+                                        "name": "Sonambe - Sinnar - 22.94 ha",
+                                        "type": "placemark",
+                                        "description": ""
+                                    },
+                                    {
+                                        "id": "Gurevadi Sinnar - ___Ha",
+                                        "name": "Gurevadi Sinnar - ___Ha",
+                                        "type": "placemark",
+                                        "description": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "Dhule Route_29",
+                                "name": "Dhule Route",
+                                "type": "folder",
+                                "children": [
+                                    {
+                                        "id": "Zodge 1 - 22.69 Ha",
+                                        "name": "Zodge 1 - 22.69 Ha",
+                                        "type": "placemark",
+                                        "description": ""
+                                    },
+                                    {
+                                        "id": "Bharvir Chandwad  - 5.13 Ha",
+                                        "name": "Bharvir Chandwad  - 5.13 Ha",
+                                        "type": "placemark",
+                                        "description": ""
+                                    },
+                                    {
+                                        "id": "Khadakjamb - Chandwad - 12.64 Ha",
+                                        "name": "Khadakjamb - Chandwad - 12.64 Ha",
+                                        "type": "placemark",
+                                        "description": ""
+                                    },
+                                    {
+                                        "id": "Chikhal Ohol - Malegaon Dhule Route - 21.52HA",
+                                        "name": "Chikhal Ohol - Malegaon Dhule Route - 21.52HA",
+                                        "type": "placemark",
+                                        "description": ""
+                                    },
+                                    {
+                                        "id": "Adgaon Tappa Chandwad - 11.67 Ha",
+                                        "name": "Adgaon Tappa Chandwad - 11.67 Ha",
+                                        "type": "placemark",
+                                        "description": ""
+                                    },
+                                    {
+                                        "id": "Malsane Chandwad - Beside Hotel Renuka - 16.77 Ha",
+                                        "name": "Malsane Chandwad - Beside Hotel Renuka - 16.77 Ha",
+                                        "type": "placemark",
+                                        "description": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "Manmad Nadgaon Chalisgaon_31",
+                                "name": "Manmad Nadgaon Chalisgaon",
+                                "type": "folder",
+                                "children": [
+                                    {
+                                        "id": "Hiswal Hirenagar Nandgaon Shivpuran - 16.63 Ha",
+                                        "name": "Hiswal Hirenagar Nandgaon Shivpuran - 16.63 Ha",
+                                        "type": "placemark",
+                                        "description": ""
+                                    },
+                                    {
+                                        "id": "Pokhari - 51.79 + 15.52 Ha",
+                                        "name": "Pokhari - 51.79 + 15.52 Ha",
+                                        "type": "placemark",
+                                        "description": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "Dhrampur Gujarat_33",
+                                "name": "Dhrampur Gujarat",
+                                "type": "folder",
+                                "children": [
+                                    {
+                                        "id": "Sub - Sogras Deola Satana Taharabad_3",
+                                        "name": "Sub - Sogras Deola Satana Taharabad",
+                                        "type": "folder",
+                                        "children": [
+                                            {
+                                                "id": "Dholbare Baglan - 4.34 Ha",
+                                                "name": "Dholbare Baglan - 4.34 Ha",
+                                                "type": "placemark",
+                                                "description": ""
+                                            },
+                                            {
+                                                "id": "Karanjad Baglan APMC - 11.21 Ha",
+                                                "name": "Karanjad Baglan APMC - 11.21 Ha",
+                                                "type": "placemark",
+                                                "description": ""
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "Vangani - 4 Ha",
+                                        "name": "Vangani - 4 Ha",
+                                        "type": "placemark",
+                                        "description": ""
+                                    },
+                                    {
+                                        "id": "Vani - Area Not Confirmed",
+                                        "name": "Vani - Area Not Confirmed",
+                                        "type": "placemark",
+                                        "description": ""
+                                    },
+                                    {
+                                        "id": "Girnare - 3.60 Ha",
+                                        "name": "Girnare - 3.60 Ha",
+                                        "type": "placemark",
+                                        "description": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "Ambai Parking - 4.96 Ha",
+                                "name": "Ambai Parking - 4.96 Ha",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Amboli Chaufully Parking - 4.45Ha",
+                                "name": "Amboli Chaufully Parking - 4.45Ha",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Ambai Parking Polygon 1",
+                                "name": "Ambai Parking Polygon 1",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Ambai Parking Polygon 2",
+                                "name": "Ambai Parking Polygon 2",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Amboli Chaufully Parking Polygon",
+                                "name": "Amboli Chaufully Parking Polygon",
+                                "type": "placemark",
+                                "description": ""
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Additional Parking (Decision to be made)_15",
+                        "name": "Additional Parking (Decision to be made)",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "id": "Additional Parking (Decision Pending)- 4.8 Ha Approx",
+                                "name": "Additional Parking (Decision Pending)- 4.8 Ha Approx",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Additional Land - 8.49 Ha",
+                                "name": "Additional Land - 8.49 Ha",
+                                "type": "placemark",
+                                "description": ""
+                            }
+                        ]
+                    },
+                    {
+                        "id": ".",
+                        "name": ".",
+                        "type": "placemark",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "id": "Pedestrian Routes.kmz_11",
+                "name": "Pedestrian Routes.kmz",
+                "type": "folder",
+                "children": [
+                    {
+                        "id": "Pedestrian Routes_33",
+                        "name": "Pedestrian Routes",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "id": "Talwade Inner Parking To Ghat Pedestrian Route [1:LineString]",
+                                "name": "Talwade Inner Parking To Ghat Pedestrian Route [1:LineString]",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Talwade Inner Parking To Ghat Pedestrian Route [2:LineString]",
+                                "name": "Talwade Inner Parking To Ghat Pedestrian Route [2:LineString]",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Talwade Return Route",
+                                "name": "Talwade Return Route",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Laddha Parking To Ghat",
+                                "name": "Laddha Parking To Ghat",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Return Route Laddha parking",
+                                "name": "Return Route Laddha parking",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "BG Farm 1PM Route",
+                                "name": "BG Farm 1PM Route",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "BG Farm Return Route",
+                                "name": "BG Farm Return Route",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "BG Farm Pedestrian route After 1PM",
+                                "name": "BG Farm Pedestrian route After 1PM",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Pedestrian Route Sapgaon Parking",
+                                "name": "Pedestrian Route Sapgaon Parking",
+                                "type": "placemark",
+                                "description": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "Trimbakeshwar_13",
+                "name": "Trimbakeshwar",
+                "type": "folder",
+                "children": [
+                    {
+                        "id": "Shrinath Ghat_3",
+                        "name": "Shrinath Ghat",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "id": "Shrinath Ghat - East",
+                                "name": "Shrinath Ghat - East",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Shrinath Ghat - East",
+                                "name": "Shrinath Ghat - East",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Shrinath Ghat - East",
+                                "name": "Shrinath Ghat - East",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Shrinath Ghat - West",
+                                "name": "Shrinath Ghat - West",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Shrinath Ghat - West",
+                                "name": "Shrinath Ghat - West",
+                                "type": "placemark",
+                                "description": ""
+                            }
+                        ]
+                    },
+                    {
+                        "id": "20250925_Sadhugram.kmz_5",
+                        "name": "20250925_Sadhugram.kmz",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "id": "7B500E576A4394CCEEC63",
+                                "name": "Sadhugram",
+                                "type": "folder",
+                                "children": [
+                                    {
+                                        "id": "03A3832DF83AB5E979C5",
+                                        "name": "Old Sadhugram",
+                                        "type": "folder",
+                                        "children": [
+                                            {
+                                                "id": "Sadhugram",
+                                                "name": "Sadhugram",
+                                                "type": "placemark",
+                                                "description": ""
+                                            },
+                                            {
+                                                "id": "Sadhugram",
+                                                "name": "Sadhugram",
+                                                "type": "placemark",
+                                                "description": ""
+                                            },
+                                            {
+                                                "id": "Sadhugram",
+                                                "name": "Sadhugram",
+                                                "type": "placemark",
+                                                "description": ""
+                                            },
+                                            {
+                                                "id": "Untitled Polygon",
+                                                "name": "Untitled Polygon",
+                                                "type": "placemark",
+                                                "description": ""
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "7C32674CAA7394CCEEC63",
+                                        "name": "New Sadhugram",
+                                        "type": "folder",
+                                        "children": [
+                                            {
+                                                "id": "Sadhugram",
+                                                "name": "Sadhugram",
+                                                "type": "placemark",
+                                                "description": ""
+                                            },
+                                            {
+                                                "id": "Untitled Polygon",
+                                                "name": "Untitled Polygon",
+                                                "type": "placemark",
+                                                "description": ""
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Parking / Bus Stops_7",
+                        "name": "Parking / Bus Stops",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "id": "Trimbakeshwar Bus stop",
+                                "name": "Trimbakeshwar Bus stop",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Trimbakeshwar Mandir Parking",
+                                "name": "Trimbakeshwar Mandir Parking",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Government Parking",
+                                "name": "Government Parking",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Mauli Parking",
+                                "name": "Mauli Parking",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Taxi Stand",
+                                "name": "Taxi Stand",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Paid Parking",
+                                "name": "Paid Parking",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Taj Pay and park",
+                                "name": "Taj Pay and park",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Jay Ganesh Parking",
+                                "name": "Jay Ganesh Parking",
+                                "type": "placemark",
+                                "description": ""
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Trimbakeshwar Temple_9",
+                        "name": "Trimbakeshwar Temple",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "id": "Trimbakeshwar Temple",
+                                "name": "Trimbakeshwar Temple",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Trimbakeshwar Temple",
+                                "name": "Trimbakeshwar Temple",
+                                "type": "placemark",
+                                "description": ""
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Ahilya Ghat_11",
+                        "name": "Ahilya Ghat",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "id": "Ahilya Ghat - East",
+                                "name": "Ahilya Ghat - East",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Ahilya Ghat - West",
+                                "name": "Ahilya Ghat - West",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Ahilya Ghat - west",
+                                "name": "Ahilya Ghat - west",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Ahilya Ghat - East",
+                                "name": "Ahilya Ghat - East",
+                                "type": "placemark",
+                                "description": ""
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Kushavart Kund_13",
+                        "name": "Kushavart Kund",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "id": "Kushawart Kund",
+                                "name": "Kushawart Kund",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Kushavart Kund",
+                                "name": "Kushavart Kund",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Kushavarta Kund",
+                                "name": "Kushavarta Kund",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "ShriChandra Ghat",
+                                "name": "ShriChandra Ghat",
+                                "type": "placemark",
+                                "description": ""
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Akhada_15",
+                        "name": "Akhada",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "id": "Bada Udaseen Akhada_3",
+                                "name": "Bada Udaseen Akhada",
+                                "type": "folder",
+                                "children": [
+                                    {
+                                        "id": "Bada Udaseen Akhada",
+                                        "name": "Bada Udaseen Akhada",
+                                        "type": "placemark",
+                                        "description": ""
+                                    },
+                                    {
+                                        "id": "Inward Route",
+                                        "name": "Inward Route",
+                                        "type": "placemark",
+                                        "description": ""
+                                    },
+                                    {
+                                        "id": "Outward route",
+                                        "name": "Outward route",
+                                        "type": "placemark",
+                                        "description": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "Naya Udaseen Akhada_5",
+                                "name": "Naya Udaseen Akhada",
+                                "type": "folder",
+                                "children": [
+                                    {
+                                        "id": "Untitled Path",
+                                        "name": "Untitled Path",
+                                        "type": "placemark",
+                                        "description": ""
+                                    },
+                                    {
+                                        "id": "Naya Udaseen Akhada",
+                                        "name": "Naya Udaseen Akhada",
+                                        "type": "placemark",
+                                        "description": ""
+                                    },
+                                    {
+                                        "id": "Inward route",
+                                        "name": "Inward route",
+                                        "type": "placemark",
+                                        "description": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "Avahan Akhada_7",
+                                "name": "Avahan Akhada",
+                                "type": "folder",
+                                "children": [
+                                    {
+                                        "id": "outward path",
+                                        "name": "outward path",
+                                        "type": "placemark",
+                                        "description": ""
+                                    },
+                                    {
+                                        "id": "Avahan Akhada",
+                                        "name": "Avahan Akhada",
+                                        "type": "placemark",
+                                        "description": ""
+                                    },
+                                    {
+                                        "id": "Inwards route",
+                                        "name": "Inwards route",
+                                        "type": "placemark",
+                                        "description": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "Juna Akhada_9",
+                                "name": "Juna Akhada",
+                                "type": "folder",
+                                "children": [
+                                    {
+                                        "id": "Juna Akhada",
+                                        "name": "Juna Akhada",
+                                        "type": "placemark",
+                                        "description": ""
+                                    },
+                                    {
+                                        "id": "Juna Akhada Movement - inwards",
+                                        "name": "Juna Akhada Movement - inwards",
+                                        "type": "placemark",
+                                        "description": ""
+                                    },
+                                    {
+                                        "id": "Juna Akhada Movement - outwards",
+                                        "name": "Juna Akhada Movement - outwards",
+                                        "type": "placemark",
+                                        "description": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "Nirmal Akhada_11",
+                                "name": "Nirmal Akhada",
+                                "type": "folder",
+                                "children": [
+                                    {
+                                        "id": "Nirmal Akhada",
+                                        "name": "Nirmal Akhada",
+                                        "type": "placemark",
+                                        "description": ""
+                                    },
+                                    {
+                                        "id": "Inward route",
+                                        "name": "Inward route",
+                                        "type": "placemark",
+                                        "description": ""
+                                    },
+                                    {
+                                        "id": "Outward route",
+                                        "name": "Outward route",
+                                        "type": "placemark",
+                                        "description": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "Atal Akhada_13",
+                                "name": "Atal Akhada",
+                                "type": "folder",
+                                "children": [
+                                    {
+                                        "id": "Atal Akhada",
+                                        "name": "Atal Akhada",
+                                        "type": "placemark",
+                                        "description": ""
+                                    },
+                                    {
+                                        "id": "Inwards route",
+                                        "name": "Inwards route",
+                                        "type": "placemark",
+                                        "description": ""
+                                    },
+                                    {
+                                        "id": "Outward route",
+                                        "name": "Outward route",
+                                        "type": "placemark",
+                                        "description": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "Niranjani Akhada_15",
+                                "name": "Niranjani Akhada",
+                                "type": "folder",
+                                "children": [
+                                    {
+                                        "id": "Niranjani Akhada",
+                                        "name": "Niranjani Akhada",
+                                        "type": "placemark",
+                                        "description": ""
+                                    },
+                                    {
+                                        "id": "outward route",
+                                        "name": "outward route",
+                                        "type": "placemark",
+                                        "description": ""
+                                    },
+                                    {
+                                        "id": "Inward route",
+                                        "name": "Inward route",
+                                        "type": "placemark",
+                                        "description": ""
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "Hospitals_17",
+                        "name": "Hospitals",
+                        "type": "folder",
+                        "children": [
+                            {
+                                "id": "Government Hospital",
+                                "name": "Government Hospital",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Sub District Hopital",
+                                "name": "Sub District Hopital",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Nilkanth Hospital",
+                                "name": "Nilkanth Hospital",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Sushrut Hospital",
+                                "name": "Sushrut Hospital",
+                                "type": "placemark",
+                                "description": ""
+                            },
+                            {
+                                "id": "Om Multi Speciality Hospital",
+                                "name": "Om Multi Speciality Hospital",
+                                "type": "placemark",
+                                "description": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

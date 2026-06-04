@@ -1,0 +1,145 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8937114,
+          20.1129311,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Ozar Airport",
+        "styleUrl": "#icon-1899-DB4436-nodesc",
+        "label-scale": 0,
+        "icon-opacity": 1,
+        "icon-color": "#db4436",
+        "icon-scale": 1,
+        "icon-offset": [
+          32,
+          64
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "insetPixels"
+        ],
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6913009,
+          19.8919232,
+          0
+        ]
+      },
+      "properties": {
+        "name": "VMRR+HW8, Raigadnagar, Maharashtra 422010, India",
+        "styleUrl": "#icon-1899-DB4436-nodesc",
+        "label-scale": 0,
+        "icon-opacity": 1,
+        "icon-color": "#db4436",
+        "icon-scale": 1,
+        "icon-offset": [
+          32,
+          64
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "insetPixels"
+        ],
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.5377355,
+          19.9386904,
+          0
+        ]
+      },
+      "properties": {
+        "name": "WGQP+HQH, Trimbak, Maharashtra 422212, India",
+        "styleUrl": "#icon-1899-DB4436-nodesc",
+        "label-scale": 0,
+        "icon-opacity": 1,
+        "icon-color": "#db4436",
+        "icon-scale": 1,
+        "icon-offset": [
+          32,
+          64
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "insetPixels"
+        ],
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.5801354,
+          19.9876056,
+          0
+        ]
+      },
+      "properties": {
+        "name": "XHPH+MG, Beze, Maharashtra 422213, India",
+        "styleUrl": "#icon-1899-DB4436-nodesc",
+        "label-scale": 0,
+        "icon-opacity": 1,
+        "icon-color": "#db4436",
+        "icon-scale": 1,
+        "icon-offset": [
+          32,
+          64
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "insetPixels"
+        ],
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.5926461,
+          19.9547548,
+          0
+        ]
+      },
+      "properties": {
+        "name": "XH3V+X4R, Trimbakeshwar Rd, Anjaneri, Maharashtra 422213, India",
+        "styleUrl": "#icon-1899-DB4436-nodesc",
+        "label-scale": 0,
+        "icon-opacity": 1,
+        "icon-color": "#db4436",
+        "icon-scale": 1,
+        "icon-offset": [
+          32,
+          64
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "insetPixels"
+        ],
+        "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+      }
+    }
+  ]
+}

@@ -1,0 +1,345 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P1",
+        "name": "P1 — Anjaneri Road Parking",
+        "capacity": 2000,
+        "vehicleTypes": [
+          "car",
+          "bus",
+          "two-wheeler"
+        ],
+        "distanceToTemple": "2.5 km",
+        "shuttleAvailable": true,
+        "entryPoint": "NH-3 Anjaneri Junction"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.52,
+              19.921
+            ],
+            [
+              73.523,
+              19.921
+            ],
+            [
+              73.523,
+              19.923
+            ],
+            [
+              73.52,
+              19.923
+            ],
+            [
+              73.52,
+              19.921
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P2",
+        "name": "P2 — NH-3 South Parking",
+        "capacity": 3000,
+        "vehicleTypes": [
+          "car",
+          "bus",
+          "truck"
+        ],
+        "distanceToTemple": "3.0 km",
+        "shuttleAvailable": true,
+        "entryPoint": "NH-3 South Entry"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.534,
+              19.916999999999998
+            ],
+            [
+              73.538,
+              19.916999999999998
+            ],
+            [
+              73.538,
+              19.918999999999997
+            ],
+            [
+              73.534,
+              19.918999999999997
+            ],
+            [
+              73.534,
+              19.916999999999998
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P3",
+        "name": "P3 — Ghoti Road Parking",
+        "capacity": 1500,
+        "vehicleTypes": [
+          "car",
+          "two-wheeler"
+        ],
+        "distanceToTemple": "2.0 km",
+        "shuttleAvailable": true,
+        "entryPoint": "Ghoti Road Entry"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.54,
+              19.924999999999997
+            ],
+            [
+              73.543,
+              19.924999999999997
+            ],
+            [
+              73.543,
+              19.927
+            ],
+            [
+              73.54,
+              19.927
+            ],
+            [
+              73.54,
+              19.924999999999997
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P4",
+        "name": "P4 — Bus Terminal Parking",
+        "capacity": 500,
+        "vehicleTypes": [
+          "bus"
+        ],
+        "distanceToTemple": "1.0 km",
+        "shuttleAvailable": false,
+        "entryPoint": "Bus Stand Road"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.532,
+              19.927
+            ],
+            [
+              73.5345,
+              19.927
+            ],
+            [
+              73.5345,
+              19.9285
+            ],
+            [
+              73.532,
+              19.9285
+            ],
+            [
+              73.532,
+              19.927
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P5",
+        "name": "P5 — Brahmagiri Road Parking",
+        "capacity": 1800,
+        "vehicleTypes": [
+          "car",
+          "two-wheeler",
+          "auto"
+        ],
+        "distanceToTemple": "1.8 km",
+        "shuttleAvailable": true,
+        "entryPoint": "Brahmagiri Hill Road"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.537,
+              19.936
+            ],
+            [
+              73.54,
+              19.936
+            ],
+            [
+              73.54,
+              19.938
+            ],
+            [
+              73.537,
+              19.938
+            ],
+            [
+              73.537,
+              19.936
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P6",
+        "name": "P6 — West Approach Parking",
+        "capacity": 2500,
+        "vehicleTypes": [
+          "car",
+          "bus",
+          "two-wheeler"
+        ],
+        "distanceToTemple": "2.2 km",
+        "shuttleAvailable": true,
+        "entryPoint": "West Ring Road"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.512,
+              19.930999999999997
+            ],
+            [
+              73.515,
+              19.930999999999997
+            ],
+            [
+              73.515,
+              19.933
+            ],
+            [
+              73.512,
+              19.933
+            ],
+            [
+              73.512,
+              19.930999999999997
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P7",
+        "name": "P7 — VIP Parking (Restricted)",
+        "capacity": 200,
+        "vehicleTypes": [
+          "car-vip",
+          "escort"
+        ],
+        "distanceToTemple": "0.5 km",
+        "shuttleAvailable": false,
+        "entryPoint": "VIP Gate — Restricted"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.529,
+              19.933
+            ],
+            [
+              73.5305,
+              19.933
+            ],
+            [
+              73.5305,
+              19.933999999999997
+            ],
+            [
+              73.529,
+              19.933999999999997
+            ],
+            [
+              73.529,
+              19.933
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P8",
+        "name": "P8 — Emergency Vehicle Bay",
+        "capacity": 100,
+        "vehicleTypes": [
+          "ambulance",
+          "fire",
+          "police"
+        ],
+        "distanceToTemple": "0.3 km",
+        "shuttleAvailable": false,
+        "entryPoint": "Emergency Access Road"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.53,
+              19.9305
+            ],
+            [
+              73.5315,
+              19.9305
+            ],
+            [
+              73.5315,
+              19.9315
+            ],
+            [
+              73.53,
+              19.9315
+            ],
+            [
+              73.53,
+              19.9305
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

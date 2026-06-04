@@ -1,0 +1,563 @@
+[
+  {
+    "id": "dproads",
+    "name": "DP Roads",
+    "type": "folder",
+    "children": [
+      {
+        "id": "dproads_child_13",
+        "name": "tunnel location",
+        "type": "folder",
+        "children": [
+          {
+            "id": "tunnel",
+            "name": "tunnel",
+            "type": "placemark",
+            "description": ""
+          },
+          {
+            "id": "tunel 2",
+            "name": "tunel 2",
+            "type": "placemark",
+            "description": ""
+          },
+          {
+            "id": "tunel 3",
+            "name": "tunel 3",
+            "type": "placemark",
+            "description": ""
+          },
+          {
+            "id": "tunel 4",
+            "name": "tunel 4",
+            "type": "placemark",
+            "description": ""
+          },
+          {
+            "id": "tunel 5",
+            "name": "tunel 5",
+            "type": "placemark",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "id": "dproads_child_15",
+        "name": "Nagar Parishad Hadda",
+        "type": "folder",
+        "children": [
+          {
+            "id": "PLAN A_21",
+            "name": "PLAN A",
+            "type": "folder",
+            "children": [
+              {
+                "id": "Untitled Path",
+                "name": "Untitled Path",
+                "type": "placemark",
+                "description": ""
+              },
+              {
+                "id": "Untitled Path",
+                "name": "Untitled Path",
+                "type": "placemark",
+                "description": ""
+              },
+              {
+                "id": "PLAN B_9",
+                "name": "PLAN B",
+                "type": "folder",
+                "children": [
+                  {
+                    "id": "Untitled Path",
+                    "name": "Untitled Path",
+                    "type": "placemark",
+                    "description": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "dproads_child_17",
+        "name": "Pockets for sadhugram.kmz",
+        "type": "folder",
+        "children": [
+          {
+            "id": "Pockets for sadhugram_15",
+            "name": "Pockets for sadhugram",
+            "type": "folder",
+            "children": [
+              {
+                "id": "missing road",
+                "name": "missing road",
+                "type": "placemark",
+                "description": ""
+              },
+              {
+                "id": "missing road",
+                "name": "missing road",
+                "type": "placemark",
+                "description": ""
+              },
+              {
+                "id": "Pocket 1",
+                "name": "Pocket 1",
+                "type": "placemark",
+                "description": ""
+              },
+              {
+                "id": "Pocket 2",
+                "name": "Pocket 2",
+                "type": "placemark",
+                "description": ""
+              },
+              {
+                "id": "Pocket 3",
+                "name": "Pocket 3",
+                "type": "placemark",
+                "description": ""
+              },
+              {
+                "id": "Pocket 4",
+                "name": "Pocket 4",
+                "type": "placemark",
+                "description": ""
+              },
+              {
+                "id": "Pocket 5",
+                "name": "Pocket 5",
+                "type": "placemark",
+                "description": ""
+              },
+              {
+                "id": "Pocket 6",
+                "name": "Pocket 6",
+                "type": "placemark",
+                "description": ""
+              },
+              {
+                "id": "Pocket 7",
+                "name": "Pocket 7",
+                "type": "placemark",
+                "description": ""
+              },
+              {
+                "id": "Pocket 8",
+                "name": "Pocket 8",
+                "type": "placemark",
+                "description": ""
+              },
+              {
+                "id": "complete survey area.kmz_23",
+                "name": "complete survey area.kmz",
+                "type": "folder",
+                "children": [
+                  {
+                    "id": "total survey boundary",
+                    "name": "total survey boundary",
+                    "type": "placemark",
+                    "description": ""
+                  }
+                ]
+              },
+              {
+                "id": "DP ROAD PNP_25",
+                "name": "DP ROAD PNP",
+                "type": "folder",
+                "children": [
+                  {
+                    "id": "Model_5",
+                    "name": "Model",
+                    "type": "folder",
+                    "children": [
+                      {
+                        "id": "Polyline [228A5]_5",
+                        "name": "Polyline [228A5]",
+                        "type": "folder",
+                        "children": [
+                          {
+                            "id": "Polyline [228A5]:0",
+                            "name": "Polyline [228A5]:0",
+                            "type": "placemark",
+                            "description": ""
+                          }
+                        ]
+                      },
+                      {
+                        "id": "Polyline [228A4]_7",
+                        "name": "Polyline [228A4]",
+                        "type": "folder",
+                        "children": [
+                          {
+                            "id": "Polyline [228A4]:0",
+                            "name": "Polyline [228A4]:0",
+                            "type": "placemark",
+                            "description": ""
+                          }
+                        ]
+                      },
+                      {
+                        "id": "Polyline [228A3]_9",
+                        "name": "Polyline [228A3]",
+                        "type": "folder",
+                        "children": [
+                          {
+                            "id": "Polyline [228A3]:0",
+                            "name": "Polyline [228A3]:0",
+                            "type": "placemark",
+                            "description": ""
+                          }
+                        ]
+                      },
+                      {
+                        "id": "Polyline [228A2]_11",
+                        "name": "Polyline [228A2]",
+                        "type": "folder",
+                        "children": [
+                          {
+                            "id": "Polyline [228A2]:0",
+                            "name": "Polyline [228A2]:0",
+                            "type": "placemark",
+                            "description": ""
+                          }
+                        ]
+                      },
+                      {
+                        "id": "Polyline [228A1]_13",
+                        "name": "Polyline [228A1]",
+                        "type": "folder",
+                        "children": [
+                          {
+                            "id": "Polyline [228A1]:0",
+                            "name": "Polyline [228A1]:0",
+                            "type": "placemark",
+                            "description": ""
+                          }
+                        ]
+                      },
+                      {
+                        "id": "Polyline [228A0]_15",
+                        "name": "Polyline [228A0]",
+                        "type": "folder",
+                        "children": [
+                          {
+                            "id": "Polyline [228A0]:0",
+                            "name": "Polyline [228A0]:0",
+                            "type": "placemark",
+                            "description": ""
+                          }
+                        ]
+                      },
+                      {
+                        "id": "Polyline [2289F]_17",
+                        "name": "Polyline [2289F]",
+                        "type": "folder",
+                        "children": [
+                          {
+                            "id": "Polyline [2289F]:0",
+                            "name": "Polyline [2289F]:0",
+                            "type": "placemark",
+                            "description": ""
+                          }
+                        ]
+                      },
+                      {
+                        "id": "Polyline [2289E]_19",
+                        "name": "Polyline [2289E]",
+                        "type": "folder",
+                        "children": [
+                          {
+                            "id": "Polyline [2289E]:0",
+                            "name": "Polyline [2289E]:0",
+                            "type": "placemark",
+                            "description": ""
+                          }
+                        ]
+                      },
+                      {
+                        "id": "Polyline [2289D]_21",
+                        "name": "Polyline [2289D]",
+                        "type": "folder",
+                        "children": [
+                          {
+                            "id": "Polyline [2289D]:0",
+                            "name": "Polyline [2289D]:0",
+                            "type": "placemark",
+                            "description": ""
+                          }
+                        ]
+                      },
+                      {
+                        "id": "Polyline [2289C]_23",
+                        "name": "Polyline [2289C]",
+                        "type": "folder",
+                        "children": [
+                          {
+                            "id": "Polyline [2289C]:0",
+                            "name": "Polyline [2289C]:0",
+                            "type": "placemark",
+                            "description": ""
+                          }
+                        ]
+                      },
+                      {
+                        "id": "Polyline [1F6BC]_25",
+                        "name": "Polyline [1F6BC]",
+                        "type": "folder",
+                        "children": [
+                          {
+                            "id": "Polyline [1F6BC]:0",
+                            "name": "Polyline [1F6BC]:0",
+                            "type": "placemark",
+                            "description": ""
+                          }
+                        ]
+                      },
+                      {
+                        "id": "Block Reference [1F6B6]_27",
+                        "name": "Block Reference [1F6B6]",
+                        "type": "folder",
+                        "children": [
+                          {
+                            "id": "Block Reference [1F6B6]:0",
+                            "name": "Block Reference [1F6B6]:0",
+                            "type": "placemark",
+                            "description": ""
+                          }
+                        ]
+                      },
+                      {
+                        "id": "Block Reference [1F6B4]_29",
+                        "name": "Block Reference [1F6B4]",
+                        "type": "folder",
+                        "children": [
+                          {
+                            "id": "Block Reference [1F6B4]:0",
+                            "name": "Block Reference [1F6B4]:0",
+                            "type": "placemark",
+                            "description": ""
+                          }
+                        ]
+                      },
+                      {
+                        "id": "Polyline [1F63C]_31",
+                        "name": "Polyline [1F63C]",
+                        "type": "folder",
+                        "children": [
+                          {
+                            "id": "Polyline [1F63C]:0",
+                            "name": "Polyline [1F63C]:0",
+                            "type": "placemark",
+                            "description": ""
+                          }
+                        ]
+                      },
+                      {
+                        "id": "Polyline [1F2CC]_33",
+                        "name": "Polyline [1F2CC]",
+                        "type": "folder",
+                        "children": [
+                          {
+                            "id": "Polyline [1F2CC]:0",
+                            "name": "Polyline [1F2CC]:0",
+                            "type": "placemark",
+                            "description": ""
+                          }
+                        ]
+                      },
+                      {
+                        "id": "3D Polyline [18F]_35",
+                        "name": "3D Polyline [18F]",
+                        "type": "folder",
+                        "children": [
+                          {
+                            "id": "3D Polyline [18F]:0",
+                            "name": "3D Polyline [18F]:0",
+                            "type": "placemark",
+                            "description": ""
+                          }
+                        ]
+                      },
+                      {
+                        "id": "3D Polyline [16F]_37",
+                        "name": "3D Polyline [16F]",
+                        "type": "folder",
+                        "children": [
+                          {
+                            "id": "3D Polyline [16F]:0",
+                            "name": "3D Polyline [16F]:0",
+                            "type": "placemark",
+                            "description": ""
+                          }
+                        ]
+                      },
+                      {
+                        "id": "3D Polyline [13B]_39",
+                        "name": "3D Polyline [13B]",
+                        "type": "folder",
+                        "children": [
+                          {
+                            "id": "3D Polyline [13B]:0",
+                            "name": "3D Polyline [13B]:0",
+                            "type": "placemark",
+                            "description": ""
+                          }
+                        ]
+                      },
+                      {
+                        "id": "3D Polyline [12E]_41",
+                        "name": "3D Polyline [12E]",
+                        "type": "folder",
+                        "children": [
+                          {
+                            "id": "3D Polyline [12E]:0",
+                            "name": "3D Polyline [12E]:0",
+                            "type": "placemark",
+                            "description": ""
+                          }
+                        ]
+                      },
+                      {
+                        "id": "3D Polyline [11E]_43",
+                        "name": "3D Polyline [11E]",
+                        "type": "folder",
+                        "children": [
+                          {
+                            "id": "3D Polyline [11E]:0",
+                            "name": "3D Polyline [11E]:0",
+                            "type": "placemark",
+                            "description": ""
+                          }
+                        ]
+                      },
+                      {
+                        "id": "3D Polyline [110]_45",
+                        "name": "3D Polyline [110]",
+                        "type": "folder",
+                        "children": [
+                          {
+                            "id": "3D Polyline [110]:0",
+                            "name": "3D Polyline [110]:0",
+                            "type": "placemark",
+                            "description": ""
+                          }
+                        ]
+                      },
+                      {
+                        "id": "3D Polyline [FA]_47",
+                        "name": "3D Polyline [FA]",
+                        "type": "folder",
+                        "children": [
+                          {
+                            "id": "3D Polyline [FA]:0",
+                            "name": "3D Polyline [FA]:0",
+                            "type": "placemark",
+                            "description": ""
+                          }
+                        ]
+                      },
+                      {
+                        "id": "3D Polyline [DB]_49",
+                        "name": "3D Polyline [DB]",
+                        "type": "folder",
+                        "children": [
+                          {
+                            "id": "3D Polyline [DB]:0",
+                            "name": "3D Polyline [DB]:0",
+                            "type": "placemark",
+                            "description": ""
+                          }
+                        ]
+                      },
+                      {
+                        "id": "3D Polyline [BE]_51",
+                        "name": "3D Polyline [BE]",
+                        "type": "folder",
+                        "children": [
+                          {
+                            "id": "3D Polyline [BE]:0",
+                            "name": "3D Polyline [BE]:0",
+                            "type": "placemark",
+                            "description": ""
+                          }
+                        ]
+                      },
+                      {
+                        "id": "3D Polyline [99]_53",
+                        "name": "3D Polyline [99]",
+                        "type": "folder",
+                        "children": [
+                          {
+                            "id": "3D Polyline [99]:0",
+                            "name": "3D Polyline [99]:0",
+                            "type": "placemark",
+                            "description": ""
+                          }
+                        ]
+                      },
+                      {
+                        "id": "3D Polyline [6E]_55",
+                        "name": "3D Polyline [6E]",
+                        "type": "folder",
+                        "children": [
+                          {
+                            "id": "3D Polyline [6E]:0",
+                            "name": "3D Polyline [6E]:0",
+                            "type": "placemark",
+                            "description": ""
+                          }
+                        ]
+                      },
+                      {
+                        "id": "3D Polyline [4C]_57",
+                        "name": "3D Polyline [4C]",
+                        "type": "folder",
+                        "children": [
+                          {
+                            "id": "3D Polyline [4C]:0",
+                            "name": "3D Polyline [4C]:0",
+                            "type": "placemark",
+                            "description": ""
+                          }
+                        ]
+                      },
+                      {
+                        "id": "3D Polyline [24]_59",
+                        "name": "3D Polyline [24]",
+                        "type": "folder",
+                        "children": [
+                          {
+                            "id": "3D Polyline [24]:0",
+                            "name": "3D Polyline [24]:0",
+                            "type": "placemark",
+                            "description": ""
+                          }
+                        ]
+                      },
+                      {
+                        "id": "3D Polyline [13]_61",
+                        "name": "3D Polyline [13]",
+                        "type": "folder",
+                        "children": [
+                          {
+                            "id": "3D Polyline [13]:0",
+                            "name": "3D Polyline [13]:0",
+                            "type": "placemark",
+                            "description": ""
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

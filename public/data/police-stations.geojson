@@ -1,0 +1,6 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type":"Feature","properties":{"name":"Main Police Station","type":"police-station","contact":"N/A","strength":100},"geometry":{"type":"Point","coordinates":[73.53319111563303,19.937409619807188]}}
+  ]
+}

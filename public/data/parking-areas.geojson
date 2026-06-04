@@ -1,0 +1,705 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Waghera",
+        "type": "trimbak-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.45,
+          20.02
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rohile",
+        "type": "trimbak-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.49,
+          20.03
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sapgaon",
+        "type": "trimbak-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.5,
+          19.96
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Talvade",
+        "type": "trimbak-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.54,
+          19.98
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Amboli",
+        "type": "trimbak-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.48,
+          19.95
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BG Farm",
+        "type": "trimbak-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.55,
+          19.93
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pahine Bhilmal",
+        "type": "trimbak-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.53,
+          19.89
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Samundi Shivar",
+        "type": "trimbak-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.51,
+          19.88
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Khadakwadi",
+        "type": "trimbak-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.49,
+          19.85
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Laddha",
+        "type": "trimbak-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.56,
+          19.95
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Waghera Holding",
+        "type": "trimbak-holding"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.43,
+          20.03
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nandgaon Koli",
+        "type": "trimbak-holding"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.44,
+          19.99
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Velunje",
+        "type": "trimbak-holding"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.43,
+          19.97
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ambai",
+        "type": "trimbak-holding"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.46,
+          19.955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dhondegaon",
+        "type": "trimbak-holding"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.53,
+          20.04
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Girnare",
+        "type": "trimbak-holding"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.58,
+          20.05
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jategaon T Juc",
+        "type": "trimbak-holding"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.65,
+          19.92
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pimpalad",
+        "type": "trimbak-holding"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.68,
+          19.92
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Khambale 1",
+        "type": "overlap-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.62,
+          19.97
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Khambale 2",
+        "type": "overlap-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.65,
+          19.975
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sandip",
+        "type": "overlap-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.68,
+          19.97
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ramshej",
+        "type": "nashik-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.78,
+          20.08
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ashehwadi Gaothan",
+        "type": "nashik-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.79,
+          20.06
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Peth Road",
+        "type": "nashik-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.81,
+          20.05
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dhakambe",
+        "type": "nashik-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.83,
+          20.07
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Global School",
+        "type": "nashik-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.835,
+          20.055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Opp. Sanap Nursery",
+        "type": "nashik-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.84,
+          20.04
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jugnu Hotel",
+        "type": "nashik-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.835,
+          20.025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tata Showroom",
+        "type": "nashik-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.88,
+          20.03
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Adgaon",
+        "type": "nashik-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.89,
+          20.015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ozar",
+        "type": "nashik-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.91,
+          20.05
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mira Empire",
+        "type": "nashik-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.75,
+          20.02
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pick Up area",
+        "type": "nashik-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.78,
+          20.01
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Idgah Maidan",
+        "type": "nashik-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.76,
+          19.98
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mahamrg Bus Stand",
+        "type": "nashik-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.79,
+          19.96
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sambhaji Stadium",
+        "type": "nashik-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.78,
+          19.94
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dive Bungalow",
+        "type": "nashik-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.84,
+          19.97
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gandhinagar",
+        "type": "nashik-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.845,
+          19.96
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Press Land",
+        "type": "nashik-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.85,
+          19.95
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Press Quarter",
+        "type": "nashik-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.85,
+          19.94
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Yuva",
+        "type": "nashik-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.86,
+          19.99
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Madsangvi",
+        "type": "nashik-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.89,
+          19.98
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "APMC",
+        "type": "nashik-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.87,
+          19.92
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Adj. 60M DP Road",
+        "type": "nashik-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.86,
+          19.91
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bardi",
+        "type": "nashik-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.94,
+          19.97
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mohchincholi",
+        "type": "nashik-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.95,
+          19.86
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jain Temple",
+        "type": "nashik-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.74,
+          19.92
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rajur Bahula",
+        "type": "nashik-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.73,
+          19.89
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Add. Rajur Bahula",
+        "type": "nashik-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.735,
+          19.87
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wadiwarhe",
+        "type": "nashik-parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.71,
+          19.84
+        ]
+      }
+    }
+  ]
+}

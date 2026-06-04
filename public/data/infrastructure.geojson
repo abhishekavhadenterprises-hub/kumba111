@@ -1,0 +1,61 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "heli-new-1",
+        "type": "helipad",
+        "name": "Sapkal Knowledge Hub Helipad",
+        "status": "active",
+        "description": "Green Corridor Helipad"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [73.599167, 19.941944]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "heli-new-2",
+        "type": "helipad",
+        "name": "Bramha Vally College Helipad",
+        "status": "active",
+        "description": "Green Corridor Helipad"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [73.576667, 19.950278]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "heli-new-3",
+        "type": "helipad",
+        "name": "Police Land Anjaneri Helipad",
+        "status": "active",
+        "description": "Green Corridor Helipad"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [73.576667, 19.955833]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "heli-new-4",
+        "type": "helipad",
+        "name": "Sachin Daptari (Land) Helipad",
+        "status": "active",
+        "description": "Green Corridor Helipad"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [73.902500, 19.932900]
+      }
+    }
+  ]
+}

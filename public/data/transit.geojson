@@ -1,0 +1,7 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type":"Feature","properties":{"name":"Nashik Road Railway Station","type":"railway-station"},"geometry":{"type":"Point","coordinates":[73.8384,19.9839]}},
+    {"type":"Feature","properties":{"name":"Ozar Airport","type":"airport"},"geometry":{"type":"Point","coordinates":[73.9130,20.1190]}}
+  ]
+}

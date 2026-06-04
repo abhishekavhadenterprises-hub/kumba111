@@ -1,0 +1,10 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type":"Feature","properties":{"name":"Watch Tower 1 - Main Ghat","type":"watch-tower"},"geometry":{"type":"Point","coordinates":[73.5310,19.9325]}},
+    {"type":"Feature","properties":{"name":"Watch Tower 2 - Sadhugram Entrance","type":"watch-tower"},"geometry":{"type":"Point","coordinates":[73.5255,19.9385]}},
+    {"type":"Feature","properties":{"name":"Watch Tower 3 - Khambale Parking","type":"watch-tower"},"geometry":{"type":"Point","coordinates":[73.5810,19.9660]}},
+    {"type":"Feature","properties":{"name":"Watch Tower 4 - Anjaneri Intersection","type":"watch-tower"},"geometry":{"type":"Point","coordinates":[73.5670,19.9600]}},
+    {"type":"Feature","properties":{"name":"Watch Tower 5 - Kushavart Kund","type":"watch-tower"},"geometry":{"type":"Point","coordinates":[73.5305,19.9330]}}
+  ]
+}

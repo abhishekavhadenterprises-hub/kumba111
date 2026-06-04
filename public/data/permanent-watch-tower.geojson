@@ -1,0 +1,135 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "1 कुशावर्त तीर्थ"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.52779611228421,
+          19.93276514944197
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "2 डॉ बाबासाहेब आंबेडकर पुतळा चौक"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.5323807372927,
+          19.93398795969905
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "3 खंडेराव मंदीर चौक, आवाहन आखाडा जवळ"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.5296154037092,
+          19.93532367236572
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "4 संत निवृत्ती नाथ महाराज मंदीर चौक"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.52395126391801,
+          19.93326070673181
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "5 जुना जव्हार फाटा"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.53325771404809,
+          19.94061078841552
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "6 नवीन घाट 1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.54038702835936,
+          19.94472985825929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "7 नवीन घाट 2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.54498860741039,
+          19.94549219629167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "8 नवीन घाट 3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.55030149306084,
+          19.9482056905389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "9 प्रयाग तीर्थ"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.55143850483886,
+          19.9450000761632
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "10 सप्तश्रृंगी गड"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.90791229519891,
+          20.3986936091651
+        ]
+      }
+    }
+  ]
+}

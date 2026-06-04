@@ -1,0 +1,135 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "1 कुशावर्त तीर्थ"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.52808381113593,
+          19.93299787491797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "2 नवीन जव्हार फाटा,( गजानन महाराज संस्थान)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.53633699403294,
+          19.93732943481877
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "3 नवीन घाट"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.54850204614922,
+          19.94663664038327
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "4 पेगलवाडी फाटा"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.55066120379452,
+          19.94459221428547
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "5 अंजनेरी पोलीस चौकी"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.5861152890264,
+          19.95373333270217
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "6 पहिणे टी पॉइंट"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.54975480022895,
+          19.90098631158323
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "7 गिरणारे"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6591920686127,
+          20.07237291587635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "8 दहावा मैल , Ozhar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.90380479805332,
+          20.07314470892017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "9 उमराळे"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.71966825613926,
+          20.19802241995942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "10 बोरगाव"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.75446202109299,
+          20.50835616338951
+        ]
+      }
+    }
+  ]
+}

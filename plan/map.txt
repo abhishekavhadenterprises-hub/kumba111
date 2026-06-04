@@ -1,0 +1,253 @@
+If your assignment is to visualize a celebrity's travel plan on a map, showing:
+
+Starting location
+Travel route/path
+Stay duration at each location
+Movement from one place to another
+Timeline of the journey
+KML file as input
+
+Then this is essentially a Route Planning & Journey Visualization Application.
+
+Recommended Tech Stack
+
+Since you already have web development experience:
+
+Frontend
+Next.js 15
+TypeScript
+Tailwind CSS
+shadcn/ui
+Map Visualization
+
+Choose one:
+
+Option 1 (Recommended)
+
+Mapbox GL JS
+
+Beautiful animations
+Route drawing
+Marker animations
+Timeline support
+Custom styling
+Easy KML conversion
+
+Mapbox Documentation
+
+Option 2
+
+Leaflet.js
+
+Free
+Lightweight
+Easier learning curve
+Good KML support
+
+Leaflet Documentation
+
+Architecture
+KML File
+   ↓
+Parse KML
+   ↓
+Extract Coordinates
+   ↓
+Convert to GeoJSON
+   ↓
+Display on Map
+   ↓
+Animate Route
+   ↓
+Show Stops & Stay Duration
+Step 1: Read KML File
+
+KML is XML-based:
+
+<Placemark>
+  <name>Mumbai</name>
+  <Point>
+    <coordinates>
+      72.8777,19.0760
+    </coordinates>
+  </Point>
+</Placemark>
+
+Convert KML → GeoJSON using:
+
+Libraries
+npm install @tmcw/togeojson
+npm install xmldom
+
+Example:
+
+import { DOMParser } from "xmldom";
+import { kml } from "@tmcw/togeojson";
+
+const xml = new DOMParser().parseFromString(
+  kmlContent,
+  "text/xml"
+);
+
+const geojson = kml(xml);
+Step 2: Show Route
+
+Example data:
+
+[
+ {
+   name: "Mumbai",
+   lat: 19.076,
+   lng: 72.877,
+   stayHours: 3
+ },
+ {
+   name: "Pune",
+   lat: 18.520,
+   lng: 73.856,
+   stayHours: 5
+ },
+ {
+   name: "Nashik",
+   lat: 19.997,
+   lng: 73.789,
+   stayHours: 2
+ }
+]
+
+Render:
+
+Mumbai ●─────● Pune ─────● Nashik
+
+on map using Polyline.
+
+Step 3: Animate Celebrity Movement
+
+Create a marker:
+
+new mapboxgl.Marker()
+
+Move marker along coordinates:
+
+requestAnimationFrame()
+
+Animation:
+
+● Mumbai
+ \
+  \
+   ● Pune
+     \
+      \
+       ● Nashik
+
+Like Uber tracking.
+
+Step 4: Stay Duration
+
+When marker reaches location:
+
+{
+ city:"Mumbai",
+ arrival:"10:00",
+ departure:"13:00"
+}
+
+Show popup:
+
+Mumbai
+
+Arrived : 10:00
+Depart : 13:00
+
+Stay : 3 Hours
+Step 5: Timeline Component
+
+Bottom timeline:
+
+09:00 Mumbai
+     ↓
+13:00 Pune
+     ↓
+18:00 Nashik
+
+Use:
+
+Framer Motion
+shadcn Card
+Progress Bar
+Premium Features
+Live Journey Playback
+
+Play/Pause
+
+▶ Play Route
+⏸ Pause
+⏪ Previous
+⏩ Next
+Route Statistics
+Total Distance
+
+350 KM
+
+Total Stops
+
+5
+
+Total Stay Time
+
+12 Hours
+
+Calculate using:
+
+npm install @turf/turf
+Day-wise Travel
+Day 1
+
+Mumbai
+↓
+Pune
+
+Day 2
+
+Pune
+↓
+Nashik
+Heat Map
+
+Highlight locations where celebrity stays longest.
+
+Best Solution (Professional)
+
+If this is for a client/demo:
+
+Stack
+Next.js
+TypeScript
+Mapbox GL JS
+Tailwind
+shadcn/ui
+Framer Motion
+toGeoJSON
+Turf.js
+Features
+
+✓ Upload KML
+
+✓ Parse Automatically
+
+✓ Draw Route
+
+✓ Animated Travel Marker
+
+✓ Timeline Playback
+
+✓ Stop Information
+
+✓ Stay Duration
+
+✓ Route Statistics
+
+✓ Day-wise Journey View
+
+✓ Modern Dashboard UI

@@ -1,0 +1,369 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Adgaon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8684010128436,
+          20.0390629757868
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Raigadnagar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.69509494349445,
+          19.89105977371951
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dahegaon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.647997,
+          19.890739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mulegaon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.598154,
+          19.907721
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Anjaneri"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.59180291615209,
+          19.954490366899034
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rajur Bahula"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.71613633277481,
+          19.923736611113252
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vilholi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7160281310641,
+          19.923626935279323
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Beze Phata"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.60088382149848,
+          19.95571973602999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Beze Dam"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.56871682037652,
+          19.98708705208258
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Talwade"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.55531761561014,
+          19.97334412716518
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pimlad"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.527715396395,
+          19.96500051566045
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ganeshbari"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.52128243048904,
+          19.95565524861094
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bilvatirth"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.52561642963217,
+          19.94232203621321
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kushavart"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.52799203605461,
+          19.933154375361926
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nashik"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.78627004715105,
+          19.995201155427992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pimpalgaon Bahula"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.70900129203818,
+          19.979574337968092
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Khambale"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.77839116815535,
+          19.873821839374262
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Trimbak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.53530375639161,
+          19.935397282031754
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Yeola"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.48347621094261,
+          20.043814019841363
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vinchur"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.23513223482082,
+          20.10496713910294
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sinnar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.98850372750971,
+          19.849499301143407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Riagadnagar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.69395417814292,
+          19.89134390998255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Talegaon Anjneri"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.64520401617153,
+          19.949188695935888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Malegaon"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.51456892058367,
+          20.55941501533559
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chandvad"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.24934962917008,
+          20.325687431560816
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pimpalgaon Baswant"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.96666922038378,
+          20.14320763041248
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dindori"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8317,
+          20.2005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pimplad Nashik"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.66532383008703,
+          19.916111217883362
+        ]
+      }
+    }
+  ]
+}

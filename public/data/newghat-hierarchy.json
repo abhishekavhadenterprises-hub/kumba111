@@ -1,0 +1,99 @@
+[
+  {
+    "id": "newghat",
+    "name": "New Ghat Trimbak",
+    "type": "folder",
+    "children": [
+      {
+        "id": "GSB STOCK LAND",
+        "name": "GSB STOCK LAND",
+        "type": "placemark",
+        "description": ""
+      },
+      {
+        "id": "sas n l",
+        "name": "sas n l",
+        "type": "placemark",
+        "description": ""
+      },
+      {
+        "id": "SAS DP ROAD",
+        "name": "SAS DP ROAD",
+        "type": "placemark",
+        "description": ""
+      },
+      {
+        "id": "text",
+        "name": "text",
+        "type": "placemark",
+        "description": ""
+      },
+      {
+        "id": "HATCH",
+        "name": "HATCH",
+        "type": "placemark",
+        "description": ""
+      },
+      {
+        "id": "Defpoints",
+        "name": "Defpoints",
+        "type": "placemark",
+        "description": ""
+      },
+      {
+        "id": "PROPOSED DP ROAD",
+        "name": "PROPOSED DP ROAD",
+        "type": "placemark",
+        "description": ""
+      },
+      {
+        "id": "Poly_Gat_Bndry",
+        "name": "Poly_Gat_Bndry",
+        "type": "placemark",
+        "description": ""
+      },
+      {
+        "id": "THIN",
+        "name": "THIN",
+        "type": "placemark",
+        "description": ""
+      },
+      {
+        "id": "Sym_Others",
+        "name": "Sym_Others",
+        "type": "placemark",
+        "description": ""
+      },
+      {
+        "id": "0 Dp road",
+        "name": "0 Dp road",
+        "type": "placemark",
+        "description": ""
+      },
+      {
+        "id": "Poly_Vahivat",
+        "name": "Poly_Vahivat",
+        "type": "placemark",
+        "description": ""
+      },
+      {
+        "id": "Point_Codes",
+        "name": "Point_Codes",
+        "type": "placemark",
+        "description": ""
+      },
+      {
+        "id": "SNAME$0$SNAME$0$buliding",
+        "name": "SNAME$0$SNAME$0$buliding",
+        "type": "placemark",
+        "description": ""
+      },
+      {
+        "id": "SNAME$0$SNAME$0$SYMBOLS",
+        "name": "SNAME$0$SNAME$0$SYMBOLS",
+        "type": "placemark",
+        "description": ""
+      }
+    ]
+  }
+]

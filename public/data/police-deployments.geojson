@@ -1,0 +1,95 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "p-1",
+        "type": "naka",
+        "name": "Trimbakeshwar Main Checkpost",
+        "strength": 45,
+        "commander": "PI Patil",
+        "status": "active"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.535,
+          19.927999999999997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "p-2",
+        "type": "naka",
+        "name": "NH-848 Satpur Checkpost",
+        "strength": 80,
+        "commander": "PI Deshmukh",
+        "status": "active"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.73,
+          19.688
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "p-3",
+        "type": "naka",
+        "name": "Anjaneri Highway Toll Naka",
+        "strength": 60,
+        "commander": "API Kadam",
+        "status": "active"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.58,
+          19.883
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "p-4",
+        "type": "reserve",
+        "name": "Nashik Police HQ Reserve (SRPF)",
+        "strength": 300,
+        "commander": "Commandant Sharma",
+        "status": "standby"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.775,
+          19.677999999999997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "p-5",
+        "type": "checkpoint",
+        "name": "Tapovan Staging Control",
+        "strength": 120,
+        "commander": "ACP Wagh",
+        "status": "active"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.815,
+          19.677999999999997
+        ]
+      }
+    }
+  ]
+}

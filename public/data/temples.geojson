@@ -1,0 +1,10 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type":"Feature","properties":{"name":"Main Trimbakeshwar Temple","type":"main-temple","significance":"Jyotirlinga"},"geometry":{"type":"Point","coordinates":[73.53078214696204,19.932620148751766]}},
+    {"type":"Feature","properties":{"name":"Kushavart Tirtha","type":"other-temple"},"geometry":{"type":"Point","coordinates":[73.5303,19.9332]}},
+    {"type":"Feature","properties":{"name":"Gajanan Maharaj Ashram","type":"other-temple"},"geometry":{"type":"Point","coordinates":[73.5280,19.9310]}},
+    {"type":"Feature","properties":{"name":"Gorakhnath Temple","type":"other-temple"},"geometry":{"type":"Point","coordinates":[73.5350,19.9350]}},
+    {"type":"Feature","properties":{"name":"Swami Samarth Ashram","type":"other-temple"},"geometry":{"type":"Point","coordinates":[73.5260,19.9290]}}
+  ]
+}

@@ -1,0 +1,1272 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pune",
+        "routeName": "Khambale Outer Parking - Belgaon Dhaga Sarul Phata VTC Phata Pandhurli Sinnar  Pune - Out Route [1:LineString]_red",
+        "routeShortName": "Pune to Khambale Outer Parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.98193878711392,
+          19.82979322144742,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sinnar",
+        "routeName": "Khambale Outer Parking - Belgaon Dhaga Sarul Phata VTC Phata Pandhurli Sinnar  Pune - Out Route [1:LineString]_red",
+        "routeShortName": "Pune to Khambale Outer Parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.88208872054314,
+          19.820615750523444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pandhurli",
+        "routeName": "Khambale Outer Parking - Belgaon Dhaga Sarul Phata VTC Phata Pandhurli Sinnar  Pune - Out Route [1:LineString]_red",
+        "routeShortName": "Pune to Khambale Outer Parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.78812647115915,
+          19.797123278974485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "VTC Phata",
+        "routeName": "Khambale Outer Parking - Belgaon Dhaga Sarul Phata VTC Phata Pandhurli Sinnar  Pune - Out Route [1:LineString]_red",
+        "routeShortName": "Pune to Khambale Outer Parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.70607485562834,
+          19.832583020985588
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sarul Phata",
+        "routeName": "Khambale Outer Parking - Belgaon Dhaga Sarul Phata VTC Phata Pandhurli Sinnar  Pune - Out Route [1:LineString]_red",
+        "routeShortName": "Pune to Khambale Outer Parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.71400993385929,
+          19.920149142178854
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Khambale Outer Parking",
+        "routeName": "Khambale Outer Parking - Belgaon Dhaga Sarul Phata VTC Phata Pandhurli Sinnar  Pune - Out Route [1:LineString]_red",
+        "routeShortName": "Pune to Khambale Outer Parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.63841942487898,
+          19.95607597423585,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nashik",
+        "routeName": "Nashik Khambale Outer Parking Trimabakeshwar - In and out_red",
+        "routeShortName": "Nashik to Trimabakeshwar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.78122085452996,
+          19.99726458799694,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Khambale Outer Parking",
+        "routeName": "Nashik Khambale Outer Parking Trimabakeshwar - In and out_red",
+        "routeShortName": "Nashik to Trimabakeshwar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.70491167360322,
+          19.979057797990702
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Trimabakeshwar",
+        "routeName": "Nashik Khambale Outer Parking Trimabakeshwar - In and out_red",
+        "routeShortName": "Nashik to Trimabakeshwar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.63819098177505,
+          19.95342322707959,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chh Sambhaji Nagar",
+        "routeName": "Route A - In Chh Sambhaji Nagar - Sinnar - Pandhurli VTC Phata - Sarul Phata - Outer Parking - Trimbak_red",
+        "routeShortName": "Chh Sambhaji Nagar to Trimbak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.51080996956094,
+          20.03182086789063,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sinnar",
+        "routeName": "Route A - In Chh Sambhaji Nagar - Sinnar - Pandhurli VTC Phata - Sarul Phata - Outer Parking - Trimbak_red",
+        "routeShortName": "Chh Sambhaji Nagar to Trimbak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.2954821029923,
+          20.05956033627985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pandhurli",
+        "routeName": "Route A - In Chh Sambhaji Nagar - Sinnar - Pandhurli VTC Phata - Sarul Phata - Outer Parking - Trimbak_red",
+        "routeShortName": "Chh Sambhaji Nagar to Trimbak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.14678867336447,
+          20.034279415838466
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "VTC Phata",
+        "routeName": "Route A - In Chh Sambhaji Nagar - Sinnar - Pandhurli VTC Phata - Sarul Phata - Outer Parking - Trimbak_red",
+        "routeShortName": "Chh Sambhaji Nagar to Trimbak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.04259483743843,
+          19.881894266081034
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sarul Phata",
+        "routeName": "Route A - In Chh Sambhaji Nagar - Sinnar - Pandhurli VTC Phata - Sarul Phata - Outer Parking - Trimbak_red",
+        "routeShortName": "Chh Sambhaji Nagar to Trimbak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.86811115060242,
+          19.825011668630736
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Outer Parking",
+        "routeName": "Route A - In Chh Sambhaji Nagar - Sinnar - Pandhurli VTC Phata - Sarul Phata - Outer Parking - Trimbak_red",
+        "routeShortName": "Chh Sambhaji Nagar to Trimbak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.70765758116774,
+          19.831142915592228
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Trimbak",
+        "routeName": "Route A - In Chh Sambhaji Nagar - Sinnar - Pandhurli VTC Phata - Sarul Phata - Outer Parking - Trimbak_red",
+        "routeShortName": "Chh Sambhaji Nagar to Trimbak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.639427235996,
+          19.95488654486225,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chh Sambhaji Nagar",
+        "routeName": "Route B - Chh Sambhaji Nagar - Sinnar - Pnadhurli VTC Phata Sarul Phata - Outer Parking - Trimbak Outer Parking - Belgaon Dhaga Sarul Phata VTC Phata - Pandhurli Sinnar Chh Sambhaji Nagar_red",
+        "routeShortName": "Chh Sambhaji Nagar to Belgaon Dhaga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.98231803110421,
+          19.82981559026996,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sinnar",
+        "routeName": "Route B - Chh Sambhaji Nagar - Sinnar - Pnadhurli VTC Phata Sarul Phata - Outer Parking - Trimbak Outer Parking - Belgaon Dhaga Sarul Phata VTC Phata - Pandhurli Sinnar Chh Sambhaji Nagar_red",
+        "routeShortName": "Chh Sambhaji Nagar to Belgaon Dhaga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.71739849868958,
+          19.819455826838837
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pnadhurli",
+        "routeName": "Route B - Chh Sambhaji Nagar - Sinnar - Pnadhurli VTC Phata Sarul Phata - Outer Parking - Trimbak Outer Parking - Belgaon Dhaga Sarul Phata VTC Phata - Pandhurli Sinnar Chh Sambhaji Nagar_red",
+        "routeShortName": "Chh Sambhaji Nagar to Belgaon Dhaga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.73041254851654,
+          19.921698612185278
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "VTC Phata",
+        "routeName": "Route B - Chh Sambhaji Nagar - Sinnar - Pnadhurli VTC Phata Sarul Phata - Outer Parking - Trimbak Outer Parking - Belgaon Dhaga Sarul Phata VTC Phata - Pandhurli Sinnar Chh Sambhaji Nagar_red",
+        "routeShortName": "Chh Sambhaji Nagar to Belgaon Dhaga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.0462118946409,
+          19.80604394515094
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sarul Phata",
+        "routeName": "Route B - Chh Sambhaji Nagar - Sinnar - Pnadhurli VTC Phata Sarul Phata - Outer Parking - Trimbak Outer Parking - Belgaon Dhaga Sarul Phata VTC Phata - Pandhurli Sinnar Chh Sambhaji Nagar_red",
+        "routeShortName": "Chh Sambhaji Nagar to Belgaon Dhaga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.37255924532691,
+          19.82614054083969
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Outer Parking",
+        "routeName": "Route B - Chh Sambhaji Nagar - Sinnar - Pnadhurli VTC Phata Sarul Phata - Outer Parking - Trimbak Outer Parking - Belgaon Dhaga Sarul Phata VTC Phata - Pandhurli Sinnar Chh Sambhaji Nagar_red",
+        "routeShortName": "Chh Sambhaji Nagar to Belgaon Dhaga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.70179625548236,
+          19.887591857845287
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Trimbak",
+        "routeName": "Route B - Chh Sambhaji Nagar - Sinnar - Pnadhurli VTC Phata Sarul Phata - Outer Parking - Trimbak Outer Parking - Belgaon Dhaga Sarul Phata VTC Phata - Pandhurli Sinnar Chh Sambhaji Nagar_red",
+        "routeShortName": "Chh Sambhaji Nagar to Belgaon Dhaga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.03139461997492,
+          19.94676791601876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Belgaon Dhaga",
+        "routeName": "Route B - Chh Sambhaji Nagar - Sinnar - Pnadhurli VTC Phata Sarul Phata - Outer Parking - Trimbak Outer Parking - Belgaon Dhaga Sarul Phata VTC Phata - Pandhurli Sinnar Chh Sambhaji Nagar_red",
+        "routeShortName": "Chh Sambhaji Nagar to Belgaon Dhaga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.35527394884343,
+          19.97841563711378,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dhule",
+        "routeName": "In Route - Dhule-chandwad-pimplagaon-kokangaon-sakore mig -kurnoli- mohadi -Dindori - Umrale - vilwandi -Waghera - Amboli_red",
+        "routeShortName": "Dhule to Amboli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.67453639631901,
+          20.66110159953424,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chandwad",
+        "routeName": "In Route - Dhule-chandwad-pimplagaon-kokangaon-sakore mig -kurnoli- mohadi -Dindori - Umrale - vilwandi -Waghera - Amboli_red",
+        "routeShortName": "Dhule to Amboli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.56700979389039,
+          20.57633080513312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pimplagaon",
+        "routeName": "In Route - Dhule-chandwad-pimplagaon-kokangaon-sakore mig -kurnoli- mohadi -Dindori - Umrale - vilwandi -Waghera - Amboli_red",
+        "routeShortName": "Dhule to Amboli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.4723215447685,
+          20.510409049153406
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kokangaon",
+        "routeName": "In Route - Dhule-chandwad-pimplagaon-kokangaon-sakore mig -kurnoli- mohadi -Dindori - Umrale - vilwandi -Waghera - Amboli_red",
+        "routeShortName": "Dhule to Amboli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.36411147964877,
+          20.431136624210524
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sakore mig",
+        "routeName": "In Route - Dhule-chandwad-pimplagaon-kokangaon-sakore mig -kurnoli- mohadi -Dindori - Umrale - vilwandi -Waghera - Amboli_red",
+        "routeShortName": "Dhule to Amboli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.26616548703066,
+          20.34835375442723
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kurnoli",
+        "routeName": "In Route - Dhule-chandwad-pimplagaon-kokangaon-sakore mig -kurnoli- mohadi -Dindori - Umrale - vilwandi -Waghera - Amboli_red",
+        "routeShortName": "Dhule to Amboli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.14138479785595,
+          20.30413396091334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mohadi",
+        "routeName": "In Route - Dhule-chandwad-pimplagaon-kokangaon-sakore mig -kurnoli- mohadi -Dindori - Umrale - vilwandi -Waghera - Amboli_red",
+        "routeShortName": "Dhule to Amboli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.04005054942158,
+          20.21379141341897
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dindori",
+        "routeName": "In Route - Dhule-chandwad-pimplagaon-kokangaon-sakore mig -kurnoli- mohadi -Dindori - Umrale - vilwandi -Waghera - Amboli_red",
+        "routeShortName": "Dhule to Amboli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.94487509394415,
+          20.141465730125223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Umrale",
+        "routeName": "In Route - Dhule-chandwad-pimplagaon-kokangaon-sakore mig -kurnoli- mohadi -Dindori - Umrale - vilwandi -Waghera - Amboli_red",
+        "routeShortName": "Dhule to Amboli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.83989455689918,
+          20.195586240096475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vilwandi",
+        "routeName": "In Route - Dhule-chandwad-pimplagaon-kokangaon-sakore mig -kurnoli- mohadi -Dindori - Umrale - vilwandi -Waghera - Amboli_red",
+        "routeShortName": "Dhule to Amboli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.71730460767374,
+          20.193358049307214
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Waghera",
+        "routeName": "In Route - Dhule-chandwad-pimplagaon-kokangaon-sakore mig -kurnoli- mohadi -Dindori - Umrale - vilwandi -Waghera - Amboli_red",
+        "routeShortName": "Dhule to Amboli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.62660355734063,
+          20.142178291158878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Amboli",
+        "routeName": "In Route - Dhule-chandwad-pimplagaon-kokangaon-sakore mig -kurnoli- mohadi -Dindori - Umrale - vilwandi -Waghera - Amboli_red",
+        "routeShortName": "Dhule to Amboli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.57549388723737,
+          20.06921711155295,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nandurbar",
+        "routeName": "In Route Nandurbar Satana Sogras Phata Agra Mumbai - Janore Ramshej Dugaon Rohile Phaata Talwade - Trimbak_red",
+        "routeShortName": "Nandurbar to Trimbak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.19937302204785,
+          20.59987285699395,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Satana",
+        "routeName": "In Route Nandurbar Satana Sogras Phata Agra Mumbai - Janore Ramshej Dugaon Rohile Phaata Talwade - Trimbak_red",
+        "routeShortName": "Nandurbar to Trimbak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.17852844534475,
+          20.447105131686783
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sogras Phata",
+        "routeName": "In Route Nandurbar Satana Sogras Phata Agra Mumbai - Janore Ramshej Dugaon Rohile Phaata Talwade - Trimbak_red",
+        "routeShortName": "Nandurbar to Trimbak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.19850364810908,
+          20.32755543377877
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Agra Mumbai",
+        "routeName": "In Route Nandurbar Satana Sogras Phata Agra Mumbai - Janore Ramshej Dugaon Rohile Phaata Talwade - Trimbak_red",
+        "routeShortName": "Nandurbar to Trimbak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.08334335545044,
+          20.2564445977641
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Janore",
+        "routeName": "In Route Nandurbar Satana Sogras Phata Agra Mumbai - Janore Ramshej Dugaon Rohile Phaata Talwade - Trimbak_red",
+        "routeShortName": "Nandurbar to Trimbak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.9791251031509,
+          20.146047368567626
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ramshej",
+        "routeName": "In Route Nandurbar Satana Sogras Phata Agra Mumbai - Janore Ramshej Dugaon Rohile Phaata Talwade - Trimbak_red",
+        "routeShortName": "Nandurbar to Trimbak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.84982185253422,
+          20.182229447708643
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dugaon",
+        "routeName": "In Route Nandurbar Satana Sogras Phata Agra Mumbai - Janore Ramshej Dugaon Rohile Phaata Talwade - Trimbak_red",
+        "routeShortName": "Nandurbar to Trimbak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.71596276695254,
+          20.187789442087293
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rohile Phaata",
+        "routeName": "In Route Nandurbar Satana Sogras Phata Agra Mumbai - Janore Ramshej Dugaon Rohile Phaata Talwade - Trimbak_red",
+        "routeShortName": "Nandurbar to Trimbak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.60961776017074,
+          20.121808929665484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Talwade",
+        "routeName": "In Route Nandurbar Satana Sogras Phata Agra Mumbai - Janore Ramshej Dugaon Rohile Phaata Talwade - Trimbak_red",
+        "routeShortName": "Nandurbar to Trimbak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.53238940537648,
+          20.070180377419664
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Trimbak",
+        "routeName": "In Route Nandurbar Satana Sogras Phata Agra Mumbai - Janore Ramshej Dugaon Rohile Phaata Talwade - Trimbak_red",
+        "routeShortName": "Nandurbar to Trimbak"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.49680768596012,
+          19.96786312882369,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saputara",
+        "routeName": "Out Route - Talwade Rohile Phata Ladachi Vilvandi Kochargaon Nalegaon Umarale Dindori Vani Saputara_red",
+        "routeShortName": "Saputara to Talwade"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.83139161358122,
+          20.20547350694878,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vani",
+        "routeName": "Out Route - Talwade Rohile Phata Ladachi Vilvandi Kochargaon Nalegaon Umarale Dindori Vani Saputara_red",
+        "routeShortName": "Saputara to Talwade"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.67602038804891,
+          20.159803073453027
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DIndori",
+        "routeName": "Out Route - Talwade Rohile Phata Ladachi Vilvandi Kochargaon Nalegaon Umarale Dindori Vani Saputara_red",
+        "routeShortName": "Saputara to Talwade"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.59854047188686,
+          20.067266790586736
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Umrale",
+        "routeName": "Out Route - Talwade Rohile Phata Ladachi Vilvandi Kochargaon Nalegaon Umarale Dindori Vani Saputara_red",
+        "routeShortName": "Saputara to Talwade"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.47990817978351,
+          20.01001069058099
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nalegaon",
+        "routeName": "Out Route - Talwade Rohile Phata Ladachi Vilvandi Kochargaon Nalegaon Umarale Dindori Vani Saputara_red",
+        "routeShortName": "Saputara to Talwade"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.55139937499891,
+          20.088909369313036
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kochargaon",
+        "routeName": "Out Route - Talwade Rohile Phata Ladachi Vilvandi Kochargaon Nalegaon Umarale Dindori Vani Saputara_red",
+        "routeShortName": "Saputara to Talwade"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.62829663107057,
+          20.259413779696924
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vilvandi",
+        "routeName": "Out Route - Talwade Rohile Phata Ladachi Vilvandi Kochargaon Nalegaon Umarale Dindori Vani Saputara_red",
+        "routeShortName": "Saputara to Talwade"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.70519388714222,
+          20.429918190080812
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ladachi",
+        "routeName": "Out Route - Talwade Rohile Phata Ladachi Vilvandi Kochargaon Nalegaon Umarale Dindori Vani Saputara_red",
+        "routeShortName": "Saputara to Talwade"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.74951660541898,
+          20.478765256032794
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rohile Phata",
+        "routeName": "Out Route - Talwade Rohile Phata Ladachi Vilvandi Kochargaon Nalegaon Umarale Dindori Vani Saputara_red",
+        "routeShortName": "Saputara to Talwade"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.86550213167101,
+          20.350636563293914
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Talwade",
+        "routeName": "Out Route - Talwade Rohile Phata Ladachi Vilvandi Kochargaon Nalegaon Umarale Dindori Vani Saputara_red",
+        "routeShortName": "Saputara to Talwade"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.83154413011356,
+          20.20544370017268,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dharampur",
+        "routeName": "Dharampur Peth Karanjali Kohor Waghera Amboli Trimabkeshwar - In and Out_red",
+        "routeShortName": "Dharampur to Trimabkeshwar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.51217875910392,
+          20.25764168976648,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Peth",
+        "routeName": "Dharampur Peth Karanjali Kohor Waghera Amboli Trimabkeshwar - In and Out_red",
+        "routeShortName": "Dharampur to Trimabkeshwar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.58981007298063,
+          20.24320391519292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Karanjali",
+        "routeName": "Dharampur Peth Karanjali Kohor Waghera Amboli Trimabkeshwar - In and Out_red",
+        "routeShortName": "Dharampur to Trimabkeshwar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.58665378751157,
+          20.16450988291402
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kohor",
+        "routeName": "Dharampur Peth Karanjali Kohor Waghera Amboli Trimabkeshwar - In and Out_red",
+        "routeShortName": "Dharampur to Trimabkeshwar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.52727750755878,
+          20.12674876922672
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Waghera",
+        "routeName": "Dharampur Peth Karanjali Kohor Waghera Amboli Trimabkeshwar - In and Out_red",
+        "routeShortName": "Dharampur to Trimabkeshwar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.4880227233416,
+          20.08393710183738
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Amboli",
+        "routeName": "Dharampur Peth Karanjali Kohor Waghera Amboli Trimabkeshwar - In and Out_red",
+        "routeShortName": "Dharampur to Trimabkeshwar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.49604038570806,
+          20.03127539535957
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Trimabkeshwar",
+        "routeName": "Dharampur Peth Karanjali Kohor Waghera Amboli Trimabkeshwar - In and Out_red",
+        "routeShortName": "Dharampur to Trimabkeshwar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.51400678473624,
+          19.95822395618201,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Javhar",
+        "routeName": "Javhar Mokhada Amboli Trimabkeswar - In and Out_red",
+        "routeShortName": "Javhar to Trimabkeswar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.3398273929738,
+          19.91168759019881,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mokhada",
+        "routeName": "Javhar Mokhada Amboli Trimabkeswar - In and Out_red",
+        "routeShortName": "Javhar to Trimabkeswar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.39344202147116,
+          19.941184865890122
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Amboli",
+        "routeName": "Javhar Mokhada Amboli Trimabkeswar - In and Out_red",
+        "routeShortName": "Javhar to Trimabkeswar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.44053000038137,
+          19.971551866769598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Trimabkeswar",
+        "routeName": "Javhar Mokhada Amboli Trimabkeswar - In and Out_red",
+        "routeShortName": "Javhar to Trimabkeswar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.47945991983144,
+          19.97982659960118,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mumbai",
+        "routeName": "Mumbai Igatpuri Vaitarana Phata Saturli Ahurli Pegalwadi Trimabakehswar - In and Out_red",
+        "routeShortName": "Mumbai to Trimabakehswar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.61543107271073,
+          19.70927904809975,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Igatpuri",
+        "routeName": "Mumbai Igatpuri Vaitarana Phata Saturli Ahurli Pegalwadi Trimabakehswar - In and Out_red",
+        "routeShortName": "Mumbai to Trimabakehswar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.60580164390488,
+          19.747192863189273
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vaitarana Phata",
+        "routeName": "Mumbai Igatpuri Vaitarana Phata Saturli Ahurli Pegalwadi Trimabakehswar - In and Out_red",
+        "routeShortName": "Mumbai to Trimabakehswar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.57690803995693,
+          19.780978492885144
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saturli",
+        "routeName": "Mumbai Igatpuri Vaitarana Phata Saturli Ahurli Pegalwadi Trimabakehswar - In and Out_red",
+        "routeShortName": "Mumbai to Trimabakehswar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.58159604412833,
+          19.81458151355339
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ahurli",
+        "routeName": "Mumbai Igatpuri Vaitarana Phata Saturli Ahurli Pegalwadi Trimabakehswar - In and Out_red",
+        "routeShortName": "Mumbai to Trimabakehswar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.54569004828826,
+          19.842778343441154
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pegalwadi",
+        "routeName": "Mumbai Igatpuri Vaitarana Phata Saturli Ahurli Pegalwadi Trimabakehswar - In and Out_red",
+        "routeShortName": "Mumbai to Trimabakehswar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.53653564267576,
+          19.87910603544657
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Trimabakehswar",
+        "routeName": "Mumbai Igatpuri Vaitarana Phata Saturli Ahurli Pegalwadi Trimabakehswar - In and Out_red",
+        "routeShortName": "Mumbai to Trimabakehswar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.55428872160134,
+          19.92944594081647,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mumbai",
+        "routeName": "In Route - Mumbai Igatpuri Vaitarna Saturli Met chandrachi Nirgudpada Pahine Bhilmal Outer Parking_red",
+        "routeShortName": "Mumbai to Outer Parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.52385220120907,
+          19.69616793138598,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Igatpuri",
+        "routeName": "In Route - Mumbai Igatpuri Vaitarna Saturli Met chandrachi Nirgudpada Pahine Bhilmal Outer Parking_red",
+        "routeShortName": "Mumbai to Outer Parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.59869263328129,
+          19.697940950763602
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vaitarna",
+        "routeName": "In Route - Mumbai Igatpuri Vaitarna Saturli Met chandrachi Nirgudpada Pahine Bhilmal Outer Parking_red",
+        "routeShortName": "Mumbai to Outer Parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.60548455549691,
+          19.74686468072796
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saturli",
+        "routeName": "In Route - Mumbai Igatpuri Vaitarna Saturli Met chandrachi Nirgudpada Pahine Bhilmal Outer Parking_red",
+        "routeShortName": "Mumbai to Outer Parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.56427724917957,
+          19.789987186675184
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Met chandrachi",
+        "routeName": "In Route - Mumbai Igatpuri Vaitarna Saturli Met chandrachi Nirgudpada Pahine Bhilmal Outer Parking_red",
+        "routeShortName": "Mumbai to Outer Parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.50930841757766,
+          19.81001663891337
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nirgudpada",
+        "routeName": "In Route - Mumbai Igatpuri Vaitarna Saturli Met chandrachi Nirgudpada Pahine Bhilmal Outer Parking_red",
+        "routeShortName": "Mumbai to Outer Parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.44945655771116,
+          19.828080831210276
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pahine",
+        "routeName": "In Route - Mumbai Igatpuri Vaitarna Saturli Met chandrachi Nirgudpada Pahine Bhilmal Outer Parking_red",
+        "routeShortName": "Mumbai to Outer Parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.44546465552301,
+          19.88165376433645
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bhilmal",
+        "routeName": "In Route - Mumbai Igatpuri Vaitarna Saturli Met chandrachi Nirgudpada Pahine Bhilmal Outer Parking_red",
+        "routeShortName": "Mumbai to Outer Parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.48099551032986,
+          19.879241915960076
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Outer Parking",
+        "routeName": "In Route - Mumbai Igatpuri Vaitarna Saturli Met chandrachi Nirgudpada Pahine Bhilmal Outer Parking_red",
+        "routeShortName": "Mumbai to Outer Parking"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.54738763264301,
+          19.89995558099565,
+          0
+        ]
+      }
+    }
+  ]
+}

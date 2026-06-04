@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>All 10 Shaiva Akhada Trimbakeshwar Sinhasta Kumbmela</name>
+	<gx:CascadingStyle kml:id="__managed_style_51C34CCB493A260BBB70">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>6</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_489E88DAD83A260BBB70">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>40ffffff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_3AE52B951E3A260BBB70">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_489E88DAD83A260BBB70</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_51C34CCB493A260BBB70</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_2F121164B43A26224027">
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>6</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>ff26a7ff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_054FF0D2703A26224027">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_130D27721F3A26224027</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_2F121164B43A26224027</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="__managed_style_04E74688583A26200DE3">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_17A2CF9E4F3A26200DE3</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_0F112344483A26200DE4</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_130D27721F3A26224027">
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>ff26a7ff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_21C8D6F4403A2620B018">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.1.0.0/none_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>6</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>ff26a7ff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_1007CD9AB63A2620B018">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.1.0.0/none_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LineStyle>
+				<color>ff2dc0fb</color>
+				<width>4</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>ff26a7ff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<StyleMap id="__managed_style_08D242DCDE3A2620B018">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#__managed_style_1007CD9AB63A2620B018</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#__managed_style_21C8D6F4403A2620B018</styleUrl>
+		</Pair>
+	</StyleMap>
+	<gx:CascadingStyle kml:id="__managed_style_0F112344483A26200DE4">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.1.0.0/none_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<scale>1.2</scale>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LineStyle>
+				<color>ff26a7ff</color>
+				<width>1.5</width>
+			</LineStyle>
+			<PolyStyle>
+				<color>ff26a7ff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<gx:CascadingStyle kml:id="__managed_style_17A2CF9E4F3A26200DE3">
+		<styleUrl>https://earth.google.com/balloon_components/base/1.1.0.0/none_template.kml#main</styleUrl>
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+				</Icon>
+				<hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+			</IconStyle>
+			<LineStyle>
+				<color>ff26a7ff</color>
+			</LineStyle>
+			<PolyStyle>
+				<color>ff26a7ff</color>
+			</PolyStyle>
+			<BalloonStyle>
+				<displayMode>hide</displayMode>
+			</BalloonStyle>
+		</Style>
+	</gx:CascadingStyle>
+	<Placemark id="0E2B2C2AB13A25D67A97">
+		<name>Naya Udaseen Akhada</name>
+		<LookAt>
+			<longitude>73.52926303508285</longitude>
+			<latitude>19.92618500909384</latitude>
+			<altitude>756.4087211240208</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>292.3598510313968</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_04E74688583A26200DE3</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						73.52845275863659,19.92610814467334,0 73.52862095163793,19.92612434952881,0 73.52881821114326,19.92614812547056,0 73.52879818069107,19.92635015010949,0 73.52842191856695,19.92635200587296,0 73.52845275863659,19.92610814467334,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark id="0C375D8F763A25DEF20E">
+		<name>Bada Udaseen Akhada</name>
+		<LookAt>
+			<longitude>73.53211920584535</longitude>
+			<latitude>19.92825188915446</latitude>
+			<altitude>762.3617326580173</altitude>
+			<heading>125.2137152372258</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>274.8601145419889</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_08D242DCDE3A2620B018</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						73.53208314761028,19.92918966700471,0 73.53187652568741,19.92905974521286,0 73.531643627047,19.92879401538937,0 73.53154044554934,19.92868066441402,0 73.53136091087008,19.92853991235634,0 73.53112105307818,19.92838311955613,0 73.53139002830038,19.92826489697599,0 73.53146865846989,19.9282765635747,0 73.53159097223023,19.92838018855593,0 73.53173900333154,19.9285510393191,0 73.53194494451222,19.92855293297064,0 73.53218891508324,19.92855642358825,0 73.53230289210782,19.92840436111891,0 73.53244869183551,19.92854715580976,0 73.53260250515225,19.92862036541811,0 73.53262343106407,19.92883546391496,0 73.53248753058399,19.92907391283469,0 73.53235353755338,19.92928871432154,0 73.53208314761028,19.92918966700471,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark id="086C2611963A25E260C0">
+		<name>Niranjani Akhada</name>
+		<LookAt>
+			<longitude>73.53787993193293</longitude>
+			<latitude>19.93416787389435</latitude>
+			<altitude>735.2999290471915</altitude>
+			<heading>125.2170228988876</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>513.8319878801123</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_08D242DCDE3A2620B018</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						73.53837402111893,19.93491859891846,0 73.53809990787207,19.9348164495842,0 73.53794726491543,19.93480295048844,0 73.53760843700854,19.93473288902653,0 73.53750335833917,19.93465023287442,0 73.5373629462498,19.9345390246123,0 73.53730512393518,19.9345075598962,0 73.53711242580769,19.93440759873441,0 73.53678882864266,19.93425523827475,0 73.53657936920932,19.93416247427029,0 73.53642673184352,19.93412777223988,0 73.53642850526171,19.93410206935066,0 73.53810482483837,19.93397133689567,0 73.53821660089464,19.93400850791441,0 73.53826791175793,19.9340427973444,0 73.53871307096155,19.93417268685325,0 73.53864972703157,19.9346513428976,0 73.53879821795724,19.93493683681378,0 73.53868088514567,19.93511282283977,0 73.53837402111893,19.93491859891846,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark id="0BB40236843A25E73AD9">
+		<name>Avahan Akhada</name>
+		<LookAt>
+			<longitude>73.52893685401975</longitude>
+			<latitude>19.93535437208107</latitude>
+			<altitude>747.3733125848432</altitude>
+			<heading>0</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>394.8831109546155</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_08D242DCDE3A2620B018</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						73.52866403566244,19.93517135646256,0 73.52921491155614,19.93537553245389,0 73.529235484807,19.93562641218767,0 73.52874219549089,19.93559795196049,0 73.52866403566244,19.93517135646256,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark id="09A4B0CE953A25F3D2F4">
+		<name>Nirmal Akhada</name>
+		<LookAt>
+			<longitude>73.52443678446191</longitude>
+			<latitude>19.93126518621103</latitude>
+			<altitude>754.9220520433803</altitude>
+			<heading>113.6807459970954</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>490.5944048931998</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_08D242DCDE3A2620B018</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						73.52506987157599,19.9317747189835,0 73.52485882800536,19.93178563819326,0 73.52455662005896,19.93174317285867,0 73.52437248128314,19.93171927653945,0 73.5237655342692,19.93172719948514,0 73.52376009133941,19.93119262966379,0 73.52438755829792,19.93122489896698,0 73.52441380718662,19.93112027531173,0 73.52467981066327,19.9312760072448,0 73.52478666866701,19.93134321952175,0 73.52482749015172,19.93153459745859,0 73.52497254465169,19.93162090258445,0 73.52506987157599,19.9317747189835,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark id="015DCBB3713A25F05D49">
+		<name>Pancha Agni  Akhada</name>
+		<LookAt>
+			<longitude>73.52345316640834</longitude>
+			<latitude>19.93226501693059</latitude>
+			<altitude>753.2374282599773</altitude>
+			<heading>44.04758145818879</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>406.5104318046361</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_08D242DCDE3A2620B018</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						73.5235983032958,19.93266223573962,0 73.52294205469872,19.93263594966914,0 73.52302270717927,19.93203373908626,0 73.52359643588014,19.93205816356166,0 73.5235731149059,19.9323779207116,0 73.5235983032958,19.93266223573962,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark id="00246085883A25FA0CF0">
+		<name>Atal Akhada</name>
+		<LookAt>
+			<longitude>73.52227604641016</longitude>
+			<latitude>19.93128393373071</latitude>
+			<altitude>770.0046651192716</altitude>
+			<heading>67.98152975257985</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>150.9038099852114</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_08D242DCDE3A2620B018</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						73.52244580417789,19.93131305294973,0 73.52237408077964,19.93151104249587,0 73.52204848576562,19.93139364825793,0 73.5221262185602,19.93118235700465,0 73.52244580417789,19.93131305294973,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark id="00F06878023A25FEDD88">
+		<name>Juna Nilparvat Akhada</name>
+		<LookAt>
+			<longitude>73.52828621473714</longitude>
+			<latitude>19.93774973901835</latitude>
+			<altitude>799.5907992269069</altitude>
+			<heading>68.34080656198827</heading>
+			<tilt>0.06515314495392886</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>552.005540380851</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_08D242DCDE3A2620B018</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						73.52860256846013,19.9388938093783,0 73.5288177468787,19.93896162712767,0 73.52865812628879,19.93926626333161,0 73.52761658450768,19.93937875910437,0 73.52725792118437,19.93893444083698,0 73.52745379384915,19.93858656477462,0 73.52801061727115,19.93858226529472,0 73.52857147902064,19.93865292452921,0 73.5286413247518,19.93869244790824,0 73.52860256846013,19.9388938093783,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark id="017CC86E423A26064A9C">
+		<name>Anand Akhada</name>
+		<LookAt>
+			<longitude>73.54086881487173</longitude>
+			<latitude>19.93695382178161</latitude>
+			<altitude>736.6625209012125</altitude>
+			<heading>324.5854380058267</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35.00000000000172</gx:fovy>
+			<range>363.5171902274305</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_08D242DCDE3A2620B018</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						73.54085310495634,19.93683233708615,0 73.54047636943604,19.93724156749866,0 73.54019952122742,19.93679331070885,0 73.53944286213,19.93648653073475,0 73.53961968004278,19.936060808438,0 73.54085310495634,19.93683233708615,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark id="0A1B60B4DF3A260BBB6E">
+		<name>Mahanirvani Akhada</name>
+		<LookAt>
+			<longitude>73.54974876127687</longitude>
+			<latitude>19.94372478449785</latitude>
+			<altitude>755.8024176275812</altitude>
+			<heading>160.1141339006977</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35.0000388806797</gx:fovy>
+			<range>413.9997631305597</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_054FF0D2703A26224027</styleUrl>
+		<Polygon>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						73.55049838523695,19.94381582406812,0 73.55043482278579,19.94460152041626,0 73.55042851097038,19.94465973617141,0 73.54949180831841,19.94455958234347,0 73.54932990698117,19.9445136376676,0 73.54913653311738,19.94444697190539,0 73.54933947031154,19.9439522149811,0 73.54946473701055,19.94365615089319,0 73.54966689084145,19.94368863045957,0 73.55049838523695,19.94381582406812,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark id="08325494253A2611FAF3">
+		<name>Mahanirvani Akhada</name>
+		<LookAt>
+			<longitude>73.54086881693227</longitude>
+			<latitude>19.93695382345107</latitude>
+			<altitude>736.6625586298853</altitude>
+			<heading>324.5852870928047</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35.00000000010875</gx:fovy>
+			<range>363.5227296736775</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AE52B951E3A260BBB70</styleUrl>
+		<Point>
+			<coordinates>73.54982489972886,19.9442467195877,732.794145726848</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0C57B4EB293A26141AA1">
+		<name>Anand Akhada</name>
+		<LookAt>
+			<longitude>73.54086881724585</longitude>
+			<latitude>19.93695382364126</latitude>
+			<altitude>736.6625586298853</altitude>
+			<heading>324.5852675153369</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35.00000000012263</gx:fovy>
+			<range>363.5234481792577</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AE52B951E3A260BBB70</styleUrl>
+		<Point>
+			<coordinates>73.54017378803633,19.93661258272479,733.0035693661317</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="086BE5F8E53A26148276">
+		<name>Juna Nilparvat Akhada</name>
+		<LookAt>
+			<longitude>73.52828622340493</longitude>
+			<latitude>19.93774973798287</latitude>
+			<altitude>799.5907237681466</altitude>
+			<heading>68.34058729936625</heading>
+			<tilt>0.0651398431694345</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>552.0155531037744</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AE52B951E3A260BBB70</styleUrl>
+		<Point>
+			<coordinates>73.52808052246168,19.93891400555859,838.2579883166158</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="07FFF3AB363A26151D78">
+		<name>Atal Akhada</name>
+		<LookAt>
+			<longitude>73.52227610068405</longitude>
+			<latitude>19.93128399430379</latitude>
+			<altitude>770.0031182153945</altitude>
+			<heading>67.98155519604694</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>151.2629237096917</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AE52B951E3A260BBB70</styleUrl>
+		<Point>
+			<coordinates>73.52224949253804,19.93134712524267,769.2987344576603</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="057EE9086B3A26158CAB">
+		<name>Nirmal Akhada</name>
+		<LookAt>
+			<longitude>73.52443677371123</longitude>
+			<latitude>19.93126518633255</latitude>
+			<altitude>754.922052040551</altitude>
+			<heading>113.680570488423</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>490.5944512483984</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AE52B951E3A260BBB70</styleUrl>
+		<Point>
+			<coordinates>73.52427327326825,19.93145753930937,754.1355620119666</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="06F507716A3A2615C741">
+		<name>Pancha Agni Akhada</name>
+		<LookAt>
+			<longitude>73.52398257288088</longitude>
+			<latitude>19.93191935234612</latitude>
+			<altitude>753.6590898598735</altitude>
+			<heading>113.680415656646</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>491.8574449927111</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AE52B951E3A260BBB70</styleUrl>
+		<Point>
+			<coordinates>73.52352452277925,19.93238837943542,754.3076753112156</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0C1E7ADE583A2616E0B3">
+		<name>Avahan Akhada</name>
+		<LookAt>
+			<longitude>73.52893684053653</longitude>
+			<latitude>19.93535436443114</latitude>
+			<altitude>747.3733125834286</altitude>
+			<heading>0.0002310375356773052</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>394.89706386943</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AE52B951E3A260BBB70</styleUrl>
+		<Point>
+			<coordinates>73.52913007465526,19.9354078646474,746.873797595626</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="016395398E3A26176594">
+		<name>Niranjani Akhada</name>
+		<LookAt>
+			<longitude>73.53787992613202</longitude>
+			<latitude>19.93416787456001</latitude>
+			<altitude>735.2998535912607</altitude>
+			<heading>125.2168412659403</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>513.837967700747</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AE52B951E3A260BBB70</styleUrl>
+		<Point>
+			<coordinates>73.53784517364844,19.93440438108652,736.0270171308346</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="04376B175E3A2617E616">
+		<name>Bada Udaseen Akhada</name>
+		<LookAt>
+			<longitude>73.53211930054087</longitude>
+			<latitude>19.92825198644762</latitude>
+			<altitude>762.3618835741231</altitude>
+			<heading>125.2137154375853</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>275.1341201216201</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AE52B951E3A260BBB70</styleUrl>
+		<Point>
+			<coordinates>73.53211775896419,19.92874689253847,753.8015993256059</coordinates>
+		</Point>
+	</Placemark>
+	<Placemark id="0D8862A9583A26183E3C">
+		<name>Naya Udaseen Akhada</name>
+		<LookAt>
+			<longitude>73.52926303689704</longitude>
+			<latitude>19.92618501044102</latitude>
+			<altitude>756.4086833953479</altitude>
+			<heading>0.0001353729061305722</heading>
+			<tilt>0</tilt>
+			<gx:fovy>35</gx:fovy>
+			<range>292.3612416873584</range>
+			<altitudeMode>absolute</altitudeMode>
+		</LookAt>
+		<styleUrl>#__managed_style_3AE52B951E3A260BBB70</styleUrl>
+		<Point>
+			<coordinates>73.52868252709943,19.92625674516688,764.5289233628187</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>

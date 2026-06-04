@@ -1,0 +1,1906 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.21358209546739,
+              20.08612377222762,
+              0
+            ],
+            [
+              74.21378054857487,
+              20.08591478796931,
+              0
+            ],
+            [
+              74.21502097113877,
+              20.08524822280544,
+              0
+            ],
+            [
+              74.21570028965333,
+              20.08632076472333,
+              0
+            ],
+            [
+              74.2136974698799,
+              20.08638734933154,
+              0
+            ],
+            [
+              74.21358209546739,
+              20.08612377222762,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "विषणुनगर विंचुर ता, निफाड",
+        "styleUrl": "#__managed_style_0EFA8D93B53A71BD5FE910",
+        "fill-opacity": 0.25098039215686274,
+        "fill": "#ffffff",
+        "stroke-opacity": 1,
+        "stroke": "#fbc02d",
+        "stroke-width": 4,
+        "icon-offset": [
+          64,
+          128
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "insetPixels"
+        ],
+        "icon": "https://earth.google.com/earth/document/icon?color=1976d2&id=2000&scale=4"
+      },
+      "id": "03D75D17383A71BD5FC8"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.21501240452815,
+          20.0853538966328,
+          0
+        ]
+      },
+      "properties": {
+        "name": "विषणुनगर विंचुर ता, निफाड",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          20,
+          2
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.71204527915643,
+              20.2839794765773,
+              0
+            ],
+            [
+              74.71198201012471,
+              20.28191065096406,
+              0
+            ],
+            [
+              74.71436821942119,
+              20.2816587279091,
+              0
+            ],
+            [
+              74.71421234445735,
+              20.28351278510409,
+              0
+            ],
+            [
+              74.71624182720437,
+              20.28338879059165,
+              0
+            ],
+            [
+              74.71673950761873,
+              20.28576437192535,
+              0
+            ],
+            [
+              74.71503388226309,
+              20.28556345606884,
+              0
+            ],
+            [
+              74.7146801830229,
+              20.28381440641102,
+              0
+            ],
+            [
+              74.71204527915643,
+              20.2839794765773,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "पोखरी",
+        "styleUrl": "#__managed_style_0EFA8D93B53A71BD5FE910",
+        "fill-opacity": 0.25098039215686274,
+        "fill": "#ffffff",
+        "stroke-opacity": 1,
+        "stroke": "#fbc02d",
+        "stroke-width": 4,
+        "icon-offset": [
+          64,
+          128
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "insetPixels"
+        ],
+        "icon": "https://earth.google.com/earth/document/icon?color=1976d2&id=2000&scale=4"
+      },
+      "id": "0677922B6E3A71F30E00"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.71526128118124,
+          20.28383185571787,
+          0
+        ]
+      },
+      "properties": {
+        "name": "पोखरी",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          20,
+          2
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.47578472017557,
+              20.04595404725524,
+              0
+            ],
+            [
+              74.47598928154677,
+              20.04448165405562,
+              0
+            ],
+            [
+              74.47535555301582,
+              20.04445421560002,
+              0
+            ],
+            [
+              74.4751864697409,
+              20.04364699169427,
+              0
+            ],
+            [
+              74.47914697441753,
+              20.04343242487278,
+              0
+            ],
+            [
+              74.47934329129207,
+              20.04541287645072,
+              0
+            ],
+            [
+              74.47578472017557,
+              20.04595404725524,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "येवाल भुजबळ ऑफीस मागे",
+        "styleUrl": "#__managed_style_0EFA8D93B53A71BD5FE91",
+        "fill-opacity": 0.25098039215686274,
+        "fill": "#ffffff",
+        "stroke-opacity": 1,
+        "stroke": "#fbc02d",
+        "stroke-width": 4,
+        "icon-offset": [
+          64,
+          128
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "insetPixels"
+        ],
+        "icon": "https://earth.google.com/earth/document/icon?color=1976d2&id=2000&scale=4"
+      },
+      "id": "0CBBA8BAD53A71C68754"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.4790922956395,
+          20.04526941380155,
+          0
+        ]
+      },
+      "properties": {
+        "name": "येवाल भुजबळ ऑफीस मागे",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          20,
+          2
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.07165180807901,
+              20.24728186188667,
+              0
+            ],
+            [
+              74.07047976676121,
+              20.24470810780821,
+              0
+            ],
+            [
+              74.07073007838002,
+              20.24445835847974,
+              0
+            ],
+            [
+              74.07147578272127,
+              20.24570563759895,
+              0
+            ],
+            [
+              74.07441022285497,
+              20.24516985893693,
+              0
+            ],
+            [
+              74.07585355978092,
+              20.24766073595343,
+              0
+            ],
+            [
+              74.07429988231664,
+              20.24714335067472,
+              0
+            ],
+            [
+              74.07165180807901,
+              20.24728186188667,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "खडकजांब सोनलाल मोहनलाल भंडारी",
+        "styleUrl": "#__managed_style_0EFA8D93B53A71BD5FE91",
+        "fill-opacity": 0.25098039215686274,
+        "fill": "#ffffff",
+        "stroke-opacity": 1,
+        "stroke": "#fbc02d",
+        "stroke-width": 4,
+        "icon-offset": [
+          64,
+          128
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "insetPixels"
+        ],
+        "icon": "https://earth.google.com/earth/document/icon?color=1976d2&id=2000&scale=4"
+      },
+      "id": "01C04110013A71DBD1BE"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.0742472249839,
+          20.24538629578113,
+          0
+        ]
+      },
+      "properties": {
+        "name": "खडकजांब सोनलाल मोहनलाल भंडारी",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          20,
+          2
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.05078030525685,
+              19.79981460452253,
+              0
+            ],
+            [
+              74.05096135909726,
+              19.80110574490387,
+              0
+            ],
+            [
+              74.05152302917215,
+              19.80123358517488,
+              0
+            ],
+            [
+              74.05144812915657,
+              19.8016211416286,
+              0
+            ],
+            [
+              74.05066240053415,
+              19.80162310559705,
+              0
+            ],
+            [
+              74.05056311138962,
+              19.80184647944451,
+              0
+            ],
+            [
+              74.04976554448908,
+              19.80188091811253,
+              0
+            ],
+            [
+              74.04980561207037,
+              19.80308689964438,
+              0
+            ],
+            [
+              74.04631818496115,
+              19.80154734888148,
+              0
+            ],
+            [
+              74.05078030525685,
+              19.79981460452253,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "सिन्नर गुरेवाडी",
+        "styleUrl": "#__managed_style_0EFA8D93B53A71BD5FE91",
+        "fill-opacity": 0.25098039215686274,
+        "fill": "#ffffff",
+        "stroke-opacity": 1,
+        "stroke": "#fbc02d",
+        "stroke-width": 4,
+        "icon-offset": [
+          64,
+          128
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "insetPixels"
+        ],
+        "icon": "https://earth.google.com/earth/document/icon?color=1976d2&id=2000&scale=4"
+      },
+      "id": "031C09F6C93A71D430EE"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.0495178955557,
+          19.8028119228467,
+          0
+        ]
+      },
+      "properties": {
+        "name": "सिन्नर गुरेवाडी",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          20,
+          2
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.66883570548028,
+              19.95959727017692,
+              0
+            ],
+            [
+              74.66851471839918,
+              19.95883549584526,
+              0
+            ],
+            [
+              74.66926205499065,
+              19.95853916382417,
+              0
+            ],
+            [
+              74.66996053241012,
+              19.95825212267969,
+              0
+            ],
+            [
+              74.67018401301453,
+              19.95905533918389,
+              0
+            ],
+            [
+              74.66883570548028,
+              19.95959727017692,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "खामगाव पाटी येवला",
+        "styleUrl": "#__managed_style_0EFA8D93B53A71BD5FE91",
+        "fill-opacity": 0.25098039215686274,
+        "fill": "#ffffff",
+        "stroke-opacity": 1,
+        "stroke": "#fbc02d",
+        "stroke-width": 4,
+        "icon-offset": [
+          64,
+          128
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "insetPixels"
+        ],
+        "icon": "https://earth.google.com/earth/document/icon?color=1976d2&id=2000&scale=4"
+      },
+      "id": "05372E1F1B3A71C29FE1"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.66891294084995,
+          19.95944688098981,
+          0
+        ]
+      },
+      "properties": {
+        "name": "खामगाव पाटी येवला",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          20,
+          2
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.061083800556,
+              19.84042753615951,
+              0
+            ],
+            [
+              74.06496595030443,
+              19.84069039208624,
+              0
+            ],
+            [
+              74.06516120514846,
+              19.84143582542182,
+              0
+            ],
+            [
+              74.06457137868752,
+              19.84218210595625,
+              0
+            ],
+            [
+              74.06123001118968,
+              19.84190044777099,
+              0
+            ],
+            [
+              74.061083800556,
+              19.84042753615951,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "इंडीय बुल्स सिन्नर",
+        "styleUrl": "#__managed_style_0EFA8D93B53A71BD5FE91",
+        "fill-opacity": 0.25098039215686274,
+        "fill": "#ffffff",
+        "stroke-opacity": 1,
+        "stroke": "#fbc02d",
+        "stroke-width": 4,
+        "icon-offset": [
+          64,
+          128
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "insetPixels"
+        ],
+        "icon": "https://earth.google.com/earth/document/icon?color=1976d2&id=2000&scale=4"
+      },
+      "id": "0DE7F28D4B3A71D0B977"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.06450743185397,
+          19.84201540886123,
+          0
+        ]
+      },
+      "properties": {
+        "name": "इंडीय बुल्स सिन्नर",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          20,
+          2
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.16898791899621,
+              20.31082863325139,
+              0
+            ],
+            [
+              74.17324852430515,
+              20.31204734455751,
+              0
+            ],
+            [
+              74.17334828336402,
+              20.31328629267612,
+              0
+            ],
+            [
+              74.16863776481506,
+              20.31200323853156,
+              0
+            ],
+            [
+              74.16898791899621,
+              20.31082863325139,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "आडगाव टप्पा चांदवड",
+        "styleUrl": "#__managed_style_0EFA8D93B53A71BD5FE91",
+        "fill-opacity": 0.25098039215686274,
+        "fill": "#ffffff",
+        "stroke-opacity": 1,
+        "stroke": "#fbc02d",
+        "stroke-width": 4,
+        "icon-offset": [
+          64,
+          128
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "insetPixels"
+        ],
+        "icon": "https://earth.google.com/earth/document/icon?color=1976d2&id=2000&scale=4"
+      },
+      "id": "04406D87563A71E718FE"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.17302820786512,
+          20.31308250543116,
+          0
+        ]
+      },
+      "properties": {
+        "name": "आडगाव टप्पा चांदवड",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          20,
+          2
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.49250906607443,
+              20.03769284453357,
+              0
+            ],
+            [
+              74.49225740051176,
+              20.03666568355232,
+              0
+            ],
+            [
+              74.49438796583415,
+              20.03602457478928,
+              0
+            ],
+            [
+              74.49464862489765,
+              20.036950933129,
+              0
+            ],
+            [
+              74.49250906607443,
+              20.03769284453357,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "येवला ता. जि.नाशिक",
+        "styleUrl": "#__managed_style_0EFA8D93B53A71BD5FE91",
+        "fill-opacity": 0.25098039215686274,
+        "fill": "#ffffff",
+        "stroke-opacity": 1,
+        "stroke": "#fbc02d",
+        "stroke-width": 4,
+        "icon-offset": [
+          64,
+          128
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "insetPixels"
+        ],
+        "icon": "https://earth.google.com/earth/document/icon?color=1976d2&id=2000&scale=4"
+      },
+      "id": "0E0E7848583A71C0043B"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.49258988849458,
+          20.03753172404672,
+          0
+        ]
+      },
+      "properties": {
+        "name": "येवला ता. जि.नाशिक",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          20,
+          2
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.97812782057525,
+              19.82608753476461,
+              0
+            ],
+            [
+              73.97942387317704,
+              19.82543741455486,
+              0
+            ],
+            [
+              73.98040201837284,
+              19.82648554382556,
+              0
+            ],
+            [
+              73.98056172123799,
+              19.82709320505603,
+              0
+            ],
+            [
+              73.97979901542342,
+              19.82766763707744,
+              0
+            ],
+            [
+              73.97812782057525,
+              19.82608753476461,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "भाटवाडी सिन्नर",
+        "styleUrl": "#__managed_style_0EFA8D93B53A71BD5FE91",
+        "fill-opacity": 0.25098039215686274,
+        "fill": "#ffffff",
+        "stroke-opacity": 1,
+        "stroke": "#fbc02d",
+        "stroke-width": 4,
+        "icon-offset": [
+          64,
+          128
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "insetPixels"
+        ],
+        "icon": "https://earth.google.com/earth/document/icon?color=1976d2&id=2000&scale=4"
+      },
+      "id": "09A89F863F3A72196430"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.979726251576,
+          19.82739123137933,
+          0
+        ]
+      },
+      "properties": {
+        "name": "भाटवाडी सिन्नर",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          20,
+          2
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.47625861610382,
+              20.27451809923525,
+              0
+            ],
+            [
+              73.47549048387854,
+              20.27376783103423,
+              0
+            ],
+            [
+              73.47682195693464,
+              20.27302769738383,
+              0
+            ],
+            [
+              73.47738506644042,
+              20.27377898312735,
+              0
+            ],
+            [
+              73.47625861610382,
+              20.27451809923525,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "वांगणी पेठ",
+        "styleUrl": "#__managed_style_0EFA8D93B53A71BD5FE91",
+        "fill-opacity": 0.25098039215686274,
+        "fill": "#ffffff",
+        "stroke-opacity": 1,
+        "stroke": "#fbc02d",
+        "stroke-width": 4,
+        "icon-offset": [
+          64,
+          128
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "insetPixels"
+        ],
+        "icon": "https://earth.google.com/earth/document/icon?color=1976d2&id=2000&scale=4"
+      },
+      "id": "02417847FA3A71FD10A0"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.47625253957747,
+          20.27434116276375,
+          0
+        ]
+      },
+      "properties": {
+        "name": "वांगणी पेठ",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          20,
+          2
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.13087514546547,
+              20.29823329925732,
+              0
+            ],
+            [
+              74.13124770220838,
+              20.29832450219667,
+              0
+            ],
+            [
+              74.13130236021993,
+              20.29878924261501,
+              0
+            ],
+            [
+              74.1308082576998,
+              20.29849590883389,
+              0
+            ],
+            [
+              74.13087514546547,
+              20.29823329925732,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "मालसाने चांदवड",
+        "styleUrl": "#__managed_style_0EFA8D93B53A71BD5FE91",
+        "fill-opacity": 0.25098039215686274,
+        "fill": "#ffffff",
+        "stroke-opacity": 1,
+        "stroke": "#fbc02d",
+        "stroke-width": 4,
+        "icon-offset": [
+          64,
+          128
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "insetPixels"
+        ],
+        "icon": "https://earth.google.com/earth/document/icon?color=1976d2&id=2000&scale=4"
+      },
+      "id": "072EC440FA3A71DF4F98"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.13120666570704,
+          20.29869378389284,
+          0
+        ]
+      },
+      "properties": {
+        "name": "मालसाने चांदवड",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          20,
+          2
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.65684031511023,
+              20.63886984888919,
+              0
+            ],
+            [
+              74.65817855179952,
+              20.63782389538678,
+              0
+            ],
+            [
+              74.6609993355717,
+              20.64105085389043,
+              0
+            ],
+            [
+              74.6601461464845,
+              20.64175165512878,
+              0
+            ],
+            [
+              74.65684031511023,
+              20.63886984888919,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "झोडगे 1",
+        "styleUrl": "#__managed_style_0EFA8D93B53A71BD5FE91",
+        "fill-opacity": 0.25098039215686274,
+        "fill": "#ffffff",
+        "stroke-opacity": 1,
+        "stroke": "#fbc02d",
+        "stroke-width": 4,
+        "icon-offset": [
+          64,
+          128
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "insetPixels"
+        ],
+        "icon": "https://earth.google.com/earth/document/icon?color=1976d2&id=2000&scale=4"
+      },
+      "id": "06332A43463A71E89AAF"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.65995748784324,
+          20.64123213885696,
+          0
+        ]
+      },
+      "properties": {
+        "name": "झोडगे 1",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          20,
+          2
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.61423964113239,
+              20.60529833533927,
+              0
+            ],
+            [
+              74.61459868157156,
+              20.60486164493816,
+              0
+            ],
+            [
+              74.6171322975265,
+              20.60649918318033,
+              0
+            ],
+            [
+              74.61677190432202,
+              20.60731628276315,
+              0
+            ],
+            [
+              74.61423964113239,
+              20.60529833533927,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "सायाणे",
+        "styleUrl": "#__managed_style_0EFA8D93B53A71BD5FE91",
+        "fill-opacity": 0.25098039215686274,
+        "fill": "#ffffff",
+        "stroke-opacity": 1,
+        "stroke": "#fbc02d",
+        "stroke-width": 4,
+        "icon-offset": [
+          64,
+          128
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "insetPixels"
+        ],
+        "icon": "https://earth.google.com/earth/document/icon?color=1976d2&id=2000&scale=4"
+      },
+      "id": "08828DD5913A71EB6A90"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.61651087081022,
+          20.60689630307427,
+          0
+        ]
+      },
+      "properties": {
+        "name": "सायाणे",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          20,
+          2
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.92428197543232,
+              20.42903675702239,
+              0
+            ],
+            [
+              73.92437838375912,
+              20.43073431706485,
+              0
+            ],
+            [
+              73.92282892655199,
+              20.4306305372582,
+              0
+            ],
+            [
+              73.92294689414346,
+              20.42886105508911,
+              0
+            ],
+            [
+              73.92428197543232,
+              20.42903675702239,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "सप्तश्र`गी गड नांदुरी शीवार",
+        "styleUrl": "#__managed_style_0EFA8D93B53A71BD5FE91",
+        "fill-opacity": 0.25098039215686274,
+        "fill": "#ffffff",
+        "stroke-opacity": 1,
+        "stroke": "#fbc02d",
+        "stroke-width": 4,
+        "icon-offset": [
+          64,
+          128
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "insetPixels"
+        ],
+        "icon": "https://earth.google.com/earth/document/icon?color=1976d2&id=2000&scale=4"
+      },
+      "id": "0C9E9F1B3E3A720D2EC8"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.92387858984593,
+          20.42913653052372,
+          0
+        ]
+      },
+      "properties": {
+        "name": "सप्तश्र`गी गड नांदुरी शीवार",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          20,
+          2
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.64551159750415,
+              20.07143106982478,
+              0
+            ],
+            [
+              73.64318610538398,
+              20.07223568962635,
+              0
+            ],
+            [
+              73.64299257875629,
+              20.07155992498623,
+              0
+            ],
+            [
+              73.64521757865678,
+              20.07081983101537,
+              0
+            ],
+            [
+              73.64551159750415,
+              20.07143106982478,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "गिरणारे पा.",
+        "styleUrl": "#__managed_style_0EFA8D93B53A71BD5FE91",
+        "fill-opacity": 0.25098039215686274,
+        "fill": "#ffffff",
+        "stroke-opacity": 1,
+        "stroke": "#fbc02d",
+        "stroke-width": 4,
+        "icon-offset": [
+          64,
+          128
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "insetPixels"
+        ],
+        "icon": "https://earth.google.com/earth/document/icon?color=1976d2&id=2000&scale=4"
+      },
+      "id": "0AA3AC9EAB3A7212F353"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.6433593928012,
+          20.07147642612817,
+          0
+        ]
+      },
+      "properties": {
+        "name": "गिरणारे पा.",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          20,
+          2
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.59790300480165,
+              20.3051192046468,
+              0
+            ],
+            [
+              74.59744215819634,
+              20.307082794674,
+              0
+            ],
+            [
+              74.59577714273131,
+              20.30664257744624,
+              0
+            ],
+            [
+              74.59549654708506,
+              20.30590886170561,
+              0
+            ],
+            [
+              74.59567032281525,
+              20.30580411509889,
+              0
+            ],
+            [
+              74.59564532232028,
+              20.30564156488967,
+              0
+            ],
+            [
+              74.59537291341422,
+              20.30566474802069,
+              0
+            ],
+            [
+              74.59566086471561,
+              20.30392475846602,
+              0
+            ],
+            [
+              74.59790300480165,
+              20.3051192046468,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "शिवपुराण जागा हिस्वळ नांदगाव",
+        "styleUrl": "#__managed_style_0EFA8D93B53A71BD5FE90",
+        "fill-opacity": 0.25098039215686274,
+        "fill": "#ffffff",
+        "stroke-opacity": 1,
+        "stroke": "#fbc02d",
+        "stroke-width": 4,
+        "icon-offset": [
+          64,
+          128
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "insetPixels"
+        ],
+        "icon": "https://earth.google.com/earth/document/icon?color=1976d2&id=2000&scale=4"
+      },
+      "id": "05AA39CBA73A71F19EF4"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.59604862978526,
+          20.30431747373443,
+          0
+        ]
+      },
+      "properties": {
+        "name": "शिवपुराण जागा हिस्वळ नांदगाव",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          20,
+          2
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.47632724561198,
+              20.27562509140392,
+              0
+            ],
+            [
+              73.47722022335314,
+              20.27683097029903,
+              0
+            ],
+            [
+              73.47629845706368,
+              20.27833817046351,
+              0
+            ],
+            [
+              73.47444234152209,
+              20.27666732791356,
+              0
+            ],
+            [
+              73.47554568454684,
+              20.27602320653428,
+              0
+            ],
+            [
+              73.47632724561198,
+              20.27562509140392,
+              0
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "name": "वांगनी",
+        "styleUrl": "#__managed_style_0EFA8D93B53A71BD5FE91",
+        "fill-opacity": 0.25098039215686274,
+        "fill": "#ffffff",
+        "stroke-opacity": 1,
+        "stroke": "#fbc02d",
+        "stroke-width": 4,
+        "icon-offset": [
+          64,
+          128
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "insetPixels"
+        ],
+        "icon": "https://earth.google.com/earth/document/icon?color=1976d2&id=2000&scale=4"
+      },
+      "id": "098A3946E23A71FBE184"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.47596737429454,
+          20.27605182376444,
+          0
+        ]
+      },
+      "properties": {
+        "name": "वांगनी",
+        "styleUrl": "#m_ylw-pushpin",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          20,
+          2
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.47180750530894,
+          19.9826080261195,
+          0
+        ]
+      },
+      "properties": {
+        "name": "अंबई फाटा ( त्रंबक जव्हार रोड)",
+        "visibility": false,
+        "styleUrl": "#m_ylw-pushpin8",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          20,
+          2
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.48080102824015,
+          20.01423832546368,
+          0
+        ]
+      },
+      "properties": {
+        "name": "नांदगाव कोहळी फाटा",
+        "visibility": false,
+        "styleUrl": "#m_ylw-pushpin8",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          20,
+          2
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.50394812278955,
+          20.06633165100145,
+          0
+        ]
+      },
+      "properties": {
+        "name": "वाघेरा गाव फाटा समोर",
+        "visibility": false,
+        "styleUrl": "#m_ylw-pushpin8",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          20,
+          2
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.56822844321954,
+          19.68662732463862,
+          0
+        ]
+      },
+      "properties": {
+        "name": "साई हॉटेल, इगतपुरी",
+        "visibility": false,
+        "styleUrl": "#m_ylw-pushpin8",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          20,
+          2
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.64909238411175,
+          19.92245850472938,
+          0
+        ]
+      },
+      "properties": {
+        "name": "जातेगाव (चौफुली)",
+        "visibility": false,
+        "styleUrl": "#m_ylw-pushpin8",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          20,
+          2
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.53837171635593,
+          19.89606661246821,
+          0
+        ]
+      },
+      "properties": {
+        "name": "खडकवाडी",
+        "visibility": false,
+        "styleUrl": "#m_ylw-pushpin8",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          20,
+          2
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.48948270326137,
+          19.87704582071801,
+          0
+        ]
+      },
+      "properties": {
+        "name": "सामुंडी शिवार",
+        "visibility": false,
+        "styleUrl": "#m_ylw-pushpin8",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          20,
+          2
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.49287104775094,
+          19.87709395243866,
+          0
+        ]
+      },
+      "properties": {
+        "name": "कोजुली शिवार",
+        "visibility": false,
+        "styleUrl": "#m_ylw-pushpin8",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          20,
+          2
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.61652662389771,
+          20.07607823514805,
+          0
+        ]
+      },
+      "properties": {
+        "name": "धोडेगाव",
+        "visibility": false,
+        "styleUrl": "#m_ylw-pushpin8",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          20,
+          2
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.775543871446,
+          19.69954226764711,
+          0
+        ]
+      },
+      "properties": {
+        "name": "सर्वतीर्थ टाकेद",
+        "visibility": false,
+        "styleUrl": "#m_ylw-pushpin8",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          20,
+          2
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.75333078080253,
+          20.52964328080128,
+          0
+        ]
+      },
+      "properties": {
+        "name": "हतगड, ता सुरगाणा",
+        "visibility": false,
+        "styleUrl": "#m_ylw-pushpin8",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          20,
+          2
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7879005439619,
+          20.41828454139567,
+          0
+        ]
+      },
+      "properties": {
+        "name": "चौसाळे, ता दिंडोरी",
+        "visibility": false,
+        "styleUrl": "#m_ylw-pushpin8",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          20,
+          2
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.47956142133664,
+          19.97972027595887,
+          0
+        ]
+      },
+      "properties": {
+        "name": "अंबोली टी पॉइंट",
+        "visibility": false,
+        "styleUrl": "#m_ylw-pushpin8",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          20,
+          2
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.68587138416328,
+          19.91967223527653,
+          0
+        ]
+      },
+      "properties": {
+        "name": "पिंपळद शिवार ( Drone Corpo)",
+        "visibility": false,
+        "styleUrl": "#m_ylw-pushpin8",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          20,
+          2
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"
+      }
+    }
+  ]
+}
