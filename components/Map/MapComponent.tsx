@@ -400,6 +400,15 @@ function DataLayerRenderer() {
     if (!map) return;
     const bounds = L.latLngBounds([]);
 
+    // Hardcoded fly-to bounds for New Ghat Trimbak to ensure perfectly centered full view
+    if (activeKmlFolders.includes("newghat")) {
+      map.flyToBounds([
+        [19.9397999, 73.5373821], // SouthWest
+        [19.9491606, 73.5509304]  // NorthEast
+      ], { padding: [50, 50], duration: 1.5 });
+      return;
+    }
+
     // For KML layers
     if (activeKmlFolders.length > 0) {
       const getActiveFeatures = (parsed: any) => {
@@ -407,7 +416,7 @@ function DataLayerRenderer() {
         return parsed.features.filter((f: any) => {
           const featureName = f.properties?.name;
           if (!featureName) return false;
-          return activeKmlFolders.some((id: string) => id.startsWith(featureName));
+          return activeKmlFolders.includes(featureName);
         });
       };
 
@@ -452,6 +461,8 @@ function DataLayerRenderer() {
 
       if (added === "airport") {
         map.flyTo([20.11303538279997, 73.8936985932528], 14, { duration: 1.5 });
+      } else if (added === "railway-stations") {
+        map.flyTo([19.948254473086326, 73.84201494020495], 16, { duration: 1.5 });
       } else if (added === "police-stations" && policeStations) {
         const layerBounds = L.geoJSON(policeStations).getBounds();
         if (layerBounds.isValid()) bounds.extend(layerBounds);
@@ -917,6 +928,13 @@ function DataLayerRenderer() {
           </div>`;
         break;
 
+      case "railway-stations":
+        return `
+          <div style="font-family:Inter,sans-serif; min-width:240px; padding:12px; background:#fff; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+            <div style="font-size:10px; text-transform:uppercase; letter-spacing:1px; color:#06b6d4; margin-bottom:6px;">Railway Station</div>
+            <h3 style="margin:0 0 8px 0; font-size:16px; font-weight:700; color:#1e293b;">${props.name}</h3>
+            <div style="font-size:11px; color:#666; margin-top:4px;">${props.description || "Nearest railway station."}</div>
+          </div>`;
       case "airport":
         popupContent = `
           <div style="font-family:Inter,system-ui,sans-serif; min-width:200px;">
@@ -975,9 +993,9 @@ function DataLayerRenderer() {
           icon={L.divIcon({
             className: 'bg-transparent border-0',
             html: `
-              <div style="transform:translate(-50%, -50%); display:flex; flex-direction:column; align-items:center;">
-                <div style="width:8px; height:8px; background-color:#f97316; border:2px solid white; border-radius:50%; box-shadow:0 0 5px rgba(0,0,0,0.5); margin-bottom:2px;"></div>
-                <div style="font-family:Inter,sans-serif; font-size:10px; font-weight:800; color:#c2410c; text-shadow:1px 1px 0 #fff,-1px -1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff,0px 2px 4px rgba(0,0,0,0.3); white-space:nowrap; text-transform:uppercase; letter-spacing:0.5px;">
+              <div style="position:relative;">
+                <div style="position:absolute; width:8px; height:8px; background-color:#f97316; border:2px solid white; border-radius:50%; box-shadow:0 0 5px rgba(0,0,0,0.5); left:-4px; top:-4px;"></div>
+                <div style="position:absolute; font-family:Inter,sans-serif; font-size:10px; font-weight:800; color:#c2410c; text-shadow:1px 1px 0 #fff,-1px -1px 0 #fff,1px -1px 0 #fff,-1px 1px 0 #fff,0px 2px 4px rgba(0,0,0,0.3); white-space:nowrap; text-transform:uppercase; letter-spacing:0.5px; top:6px; left:50%; transform:translateX(-50%);">
                   ${wp.name}
                 </div>
               </div>`,
@@ -1191,6 +1209,35 @@ function DataLayerRenderer() {
         />
       )}
 
+      {/* Railway Stations */}
+      {visibleLayers.has("railway-stations") && (
+        <GeoJSON
+          key={`railway-stations-${geoKey}`}
+          data={{
+            type: "FeatureCollection",
+            features: [
+              {
+                type: "Feature",
+                geometry: { type: "Point", coordinates: [73.84201494020495, 19.948254473086326] },
+                properties: { name: "Nashik Road Railway Station", description: "Nearest major railway station." },
+              }
+            ]
+          } as any}
+          pointToLayer={(feature, latlng) => {
+            const html = `
+              <div style="position:relative;">
+                <div style="position:absolute; background:#06b6d4; width:28px; height:28px; border-radius:50%; border:2px solid white; display:flex; align-items:center; justify-content:center; box-shadow:0 0 10px rgba(0,0,0,0.5); left:-14px; top:-14px;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="3" rx="2"></rect><path d="M4 11h16"></path><path d="M12 3v8"></path><path d="m8 19-2 3"></path><path d="m18 22-2-3"></path><path d="M8 15h.01"></path><path d="M16 15h.01"></path></svg>
+                </div>
+                <div style="position:absolute; background:white; color:black; font-size:10px; font-weight:bold; padding:2px 6px; border-radius:4px; top:18px; left:50%; transform:translateX(-50%); white-space:nowrap; box-shadow:0 2px 4px rgba(0,0,0,0.2);">Railway Station</div>
+              </div>`;
+            const icon = L.divIcon({ html, className: "custom-point-icon", iconSize: [0, 0] });
+            return L.marker(latlng, { icon });
+          }}
+          onEachFeature={(f, l) => bindFeaturePopup(f, l, "railway-stations")}
+        />
+      )}
+
       {/* Airport */}
       {visibleLayers.has("airport") && (
         <GeoJSON
@@ -1401,27 +1448,29 @@ function DataLayerRenderer() {
                       dashArray: "8 6"
                     }}
                   />
-                  <AnimatedRoute
-                    key={`green-corridor-animated-${idx}-${geoKey}`}
-                    feature={feature}
-                    color={isLongRoute ? "#16a34a" : "#22c55e"}
-                    duration={isLongRoute ? 49 : 30}
-                    loop={false}
-                    growLine={true}
-                    showVehicle={true}
-                    nativeHeading={-90}
-                    trackCamera={isLongRoute}
-                    keyframes={isLongRoute ? GREEN_CORRIDOR_TIMINGS : undefined}
-                    syncAudioEvent={isLongRoute ? "green-corridor-audio-time" : undefined}
-                    onClick={() => selectFeature({
-                      layerId: "green-corridor",
-                      properties: {
-                        ...feature.properties,
-                        name: feature.properties.name || "VIP Route",
-                      },
-                      geometry: feature.geometry
-                    })}
-                  />
+                  {isLongRoute && (
+                    <AnimatedRoute
+                      key={`green-corridor-animated-${idx}-${geoKey}`}
+                      feature={feature}
+                      color={isLongRoute ? "#16a34a" : "#22c55e"}
+                      duration={isLongRoute ? 49 : 30}
+                      loop={false}
+                      growLine={true}
+                      showVehicle={true}
+                      nativeHeading={-90}
+                      trackCamera={isLongRoute}
+                      keyframes={isLongRoute ? GREEN_CORRIDOR_TIMINGS : undefined}
+                      syncAudioEvent={isLongRoute ? "green-corridor-audio-time" : undefined}
+                      onClick={() => selectFeature({
+                        layerId: "green-corridor",
+                        properties: {
+                          ...feature.properties,
+                          name: feature.properties.name || "VIP Route",
+                        },
+                        geometry: feature.geometry
+                      })}
+                    />
+                  )}
                 </React.Fragment>
               );
             }
@@ -3641,11 +3690,11 @@ function DataLayerRenderer() {
             const props = feature?.properties || {};
             const iconColor = props.stroke || "#f43f5e";
 
-            let html = `<div style="display:flex; flex-direction:column; align-items:center; transform: translate(-50%, -50%);">
-              <div style="width:14px;height:14px;background-color:${iconColor};border-radius:50%;border:2px solid white;box-shadow:0 0 8px rgba(0,0,0,0.5);"></div>`;
+            let html = `<div style="position:relative;">
+              <div style="position:absolute; width:14px; height:14px; background-color:${iconColor}; border-radius:50%; border:2px solid white; box-shadow:0 0 8px rgba(0,0,0,0.5); left:-7px; top:-7px;"></div>`;
 
             if (props.name) {
-              html += `<div style="background:white; color:black; font-size:10px; font-weight:bold; padding:2px 6px; border-radius:4px; margin-top:4px; white-space:nowrap; box-shadow:0 2px 4px rgba(0,0,0,0.2);">${props.name}</div>`;
+              html += `<div style="position:absolute; background:white; color:black; font-size:10px; font-weight:bold; padding:2px 6px; border-radius:4px; top:10px; left:50%; transform:translateX(-50%); white-space:nowrap; box-shadow:0 2px 4px rgba(0,0,0,0.2);">${props.name}</div>`;
             }
             html += `</div>`;
 
@@ -3703,11 +3752,11 @@ function DataLayerRenderer() {
             const props = feature?.properties || {};
             const iconColor = props.stroke || "#f59e0b";
 
-            let html = `<div style="display:flex; flex-direction:column; align-items:center; transform: translate(-50%, -50%);">
-              <div style="width:14px;height:14px;background-color:${iconColor};border-radius:50%;border:2px solid white;box-shadow:0 0 8px rgba(0,0,0,0.5);"></div>`;
+            let html = `<div style="position:relative;">
+              <div style="position:absolute; width:14px; height:14px; background-color:${iconColor}; border-radius:50%; border:2px solid white; box-shadow:0 0 8px rgba(0,0,0,0.5); left:-7px; top:-7px;"></div>`;
 
             if (props.name) {
-              html += `<div style="background:white; color:black; font-size:10px; font-weight:bold; padding:2px 6px; border-radius:4px; margin-top:4px; white-space:nowrap; box-shadow:0 2px 4px rgba(0,0,0,0.2);">${props.name}</div>`;
+              html += `<div style="position:absolute; background:white; color:black; font-size:10px; font-weight:bold; padding:2px 6px; border-radius:4px; top:10px; left:50%; transform:translateX(-50%); white-space:nowrap; box-shadow:0 2px 4px rgba(0,0,0,0.2);">${props.name}</div>`;
             }
             html += `</div>`;
 
@@ -3765,11 +3814,11 @@ function DataLayerRenderer() {
             const props = feature?.properties || {};
             const iconColor = props.stroke || "#6366f1";
 
-            let html = `<div style="display:flex; flex-direction:column; align-items:center; transform: translate(-50%, -50%);">
-              <div style="width:14px;height:14px;background-color:${iconColor};border-radius:50%;border:2px solid white;box-shadow:0 0 8px rgba(0,0,0,0.5);"></div>`;
+            let html = `<div style="position:relative;">
+              <div style="position:absolute; width:14px; height:14px; background-color:${iconColor}; border-radius:50%; border:2px solid white; box-shadow:0 0 8px rgba(0,0,0,0.5); left:-7px; top:-7px;"></div>`;
 
             if (props.name) {
-              html += `<div style="background:white; color:black; font-size:10px; font-weight:bold; padding:2px 6px; border-radius:4px; margin-top:4px; white-space:nowrap; box-shadow:0 2px 4px rgba(0,0,0,0.2);">${props.name}</div>`;
+              html += `<div style="position:absolute; background:white; color:black; font-size:10px; font-weight:bold; padding:2px 6px; border-radius:4px; top:10px; left:50%; transform:translateX(-50%); white-space:nowrap; box-shadow:0 2px 4px rgba(0,0,0,0.2);">${props.name}</div>`;
             }
             html += `</div>`;
 

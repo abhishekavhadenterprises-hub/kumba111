@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { Route, ChevronUp, ChevronDown, Eye, EyeOff } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Route, ChevronUp, ChevronDown, Eye, EyeOff, X, Maximize2 } from "lucide-react";
 import { useDashboard } from "@/lib/context/dashboard-context";
 import { useLanguage } from "@/lib/context/language-context";
 import { PROCESSION_GROUPS } from "@/lib/data/schedule";
@@ -12,75 +12,142 @@ export default function SchemeControl() {
   const isOpen = activeOverlay === "scheme";
   const setIsOpen = (open: boolean) => setActiveOverlay(open ? "scheme" : null);
 
-  // Procession groups imported from schedule.ts
+  const [imgSrc, setImgSrc] = useState("/svg/R3%20Core-1%20Plan%20(08-05-2026).svg");
+
+  useEffect(() => {
+    if (selectedProcessionRoute) {
+      setImgSrc(`/svg/procession-${selectedProcessionRoute}.svg`);
+    } else {
+      setImgSrc("/svg/R3%20Core-1%20Plan%20(08-05-2026).svg");
+    }
+  }, [selectedProcessionRoute]);
+
+  const handleImgError = () => {
+    if (imgSrc !== "/svg/R3%20Core-1%20Plan%20(08-05-2026).svg") {
+      setImgSrc("/svg/R3%20Core-1%20Plan%20(08-05-2026).svg");
+    }
+  };
 
   return (
-    // Positioned directly under the Legend option
-    <div className="absolute bottom-4 z-[450] pointer-events-none transition-all duration-300" style={{ left: "calc(var(--left-sidebar-width, 0px) + 12px)" }}>
-      <div className="relative pointer-events-auto flex items-end gap-3">
+    <>
+      <div className="absolute bottom-4 z-[450] pointer-events-none transition-all duration-300" style={{ left: "calc(var(--left-sidebar-width, 0px) + 12px)" }}>
+        <div className="relative pointer-events-auto flex items-end gap-3">
+          {/* Main Button */}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className={`bg-white backdrop-blur-xl border border-[#D6D0C4] rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.12)] px-6 py-3 flex items-center gap-3 transition-all duration-300 hover:border-gray-400 hover:shadow-md hover:bg-gray-100 shrink-0 ${isOpen ? "border-orange-500/50 shadow-[0_0_20px_rgba(249,115,22,0.2)]" : ""}`}
+          >
+            <Route className={`w-5 h-5 ${isOpen ? "text-orange-500" : "text-gray-900 font-bold"}`} />
+            <div className="text-left hidden sm:block">
+              <div className="text-xs font-black tracking-wider text-black font-extrabold uppercase">{t("procession.route")}</div>
+              <div className="text-[10px] text-gray-900 font-bold">{PROCESSION_GROUPS.find(r => r.id === selectedProcessionRoute)?.label || t("procession.route.select")}</div>
+            </div>
+            {isOpen ? (
+              <ChevronUp className="w-4 h-4 text-gray-700 font-medium ml-2" />
+            ) : (
+              <ChevronUp className="w-4 h-4 text-gray-700 font-medium ml-2 rotate-180" />
+            )}
+          </button>
 
-        {/* Main Button */}
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className={`bg-white backdrop-blur-xl border border-[#D6D0C4] rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.12)] px-6 py-3 flex items-center gap-3 transition-all duration-300 hover:border-gray-400 hover:shadow-md hover:bg-gray-100 shrink-0 ${isOpen ? "border-orange-500/50 shadow-[0_0_20px_rgba(249,115,22,0.2)]" : ""}`}
-        >
-          <Route className={`w-5 h-5 ${isOpen ? "text-orange-500" : "text-gray-900 font-bold"}`} />
-          <div className="text-left">
-            <div className="text-xs font-black tracking-wider text-black font-extrabold uppercase">{t("procession.route")}</div>
-            <div className="text-[10px] text-gray-900 font-bold">{PROCESSION_GROUPS.find(r => r.id === selectedProcessionRoute)?.label || t("procession.route.select")}</div>
-          </div>
-          {isOpen ? (
-            <ChevronUp className="w-4 h-4 text-gray-700 font-medium ml-2" />
-          ) : (
-            <ChevronUp className="w-4 h-4 text-gray-700 font-medium ml-2 rotate-180" />
-          )}
-        </button>
-
-        {/* Labels Toggle Button */}
-        <button
-          onClick={toggleLabels}
-          className={`bg-white backdrop-blur-xl border border-[#D6D0C4] rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.12)] w-12 h-12 flex items-center justify-center transition-all duration-300 hover:border-gray-400 hover:shadow-md hover:bg-gray-100 shrink-0 ${!showLabels ? "border-red-500/50" : ""}`}
-          title={showLabels ? "Hide Labels" : "Show Labels"}
-        >
-          {showLabels ? (
-            <Eye className="w-5 h-5 text-gray-700 font-medium" />
-          ) : (
-            <EyeOff className="w-5 h-5 text-red-400" />
-          )}
-        </button>
-
-        {/* Menu */}
-        {isOpen && (
-          <div className="absolute bottom-[calc(100%+12px)] left-0 md:static bg-white backdrop-blur-xl border border-[#D6D0C4] rounded-2xl shadow-2xl overflow-y-auto max-h-[60vh] flex flex-col md:flex-row flex-wrap w-[calc(100vw-24px)] md:w-auto md:max-w-[800px] p-2 gap-1.5 animate-in slide-in-from-bottom-4 md:slide-in-from-left-4 fade-in duration-300">
-            {PROCESSION_GROUPS.map((route, i) => (
-              <button
-                key={i}
-                className={`px-4 py-3 md:py-2 text-xs md:text-xs font-bold rounded-lg transition-all border text-left md:text-center ${selectedProcessionRoute === route.id
-                    ? "bg-orange-500/20 text-[#B8621B] border-orange-500/50"
-                    : "text-gray-700 font-medium bg-white hover:bg-orange-500/10 hover:text-orange-300 border-gray-300"
-                  }`}
-                onClick={() => {
-                  const newRoute = route.id === selectedProcessionRoute ? null : route.id;
-                  setSelectedProcessionRoute(newRoute);
-                  if (newRoute) {
-                    setLayerVisible("procession-route", true);
-                    setLayerVisible("custom-map", true);
-                    selectFeature({ layerId: 'procession-route', properties: { name: route.label, akhadaId: route.id, sequence: route.id.split('-').length }, geometry: null });
-                  } else {
-                    setLayerVisible("procession-route", false);
-                    setLayerVisible("custom-map", false);
-                    selectFeature(null);
-                  }
-                  // Optionally close on select for mobile:
-                  if (window.innerWidth < 768) setIsOpen(false);
-                }}
-              >
-                {route.label}
-              </button>
-            ))}
-          </div>
-        )}
+          {/* Labels Toggle Button */}
+          <button
+            onClick={toggleLabels}
+            className={`bg-white backdrop-blur-xl border border-[#D6D0C4] rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.12)] w-12 h-12 flex items-center justify-center transition-all duration-300 hover:border-gray-400 hover:shadow-md hover:bg-gray-100 shrink-0 ${!showLabels ? "border-red-500/50" : ""}`}
+            title={showLabels ? "Hide Labels" : "Show Labels"}
+          >
+            {showLabels ? (
+              <Eye className="w-5 h-5 text-gray-700 font-medium" />
+            ) : (
+              <EyeOff className="w-5 h-5 text-red-400" />
+            )}
+          </button>
+        </div>
       </div>
-    </div>
+
+      {/* Inline Modal Overlay */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 z-[100] pointer-events-auto flex flex-col items-center justify-center animate-in fade-in duration-300"
+          style={{
+            paddingTop: '80px', // Clear top bar
+            paddingLeft: 'calc(var(--left-sidebar-width, 0px) + 24px)', // Clear left sidebar
+            paddingRight: 'calc(var(--right-sidebar-width, 0px) + 24px)', // Clear right sidebar
+            paddingBottom: '90px' // Clear bottom controls completely
+          }}
+        >
+          {/* Dark backdrop */}
+          <div className="absolute inset-0 bg-black/70 backdrop-blur-md -z-10 transition-opacity" onClick={() => setIsOpen(false)} />
+
+          {/* Modal Container - Maximize space */}
+          <div className="relative w-full h-full bg-white rounded-3xl shadow-2xl flex flex-col overflow-hidden border border-white/20 animate-in zoom-in-95 duration-300">
+
+            {/* Header */}
+            <div className="flex items-center justify-between px-4 py-3 border-b border-gray-200 bg-gray-50/90 backdrop-blur-sm z-20 shadow-sm flex-shrink-0">
+              <h3 className="font-extrabold text-gray-900 uppercase tracking-wider text-sm flex items-center gap-2">
+                <div className="bg-orange-100 p-1.5 rounded-lg shadow-inner">
+                  <Route className="w-4 h-4 text-orange-600" />
+                </div>
+                {t("procession.route")}
+              </h3>
+              <button onClick={() => setIsOpen(false)} className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-200 transition-colors bg-white border border-gray-300 shadow-sm group">
+                <X className="w-4 h-4 text-gray-600 group-hover:scale-110 transition-transform" />
+              </button>
+            </div>
+
+            {/* Big SVG Map Area - Maximized & Zoomed */}
+            <div className="flex-1 w-full bg-[#f8f9fa] relative overflow-hidden group">
+              <div className="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1.5 rounded-lg shadow-lg text-[10px] font-black text-gray-800 border border-gray-200 z-10 uppercase tracking-wider flex items-center gap-2">
+                <Maximize2 className="w-3 h-3 text-orange-500" />
+                {selectedProcessionRoute ? PROCESSION_GROUPS.find(r => r.id === selectedProcessionRoute)?.label : "R3 Core-1 Plan"}
+              </div>
+
+              <div className="w-full h-full flex items-center justify-center overflow-auto">
+                <img
+                  src={imgSrc}
+                  alt="Procession Map"
+                  onError={handleImgError}
+                  className="w-full h-full object-cover filter drop-shadow-2xl origin-center"
+                  style={{ transform: 'scale(1.2)' }}
+                />
+              </div>
+            </div>
+
+            {/* Bottom Buttons Row - Small & Compact */}
+            <div className="w-full bg-white p-3 sm:p-4 overflow-x-auto flex-shrink-0 border-t border-gray-200 z-20 shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
+              <div className="flex flex-row gap-2 min-w-max">
+                {PROCESSION_GROUPS.map((route, i) => (
+                  <button
+                    key={i}
+                    className={`px-3 py-2 text-xs font-bold rounded-xl transition-all border text-left flex items-center gap-2 ${selectedProcessionRoute === route.id
+                        ? "bg-orange-50/80 text-orange-700 border-orange-500 shadow-sm ring-2 ring-orange-500/10 transform -translate-y-0.5"
+                        : "text-gray-700 bg-white hover:bg-gray-50 hover:text-orange-600 border-gray-200 shadow-sm hover:border-orange-300 hover:shadow-md"
+                      }`}
+                    onClick={() => {
+                      const newRoute = route.id === selectedProcessionRoute ? null : route.id;
+                      setSelectedProcessionRoute(newRoute);
+                      if (newRoute) {
+                        setLayerVisible("procession-route", true);
+                        setLayerVisible("custom-map", true);
+                        selectFeature({ layerId: 'procession-route', properties: { name: route.label, akhadaId: route.id, sequence: route.id.split('-').length }, geometry: null });
+                      } else {
+                        setLayerVisible("procession-route", false);
+                        setLayerVisible("custom-map", false);
+                        selectFeature(null);
+                      }
+                    }}
+                  >
+                    <div className={`w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-black shadow-inner flex-shrink-0 ${selectedProcessionRoute === route.id ? "bg-gradient-to-br from-orange-500 to-amber-600 text-white" : "bg-gray-100 border border-gray-200 text-gray-500"}`}>
+                      {i + 1}
+                    </div>
+                    <span className="leading-tight truncate max-w-[150px]">{route.label}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+
+          </div>
+        </div>
+      )}
+    </>
   );
 }

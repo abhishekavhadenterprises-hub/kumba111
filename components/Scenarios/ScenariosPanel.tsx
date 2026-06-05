@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import {
   Flame, AlertTriangle, Route, Star, Ban, Shuffle, Activity, UserSearch,
   ChevronUp, ChevronDown, Sun, Moon, UsersRound, Zap, Truck, Car, Navigation,
@@ -8,11 +9,11 @@ import {
 } from "lucide-react";
 import { useDashboard } from "@/lib/context/dashboard-context";
 import { useLanguage } from "@/lib/context/language-context";
-export const SCENARIOS = [
+export const getScenarios = (t: any) => [
   {
     id: "newroute",
-    title: "Green Corridor",
-    desc: "Emergency VIP and response routes.",
+    title: t("scenario.green_corridor"),
+    desc: t("scenario.green_corridor.desc"),
     icon: Truck,
     color: "text-green-500 group-hover:text-green-400",
     borderActive: "border-green-500/50 shadow-[0_0_20px_rgba(34,197,94,0.2)] bg-gradient-to-br from-green-500/10 to-transparent",
@@ -20,8 +21,8 @@ export const SCENARIOS = [
   },
   {
     id: "Trimbak Boundary.kmz",
-    title: "Trimbak Boundary",
-    desc: "Trimbak City Boundary",
+    title: t("scenario.trimbak_boundary"),
+    desc: t("scenario.trimbak_boundary.desc"),
     icon: MapPin,
     color: "text-blue-500 group-hover:text-blue-400",
     borderActive: "border-blue-500/50 shadow-[0_0_20px_rgba(59,130,246,0.2)] bg-gradient-to-br from-blue-500/10 to-transparent",
@@ -29,8 +30,8 @@ export const SCENARIOS = [
   },
   {
     id: "Green Scheme - For Non Parvani Days",
-    title: "Green Scheme",
-    desc: "For Non Parvani Days",
+    title: t("scenario.green_scheme"),
+    desc: t("scenario.green_scheme.desc"),
     icon: Route,
     color: "text-emerald-500 group-hover:text-emerald-400",
     borderActive: "border-emerald-500/50 shadow-[0_0_20px_rgba(16,185,129,0.2)] bg-gradient-to-br from-emerald-500/10 to-transparent",
@@ -38,8 +39,8 @@ export const SCENARIOS = [
   },
   {
     id: "Orange Scheme - Parvani Days",
-    title: "Orange Scheme",
-    desc: "For Parvani Days",
+    title: t("scenario.orange_scheme"),
+    desc: t("scenario.orange_scheme.desc"),
     icon: Route,
     color: "text-orange-500 group-hover:text-orange-400",
     borderActive: "border-orange-500/50 shadow-[0_0_20px_rgba(249,115,22,0.2)] bg-gradient-to-br from-orange-500/10 to-transparent",
@@ -47,8 +48,8 @@ export const SCENARIOS = [
   },
   {
     id: "Red Scheme - Emergency Days",
-    title: "Red Scheme",
-    desc: "For Emergency Situations",
+    title: t("scenario.red_scheme"),
+    desc: t("scenario.red_scheme.desc"),
     icon: Route,
     color: "text-red-500 group-hover:text-red-400",
     borderActive: "border-red-500/50 shadow-[0_0_20px_rgba(239,68,68,0.2)] bg-gradient-to-br from-red-500/10 to-transparent",
@@ -56,8 +57,8 @@ export const SCENARIOS = [
   },
   {
     id: "Trimbak Parking Location",
-    title: "Trimbak Parking Location",
-    desc: "Parking Zones",
+    title: t("scenario.trimbak_parking"),
+    desc: t("scenario.trimbak_parking.desc"),
     icon: Car,
     color: "text-sky-500 group-hover:text-sky-400",
     borderActive: "border-sky-500/50 shadow-[0_0_20px_rgba(14,165,233,0.2)] bg-gradient-to-br from-sky-500/10 to-transparent",
@@ -65,8 +66,8 @@ export const SCENARIOS = [
   },
   {
     id: "Pedestrian Routes.kmz",
-    title: "Pedestrian Routes",
-    desc: "Walkways & Pedestrian Paths",
+    title: t("scenario.pedestrian_routes"),
+    desc: t("scenario.pedestrian_routes.desc"),
     icon: UsersRound,
     color: "text-purple-500 group-hover:text-purple-400",
     borderActive: "border-purple-500/50 shadow-[0_0_20px_rgba(168,85,247,0.2)] bg-gradient-to-br from-purple-500/10 to-transparent",
@@ -74,8 +75,8 @@ export const SCENARIOS = [
   },
   {
     id: "tunnel location",
-    title: "Tunnel Location",
-    desc: "Tunnel points & pockets",
+    title: t("scenario.tunnel_location"),
+    desc: t("scenario.tunnel_location.desc"),
     icon: MapPin,
     color: "text-rose-500 group-hover:text-rose-400",
     borderActive: "border-rose-500/50 shadow-[0_0_20px_rgba(244,63,94,0.2)] bg-gradient-to-br from-rose-500/10 to-transparent",
@@ -83,8 +84,8 @@ export const SCENARIOS = [
   },
   {
     id: "newghat",
-    title: "New Ghat Trimbak",
-    desc: "Ghat layout and details",
+    title: t("scenario.new_ghat"),
+    desc: t("scenario.new_ghat.desc"),
     icon: MapPin,
     color: "text-amber-500 group-hover:text-amber-400",
     borderActive: "border-amber-500/50 shadow-[0_0_20px_rgba(245,158,11,0.2)] bg-gradient-to-br from-amber-500/10 to-transparent",
@@ -92,8 +93,8 @@ export const SCENARIOS = [
   },
   {
     id: "dproads",
-    title: "DP Roads",
-    desc: "Development Plan roads",
+    title: t("scenario.dp_roads"),
+    desc: t("scenario.dp_roads.desc"),
     icon: MapPin,
     color: "text-indigo-500 group-hover:text-indigo-400",
     borderActive: "border-indigo-500/50 shadow-[0_0_20px_rgba(99,102,241,0.2)] bg-gradient-to-br from-indigo-500/10 to-transparent",
@@ -121,9 +122,17 @@ export default function ScenariosPanel() {
   const isOpen = activeOverlay === "scenarios";
   const setIsOpen = (open: boolean) => setActiveOverlay(open ? "scenarios" : null);
   const [hierarchy, setHierarchy] = useState<any[]>([]);
-  const [showMultiTabAlert, setShowMultiTabAlert] = useState(false);
+  const activeScenarioCount = getScenarios(t).filter(s => {
+    if (s.type === "kml") {
+      return activeKmlFolders.some(id => typeof id === 'string' && id.includes(s.id));
+    }
+    return activeScenarios.includes(s.id);
+  }).length;
+  const isMultiTabActive = activeScenarioCount >= 2;
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     Promise.all([
       fetch(`/data/trimbak-hierarchy.json?t=${Date.now()}`).then((res) => res.ok ? res.json() : []),
       fetch(`/data/tunnel-hierarchy.json?t=${Date.now()}`).then((res) => res.ok ? res.json() : []),
@@ -138,7 +147,7 @@ export default function ScenariosPanel() {
 
   const handleScenarioClick = (scenario: any) => {
     // Check how many scenarios are currently active
-    const currentlyActiveCount = SCENARIOS.filter(s => {
+    const currentlyActiveCount = getScenarios(t).filter(s => {
       if (s.type === "kml") {
         return activeKmlFolders.some(id => typeof id === 'string' && id.includes(s.id));
       }
@@ -151,8 +160,6 @@ export default function ScenariosPanel() {
 
     // If turning ON a scenario when another is already ON
     if (!isCurrentlyActive && currentlyActiveCount >= 1) {
-      setShowMultiTabAlert(true);
-      setTimeout(() => setShowMultiTabAlert(false), 4000);
 
       // Stop audio
       if (typeof window !== "undefined" && (window as any).activeScenarioAudio) {
@@ -269,27 +276,30 @@ export default function ScenariosPanel() {
   };
 
   return (
-    <div className="pb-4">
+    <div className="relative pb-4">
       {/* Multi-tab Notification */}
-      <div
-        className={`fixed top-24 left-1/2 -translate-x-1/2 z-[100] transition-all duration-700 ease-out ${showMultiTabAlert
-            ? "opacity-100 translate-y-0 scale-100"
-            : "opacity-0 -translate-y-8 scale-95 pointer-events-none"
-          }`}
-      >
-        <div className="bg-black/40 backdrop-blur-xl border border-white/20 shadow-[0_16px_40px_rgba(0,0,0,0.5),0_0_20px_rgba(212,175,55,0.15)] rounded-2xl p-3.5 flex items-center gap-4 overflow-hidden relative group">
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
+      {mounted && createPortal(
+        <div
+          className={`fixed top-32 left-8 md:left-[360px] z-[5000] max-w-sm transition-all duration-700 ease-out ${isMultiTabActive
+              ? "opacity-100 translate-x-0 scale-100"
+              : "opacity-0 -translate-x-8 scale-95 pointer-events-none"
+            }`}
+        >
+          <div className="bg-black/60 backdrop-blur-2xl border border-white/20 shadow-[0_16px_40px_rgba(0,0,0,0.5),0_0_20px_rgba(212,175,55,0.15)] rounded-2xl p-3.5 flex items-center gap-4 overflow-hidden relative group">
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
 
-          <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-amber-500/20 to-orange-500/10 border border-amber-500/30 shadow-[0_0_15px_rgba(245,158,11,0.2)]">
-            <Activity className="w-5 h-5 text-amber-400" />
-          </div>
+            <div className="relative flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-amber-500/20 to-orange-500/10 border border-amber-500/30 shadow-[0_0_15px_rgba(245,158,11,0.2)]">
+              <Activity className="w-5 h-5 text-amber-400" />
+            </div>
 
-          <div className="pr-4">
-            <h3 className="text-white/95 font-semibold text-[14px] tracking-wide mb-0.5 drop-shadow-sm">Multi-tab Active</h3>
-            <p className="text-white/60 text-[12px] font-medium tracking-wide">Audio simulation paused for clarity</p>
+            <div className="pr-4">
+              <h3 className="text-white/95 font-semibold text-[14px] tracking-wide mb-0.5 drop-shadow-sm">{t("multi_tab.active")}</h3>
+              <p className="text-white/60 text-[12px] font-medium tracking-wide">{t("multi_tab.audio_paused")}</p>
+            </div>
           </div>
-        </div>
-      </div>
+        </div>,
+        document.body
+      )}
 
       {/* Header */}
       <div className="flex items-center justify-between mb-4 px-2 pb-2 border-b border-white/10">
@@ -303,7 +313,7 @@ export default function ScenariosPanel() {
       </div>
 
       <div className="flex flex-col gap-1">
-        {SCENARIOS.map((scenario) => {
+        {getScenarios(t).map((scenario) => {
           const isActive = scenario.type === "kml"
             ? activeKmlFolders.some(id => typeof id === 'string' && id.includes(scenario.id))
             : activeScenarios.includes(scenario.id);

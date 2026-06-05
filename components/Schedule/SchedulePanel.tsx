@@ -3,8 +3,10 @@
 import { useState } from "react";
 import { ChevronRight, ChevronDown, MapPin, Clock } from "lucide-react";
 import { AKHADA_TIMETABLE_2026 } from "@/lib/data/akhada-timetable";
+import { useLanguage } from "@/lib/context/language-context";
 
 export default function SchedulePanel() {
+  const { t } = useLanguage();
   const [expandedGroups, setExpandedGroups] = useState<string[]>([]);
   const [expandedAkhada, setExpandedAkhada] = useState<number | null>(null);
 

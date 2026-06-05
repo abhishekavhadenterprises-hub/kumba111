@@ -2,27 +2,29 @@
 
 import { useDashboard } from "@/lib/context/dashboard-context";
 import { SCHEME_COLORS } from "@/lib/data/trimbakeshwar-base";
+import { useLanguage } from "@/lib/context/language-context";
 
 export default function MapLegend() {
   const { visibleLayers, activeScheme } = useDashboard();
+  const { t } = useLanguage();
 
   const items: { color: string; label: string; type: "line" | "fill" | "dot" }[] = [];
 
   // Movement scheme items
   if (visibleLayers.has("movement-red")) {
-    items.push({ color: SCHEME_COLORS.red.fill, label: "Red Zone — Lockdown", type: "fill" });
+    items.push({ color: SCHEME_COLORS.red.fill, label: t("legend.red_zone") || "Red Zone — Lockdown", type: "fill" });
   }
   if (visibleLayers.has("movement-orange")) {
-    items.push({ color: SCHEME_COLORS.orange.fill, label: "Orange Zone — Restricted", type: "fill" });
+    items.push({ color: SCHEME_COLORS.orange.fill, label: t("legend.orange_zone") || "Orange Zone — Restricted", type: "fill" });
   }
   if (visibleLayers.has("movement-green")) {
-    items.push({ color: SCHEME_COLORS.green.fill, label: "Green Zone — Normal", type: "fill" });
+    items.push({ color: SCHEME_COLORS.green.fill, label: t("legend.green_zone") || "Green Zone — Normal", type: "fill" });
   }
   if (visibleLayers.has("akhada-routes")) {
-    items.push({ color: "#f97316", label: "Akhada Routes", type: "line" });
+    items.push({ color: "#f97316", label: t("akhada.route") || "Akhada Routes", type: "line" });
   }
   if (visibleLayers.has("parking-zones")) {
-    items.push({ color: "#818cf8", label: "Parking Zones", type: "fill" });
+    items.push({ color: "#818cf8", label: t("parking.zones") || "Parking Zones", type: "fill" });
   }
   if (visibleLayers.has("police-deployments")) {
     items.push({ color: "#3b82f6", label: "Police Posts", type: "dot" });

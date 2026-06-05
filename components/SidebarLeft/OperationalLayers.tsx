@@ -64,25 +64,25 @@ export default function OperationalLayers() {
     return null;
   };
 
-  const LAYER_GROUPS: { title: string; layers: LayerItem[] }[] = [
+  const getLayerGroups = (t: any): { title: string; layers: LayerItem[] }[] => [
     {
       title: t("operational.layers"),
       layers: [
-        { id: "helipads", name: "Helipad", icon: Plane, color: "text-emerald-400", glow: "shadow-[0_0_10px_rgba(52,211,153,0.5)]", description: "Helipads for emergency & VIPs" },
-        { id: "temp-police-sheds", name: "Temporary police chauki", icon: Shield, color: "text-sky-400", glow: "shadow-[0_0_10px_rgba(56,189,248,0.5)]", description: "Temporary shelters for police" },
-        { id: "permanent-police-chauki", name: "Permanent police chauki", icon: ShieldAlert, color: "text-indigo-500", glow: "shadow-[0_0_10px_rgba(99,102,241,0.5)]", description: "Permanent police chaukis" },
-        { id: "police-stations", name: "Police stations", icon: ShieldAlert, color: "text-blue-500", glow: "shadow-[0_0_10px_rgba(59,130,246,0.5)]", description: "Main police stations" },
-        { id: "police-quarters", name: "Police accommodation", icon: Home, color: "text-blue-400", glow: "shadow-[0_0_10px_rgba(96,165,250,0.5)]", description: "Accommodation for police personnel" },
-        { id: "permanent-watch-tower", name: "Permanent watch tower", icon: Eye, color: "text-fuchsia-500", glow: "shadow-[0_0_10px_rgba(217,70,239,0.5)]", description: "Permanent watch towers" },
-        { id: "temporary-watch-tower", name: "Temporary watch tower", icon: Eye, color: "text-violet-500", glow: "shadow-[0_0_10px_rgba(139,92,246,0.5)]", description: "Temporary watch towers" },
-        { id: "inner-parking", kmlFolderId: "Inner Parking_5", name: "Inner parking", icon: CircleParking, color: "text-orange-400", glow: "shadow-[0_0_10px_rgba(251,146,60,0.5)]", description: "Inner ring parking zones" },
-        { id: "outer-parking", kmlFolderId: "Outer Parking_3", name: "Outer parking", icon: CircleParking, color: "text-yellow-500", glow: "shadow-[0_0_10px_rgba(234,179,8,0.5)]", description: "Outer ring parking zones" },
-        { id: "holding-area", kmlFolderId: "Holding Area_13", name: "Holding Area", icon: Users, color: "text-pink-400", glow: "shadow-[0_0_10px_rgba(244,114,182,0.5)]", description: "Crowd holding areas" },
-        { id: "main-temple", name: "Main trimbakeshwar temple", icon: Flame, color: "text-orange-600", glow: "shadow-[0_0_10px_rgba(234,88,12,0.5)]", description: "The Jyotirlinga temple" },
-        { id: "all-akhada", name: "All Akhada", icon: Castle, color: "text-red-500", glow: "shadow-[0_0_10px_rgba(239,68,68,0.5)]", description: "Locations of all Akhadas" },
-        { id: "other-temples", name: "All other temples", icon: Flame, color: "text-orange-400", glow: "shadow-[0_0_10px_rgba(251,146,60,0.5)]", description: "Other important temples & ashrams" },
-        { id: "railway-stations", name: "Railway stations nearby", icon: Train, color: "text-gray-500", glow: "shadow-[0_0_10px_rgba(107,114,128,0.5)]", description: "Nearest railway stations" },
-        { id: "airport", name: "Airport", icon: Plane, color: "text-sky-600", glow: "shadow-[0_0_10px_rgba(2,132,199,0.5)]", description: "Nearest airport (Ozar)" },
+        { id: "helipads", name: t("layer.helipads"), icon: Plane, color: "text-emerald-400", glow: "shadow-[0_0_10px_rgba(52,211,153,0.5)]", description: t("layer.helipads.desc") },
+        { id: "temp-police-sheds", name: t("layer.temp_police"), icon: Shield, color: "text-sky-400", glow: "shadow-[0_0_10px_rgba(56,189,248,0.5)]", description: t("layer.temp_police.desc") },
+        { id: "permanent-police-chauki", name: t("layer.perm_police"), icon: ShieldAlert, color: "text-indigo-500", glow: "shadow-[0_0_10px_rgba(99,102,241,0.5)]", description: t("layer.perm_police.desc") },
+        { id: "police-stations", name: t("layer.police_stations"), icon: ShieldAlert, color: "text-blue-500", glow: "shadow-[0_0_10px_rgba(59,130,246,0.5)]", description: t("layer.police_stations.desc") },
+        { id: "police-quarters", name: t("layer.police_quarters"), icon: Home, color: "text-blue-400", glow: "shadow-[0_0_10px_rgba(96,165,250,0.5)]", description: t("layer.police_quarters.desc") },
+        { id: "permanent-watch-tower", name: t("layer.perm_watch"), icon: Eye, color: "text-fuchsia-500", glow: "shadow-[0_0_10px_rgba(217,70,239,0.5)]", description: t("layer.perm_watch.desc") },
+        { id: "temporary-watch-tower", name: t("layer.temp_watch"), icon: Eye, color: "text-violet-500", glow: "shadow-[0_0_10px_rgba(139,92,246,0.5)]", description: t("layer.temp_watch.desc") },
+        { id: "inner-parking", kmlFolderId: "Inner Parking_5", name: t("layer.inner_parking"), icon: CircleParking, color: "text-orange-400", glow: "shadow-[0_0_10px_rgba(251,146,60,0.5)]", description: t("layer.inner_parking.desc") },
+        { id: "outer-parking", kmlFolderId: "Outer Parking_3", name: t("layer.outer_parking"), icon: CircleParking, color: "text-yellow-500", glow: "shadow-[0_0_10px_rgba(234,179,8,0.5)]", description: t("layer.outer_parking.desc") },
+        { id: "holding-area", kmlFolderId: "Holding Area_13", name: t("layer.holding_area"), icon: Users, color: "text-pink-400", glow: "shadow-[0_0_10px_rgba(244,114,182,0.5)]", description: t("layer.holding_area.desc") },
+        { id: "main-temple", name: t("layer.main_temple"), icon: Flame, color: "text-orange-600", glow: "shadow-[0_0_10px_rgba(234,88,12,0.5)]", description: t("layer.main_temple.desc") },
+        { id: "all-akhada", name: t("layer.all_akhada"), icon: Castle, color: "text-red-500", glow: "shadow-[0_0_10px_rgba(239,68,68,0.5)]", description: t("layer.all_akhada.desc") },
+        { id: "other-temples", name: t("layer.other_temples"), icon: Flame, color: "text-orange-400", glow: "shadow-[0_0_10px_rgba(251,146,60,0.5)]", description: t("layer.other_temples.desc") },
+        { id: "railway-stations", name: t("layer.railway"), icon: Train, color: "text-cyan-500", glow: "shadow-[0_0_10px_rgba(6,182,212,0.5)]", description: t("layer.railway.desc") },
+        { id: "airport", name: t("layer.airport"), icon: Plane, color: "text-sky-600", glow: "shadow-[0_0_10px_rgba(2,132,199,0.5)]", description: t("layer.airport.desc") },
       ],
     },
   ];
@@ -95,7 +95,7 @@ export default function OperationalLayers() {
       </div>
 
       {/* Layer groups */}
-      {LAYER_GROUPS.map((group) => (
+      {getLayerGroups(t).map((group) => (
         <div key={group.title} className="mb-6">
           <div className="text-[12px] text-gray-400 font-medium tracking-tight mb-2 px-3 uppercase tracking-wider">{group.title}</div>
           <div className="flex flex-col gap-1.5 px-2">

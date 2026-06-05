@@ -130,7 +130,7 @@ export default function TopBar() {
   };
 
   return (
-    <div className="w-full h-14 bg-transparent border-b border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.1)] flex items-center justify-between px-3 md:px-5 z-50 gap-2 md:gap-0">
+    <div className="relative w-full h-14 bg-transparent border-b border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.1)] flex items-center justify-between px-3 md:px-5 z-[2000] gap-2 md:gap-0">
       {/* Left: Branding */}
       <div className="flex items-center gap-2 md:gap-3 flex-shrink-0">
         <div className="w-9 h-9 bg-gradient-to-br from-orange-500/20 to-red-500/20 text-[#D4AF37] rounded-lg flex items-center justify-center border border-white/10 shadow-[0_0_12px_rgba(249,115,22,0.1)]">

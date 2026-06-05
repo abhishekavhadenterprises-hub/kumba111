@@ -100,10 +100,10 @@ function DashboardContent() {
       </div>
 
       <div className="relative z-40 w-full pointer-events-none px-4 pt-4 flex flex-col gap-0 items-center justify-center">
-        <div className="pointer-events-auto w-full rounded-t-3xl overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.8)] border border-white/20 bg-gradient-to-b from-white/[0.08] to-transparent backdrop-blur-[40px] bg-[#050505]/80 relative before:absolute before:inset-0 before:rounded-t-3xl before:border before:border-white/5 before:pointer-events-none">
+        <div className="pointer-events-auto w-full z-50 rounded-t-3xl overflow-visible shadow-[0_8px_32px_rgba(0,0,0,0.8)] border border-white/20 bg-gradient-to-b from-white/[0.08] to-transparent backdrop-blur-[40px] bg-[#050505]/80 relative before:absolute before:inset-0 before:rounded-t-3xl before:border before:border-white/5 before:pointer-events-none">
           <TopBar />
         </div>
-        <div className="pointer-events-auto w-full rounded-b-3xl overflow-hidden shadow-[0_4px_16px_rgba(0,0,0,0.8)] border border-white/20 border-t-0 backdrop-blur-[40px] bg-[#050505]/80 relative before:absolute before:inset-0 before:rounded-b-3xl before:border before:border-white/5 before:pointer-events-none">
+        <div className="pointer-events-auto w-full z-40 rounded-b-3xl overflow-visible shadow-[0_4px_16px_rgba(0,0,0,0.8)] border border-white/20 border-t-0 backdrop-blur-[40px] bg-[#050505]/80 relative before:absolute before:inset-0 before:rounded-b-3xl before:border before:border-white/5 before:pointer-events-none">
           <StatusBanner />
         </div>
       </div>

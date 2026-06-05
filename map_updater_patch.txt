@@ -1,0 +1,195 @@
+function MapUpdater() {
+  const { searchLocation, activeScenarios, selectedProcessionRoute, selectedFeature } = useDashboard();
+  const map = useMap();
+  const [showRecenter, setShowRecenter] = useState(false);
+  const [isVehicleActive, setIsVehicleActive] = useState(false);
+  const isTrackingRef = useRef(true);
+
+  // Sync ref with state
+  useEffect(() => {
+    isTrackingRef.current = !showRecenter;
+  }, [showRecenter]);
+
+  // Handle selected feature zoom
+  useEffect(() => {
+    if (selectedFeature && selectedFeature.geometry && map) {
+      try {
+        const layer = L.geoJSON(selectedFeature.geometry);
+        const bounds = layer.getBounds();
+        if (bounds.isValid()) {
+          map.flyToBounds(bounds, { duration: 1.5, padding: [50, 50], maxZoom: 15 });
+        }
+      } catch (e) {
+        console.error("Failed to zoom to selected feature", e);
+      }
+    }
+  }, [selectedFeature, map]);
+
+  // Handle map resize
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      try { map?.invalidateSize(); } catch { }
+    }, 200);
+    const onResize = () => { try { map.invalidateSize(); } catch { } };
+    window.addEventListener("resize", onResize);
+    return () => { clearTimeout(timeout); window.removeEventListener("resize", onResize); };
+  }, [map]);
+
+  // Fly to scenario bounds logic
+  useEffect(() => {
+    // reset tracking state when scenario changes
+    setShowRecenter(false);
+    setIsVehicleActive(false);
+    isTrackingRef.current = true;
+
+    if (searchLocation && map) {
+      try {
+        map.flyTo([searchLocation.lat, searchLocation.lon], 17, { duration: 1.5, easeLinearity: 0.25 });
+      } catch {
+        try { map.setView([searchLocation.lat, searchLocation.lon], 17); } catch { }
+      }
+    } else if (activeScenarios.includes("newroute") && map) {
+      // Green Corridor bounding box
+      const bounds = [
+        [19.8900, 73.5200], // South-West
+        [20.1200, 73.9300]  // North-East
+      ];
+      try {
+        map.flyToBounds(bounds, { duration: 1.5, padding: [20, 20] });
+      } catch { }
+    } else if (activeScenarios.includes("connecting-roads") && map) {
+      // Bounds for connecting roads (Jawahar to Dhule, Ghoti to Peth)
+      const bounds = [
+        [19.7000, 73.2000],
+        [20.2500, 74.0000]
+      ];
+      try { map.flyToBounds(bounds, { duration: 1.5, padding: [30, 30] }); } catch { }
+    } else if (activeScenarios.includes("regional-roads") && map) {
+      // Bounds matching the reference image (Mumbai/Jawahar to Dhule/Peth)
+      const bounds = [
+        [19.5000, 73.1000],
+        [20.3000, 74.2000]
+      ];
+      try { map.flyToBounds(bounds, { duration: 1.5, padding: [30, 30] }); } catch { }
+    } else if (activeScenarios.includes("parking-areas") && map) {
+      // Bounds to cover Nashik to Trimbakeshwar (for parking areas)
+      const bounds = [
+        [19.8000, 73.4000], // South-West (below Trimbakeshwar)
+        [20.1500, 74.0000]  // North-East (above Nashik)
+      ];
+      try { map.flyToBounds(bounds, { duration: 1.5, padding: [30, 30] }); } catch { }
+    } else if (activeScenarios.includes("movement-plan") && map) {
+      // Bounds for movement plan (Nashik to Dhule/Nandurbar)
+      const bounds = [
+        [19.9000, 73.5000], // South-West (Trimbakeshwar)
+        [21.4000, 74.8000]  // North-East (Nandurbar/Dhule)
+      ];
+      try { map.flyToBounds(bounds, { duration: 1.5, padding: [30, 30] }); } catch { }
+    } else if (activeScenarios.includes("movement-plan-2") && map) {
+      // Bounds for movement plan 2 (Mumbai/Pune to Dhule)
+      const bounds = [
+        [19.6000, 73.2000], // South-West
+        [21.4000, 74.8000]  // North-East
+      ];
+      try { map.flyToBounds(bounds, { duration: 1.5, padding: [30, 30] }); } catch { }
+    } else if (activeScenarios.includes("movement-plan-orange") && map) {
+      // Bounds for movement plan orange (Mumbai/Pune to Dhule)
+      const bounds = [
+        [19.6000, 73.2000], // South-West
+        [21.4000, 74.8000]  // North-East
+      ];
+      try { map.flyToBounds(bounds, { duration: 1.5, padding: [30, 30] }); } catch { }
+    } else if (activeScenarios.includes("movement-plan-orange-1") && map) {
+      const bounds = [ [19.6000, 73.2000], [21.4000, 74.8000] ];
+      try { map.flyToBounds(bounds, { duration: 1.5, padding: [30, 30] }); } catch { }
+    } else if (activeScenarios.includes("movement-plan-orange-2") && map) {
+      // Bounds for movement plan orange 2 (Mumbai/Pune to Dhule)
+      const bounds = [
+        [19.6000, 73.2000], // South-West
+        [21.4000, 74.8000]  // North-East
+      ];
+      try { map.flyToBounds(bounds, { duration: 1.5, padding: [30, 30] }); } catch { }
+    } else if (activeScenarios.includes("movement-plan-green") && map) {
+      // Bounds for movement plan green (Mumbai/Pune to Dhule)
+      const bounds = [
+        [19.5000, 73.1000], // South-West
+        [21.4000, 74.8000]  // North-East
+      ];
+      try { map.flyToBounds(bounds, { duration: 1.5, padding: [30, 30] }); } catch { }
+    } else if (activeScenarios.includes("walkway") && map) {
+      // Bounds for walkway (Trimbakeshwar local)
+      const bounds = [
+        [19.9200, 73.5000], // South-West
+        [19.9650, 73.5850]  // North-East
+      ];
+      try { map.flyToBounds(bounds, { duration: 1.5, padding: [30, 30] }); } catch { }
+    } else if (activeScenarios.includes("parking-for-trimbak") && map) {
+      // Bounds for parking for trimbak (Nashik to Trimbak to Dharampur)
+      const bounds = [
+        [19.8000, 73.3500], // South-West
+        [20.0500, 73.8000]  // North-East
+      ];
+      try { map.flyToBounds(bounds, { duration: 1.5, padding: [30, 30] }); } catch { }
+    }
+  }, [searchLocation, activeScenarios, map]);
+
+  useEffect(() => {
+    let vehicleTimeout;
+
+    const handleVehiclePosition = (e) => {
+      // Mark vehicle as active
+      setIsVehicleActive(true);
+      
+      // Clear timeout and set it again to detect when vehicle stops
+      clearTimeout(vehicleTimeout);
+      vehicleTimeout = setTimeout(() => {
+        setIsVehicleActive(false);
+        setShowRecenter(false);
+      }, 1000);
+
+      if (!isTrackingRef.current || !map) return;
+      const { lat, lng } = e.detail;
+      // Use animate: false without throttling to sync perfectly with the cars 60fps requestAnimationFrame
+      map.setView([lat, lng], map.getZoom(), { animate: false });
+    };
+
+    // If the user manually interacts with the map (drag/zoom), pause tracking to prevent fighting
+    const pauseTracking = () => {
+      if (isTrackingRef.current) {
+        setShowRecenter(true);
+      }
+    };
+
+    map.on("dragstart", pauseTracking);
+    map.on("zoomstart", pauseTracking);
+
+    window.addEventListener("vehicle-position", handleVehiclePosition);
+    return () => {
+      clearTimeout(vehicleTimeout);
+      map.off("dragstart", pauseTracking);
+      map.off("zoomstart", pauseTracking);
+      window.removeEventListener("vehicle-position", handleVehiclePosition);
+    };
+  }, [map]);
+
+  if (showRecenter && isVehicleActive) {
+    return (
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-[1000] pointer-events-auto">
+        <button
+          onClick={() => setShowRecenter(false)}
+          className="flex items-center gap-2 bg-white hover:bg-gray-50 text-blue-600 px-5 py-2.5 rounded-full shadow-[0_4px_20px_rgba(0,0,0,0.15)] border border-gray-200 font-bold transition-all animate-in fade-in slide-in-from-bottom-4 duration-300 group"
+        >
+          <svg className="w-5 h-5 text-blue-500 group-hover:scale-110 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <circle cx="12" cy="12" r="7"></circle>
+          </svg>
+          Re-center
+        </button>
+      </div>
+    );
+  }
+
+  return null;
+}
+

@@ -3,9 +3,12 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Layers } from "lucide-react";
 import { useDashboard } from "@/lib/context/dashboard-context";
-import { SCENARIOS } from "../Scenarios/ScenariosPanel";
+import { getScenarios } from "../Scenarios/ScenariosPanel";
+import { useLanguage } from "@/lib/context/language-context";
 
 export default function GlobalScenarioNavigation() {
+  const { t } = useLanguage();
+  const SCENARIOS = getScenarios(t);
   const {
     activeScenarios,
     activeKmlFolders,

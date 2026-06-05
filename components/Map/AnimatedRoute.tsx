@@ -49,6 +49,7 @@ export default function AnimatedRoute({ feature, color, duration = 12, showArrow
     let elapsedTime = 0;
     let animationFrameId: number;
     let audioTime = 0;
+    let lastDispatchTime = 0;
 
     const handleAudioTime = (e: Event) => {
       audioTime = (e as CustomEvent).detail.time;
@@ -68,8 +69,17 @@ export default function AnimatedRoute({ feature, color, duration = 12, showArrow
       const isAudioPlaying = audio && !audio.paused && audio.currentTime > 0;
       const hasAudio = !!audio && !!audio.src;
 
-      // Only advance time if there's no audio, or if the audio is actively playing
-      if (!hasAudio || isAudioPlaying) {
+      // Smoothly advance time. If audio drifts (e.g. seeking), resync it.
+      if (hasAudio) {
+        if (isAudioPlaying) {
+          elapsedTime += dt;
+          if (Math.abs((elapsedTime / 1000) - audio.currentTime) > 0.3) {
+            elapsedTime = audio.currentTime * 1000;
+          }
+        } else {
+          elapsedTime = audio.currentTime * 1000;
+        }
+      } else {
         elapsedTime += dt;
       }
 
@@ -79,8 +89,8 @@ export default function AnimatedRoute({ feature, color, duration = 12, showArrow
       let isFinished = false;
 
       if (keyframes && keyframes.length > 0) {
-        // Variable speed using keyframes and audio time (or elapsed time if no audio event)
-        const t = (syncAudioEvent && audioTime > 0) ? audioTime : elapsed / 1000;
+        // Variable speed using smooth elapsed time
+        const t = elapsed / 1000;
         
         if (Math.random() < 0.02) console.log('AnimatedRoute debug:', routeId, 't:', t, 'p:', p, 'audioTime:', audioTime);
         
@@ -220,7 +230,7 @@ export default function AnimatedRoute({ feature, color, duration = 12, showArrow
         <div class="absolute w-20 h-20 rounded-full animate-ping opacity-30 mix-blend-screen" style="background-color: ${color}; box-shadow: 0 0 20px ${color}"></div>
         <div class="absolute w-12 h-12 rounded-full opacity-50 blur-md" style="background-color: ${color}"></div>
         
-        <div class="route-vehicle-wrapper relative z-10" style="transform: rotate(${nativeHeading}deg);">
+        <div class="route-vehicle-wrapper relative z-10" style="transform: rotate(${nativeHeading}deg); transition: transform 0.15s linear; will-change: transform;">
           <img src="/images/car.png" alt="Vehicle" class="route-vehicle relative w-20 h-auto object-contain drop-shadow-[0_12px_20px_rgba(0,0,0,0.85)] transition-transform duration-300 hover:scale-110" onerror="this.onerror=null;this.src='https://img.icons8.com/fluency/48/car-top-view.png';" />
         </div>
       </div>
