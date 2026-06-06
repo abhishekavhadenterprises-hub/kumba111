@@ -1,0 +1,830 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.65504103777849,
+          19.96604119582813,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Gayatri Holding Area - 17.48 HA",
+        "styleUrl": "#msn_H2",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/H.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.55213445465169,
+          19.94233588478793,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Pegalwadi - Holding Area",
+        "styleUrl": "#msn_H1",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/H.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.47941917569345,
+          20.00777619411522,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Velunje (Patrecha Pada) Holding Area- 2Ha",
+        "styleUrl": "#msn_H",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/H.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.48109243460823,
+          20.01397209775279,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Nandgaon Koli Phata (Holding Area)- 5.82 Ha",
+        "styleUrl": "#msn_H",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/H.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.50181847689079,
+          20.03550248246743,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Gorthan Holding Area - 2 Ha",
+        "styleUrl": "#msn_H",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/H.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.50457987120424,
+          20.06577657915872,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Waghera Holding Area - 17.79 Ha",
+        "styleUrl": "#msn_H",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/H.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.61931634272335,
+          20.07575883624878,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Dhondegaon Holding Area - 2.88 Ha",
+        "styleUrl": "#msn_H0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/H.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.64849325400724,
+          19.92841272318026,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Jategaon Infront of Govt. Hospital - 1.75 Ha",
+        "styleUrl": "#msn_H0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/H.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.64982803598403,
+          19.92234180611669,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Jategaon T Junction - 4.88 Ha",
+        "styleUrl": "#msn_H0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/H.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.68552693763202,
+          19.91951889005984,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Pimpalad Shivar Left and Right Side - 26.01 Ha",
+        "styleUrl": "#msn_H0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/H.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.66917286321174,
+          19.95890463154544,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Khmagaon Yeola - Tentative Holidng Area - to be vrified on site",
+        "styleUrl": "#msn_H0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/H.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.47666087352364,
+          20.04445879637753,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Angangaon Behind Bhujbal Office - Yeola - 15.1 Ha",
+        "styleUrl": "#msn_H0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/H.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.07445328229552,
+          20.07369053709035,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Kothure Tal Niphaad - Niphad Pimpalas Route - Tentative Holding Area",
+        "styleUrl": "#msn_H0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/H.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.2146074646869,
+          20.08576699984627,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Vishnunagar Vinchur Niffad - 8.59 Ha",
+        "styleUrl": "#msn_H0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/H.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.49345498166079,
+          20.0369109045556,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Fatehpur Naka - 5.43 Ha",
+        "styleUrl": "#msn_H0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/H.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.66110102382322,
+          19.96100475208113,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Khamgaon Yeola - 2.28",
+        "styleUrl": "#msn_H0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/H.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.06296332697204,
+          19.8412727373359,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Musalgaon - India Bulls Sinnar - 39.56 Ha",
+        "styleUrl": "#msn_H0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/H.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.97862285629714,
+          19.82706654992377,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Bhatwadi Sinnar - 7.12 ha",
+        "styleUrl": "#msn_H0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/H.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.92721070096906,
+          19.81160791668033,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Sonambe - Sinnar - 22.94 ha",
+        "styleUrl": "#msn_H0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/H.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.04896180459455,
+          19.8018765041804,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Gurevadi Sinnar - ___Ha",
+        "styleUrl": "#msn_H0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/H.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.65893320062008,
+          20.63968271703105,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Zodge 1 - 22.69 Ha",
+        "styleUrl": "#msn_H0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/H.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.13111158137686,
+          20.29838187179553,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Bharvir Chandwad  - 5.13 Ha",
+        "styleUrl": "#msn_H0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/H.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.0731358992772,
+          20.24630787955128,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Khadakjamb - Chandwad - 12.64 Ha",
+        "styleUrl": "#msn_H0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/H.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.60919139014223,
+          20.59888999569274,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Chikhal Ohol - Malegaon Dhule Route - 21.52HA",
+        "styleUrl": "#msn_H0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/H.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.17102032489925,
+          20.31165639019981,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Adgaon Tappa Chandwad - 11.67 Ha",
+        "styleUrl": "#msn_H0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/H.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.12949849164346,
+          20.2988908558877,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Malsane Chandwad - Beside Hotel Renuka - 16.77 Ha",
+        "styleUrl": "#msn_H0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/H.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.59665101776504,
+          20.30569206289701,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Hiswal Hirenagar Nandgaon Shivpuran - 16.63 Ha",
+        "styleUrl": "#msn_H0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/H.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.71378321471047,
+          20.28225086023595,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Pokhari - 51.79 + 15.52 Ha",
+        "styleUrl": "#msn_H0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/H.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.14589510340154,
+          20.71253229789705,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Dholbare Baglan - 4.34 Ha",
+        "styleUrl": "#msn_H0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/H.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.14685226579697,
+          20.74762118949119,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Karanjad Baglan APMC - 11.21 Ha",
+        "styleUrl": "#msn_H0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/H.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.47615039093338,
+          20.2761354268161,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Vangani - 4 Ha",
+        "styleUrl": "#msn_H0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/H.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.9235264220688,
+          20.42976170111893,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Vani - Area Not Confirmed",
+        "styleUrl": "#msn_H0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/H.png"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.64434885071314,
+          20.07125029546663,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Girnare - 3.60 Ha",
+        "styleUrl": "#msn_H0",
+        "icon-scale": 1.1,
+        "icon-offset": [
+          32,
+          1
+        ],
+        "icon-offset-units": [
+          "pixels",
+          "pixels"
+        ],
+        "icon": "http://maps.google.com/mapfiles/kml/paddle/H.png"
+      }
+    }
+  ]
+}

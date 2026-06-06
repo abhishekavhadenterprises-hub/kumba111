@@ -311,6 +311,7 @@ function DataLayerRenderer() {
   const [walkway, setWalkway] = useState<any>(null);
   const [parkingForTrimbak, setParkingForTrimbak] = useState<any>(null);
   const [trimbakParsed, setTrimbakParsed] = useState<any>(null);
+  const [holdingAreaParsed, setHoldingAreaParsed] = useState<any>(null);
   const [tunnelParsed, setTunnelParsed] = useState<any>(null);
   const [newghatParsed, setNewghatParsed] = useState<any>(null);
   const [dproadsParsed, setDproadsParsed] = useState<any>(null);
@@ -362,6 +363,7 @@ function DataLayerRenderer() {
     load("/data/walkway.geojson", setWalkway);
     load("/data/parking-for-trimbak.geojson", setParkingForTrimbak);
     load("/data/trimbak-parsed.geojson", setTrimbakParsed);
+    load("/data/holding-area.geojson", setHoldingAreaParsed);
     load("/data/tunnel-parsed.geojson", setTunnelParsed);
     load("/data/newghat-parsed.geojson", setNewghatParsed);
     load("/data/dproads-parsed.geojson", setDproadsParsed);
@@ -405,6 +407,15 @@ function DataLayerRenderer() {
       map.flyToBounds([
         [19.9397999, 73.5373821], // SouthWest
         [19.9491606, 73.5509304]  // NorthEast
+      ], { padding: [50, 50], duration: 1.5 });
+      return;
+    }
+
+    // Hardcoded fly-to bounds for Trimbak Boundary
+    if (activeKmlFolders.some(id => id.startsWith("Trimbak Boundary"))) {
+      map.flyToBounds([
+        [19.9180, 73.5120], // SouthWest (slightly padded from actual 19.9212, 73.5168)
+        [19.9630, 73.5600]  // NorthEast (slightly padded from actual 19.9595, 73.5558)
       ], { padding: [50, 50], duration: 1.5 });
       return;
     }
@@ -472,6 +483,9 @@ function DataLayerRenderer() {
       } else if (added === "parking-zones" && parkingZones) {
         const layerBounds = L.geoJSON(parkingZones).getBounds();
         if (layerBounds.isValid()) bounds.extend(layerBounds);
+      } else if (added === "holding-area" && holdingAreaParsed) {
+        const layerBounds = L.geoJSON(holdingAreaParsed).getBounds();
+        if (layerBounds.isValid()) bounds.extend(layerBounds);
       } else if (added === "police-quarters" && policeQuarters) {
         const layerBounds = L.geoJSON(policeQuarters).getBounds();
         if (layerBounds.isValid()) bounds.extend(layerBounds);
@@ -512,7 +526,7 @@ function DataLayerRenderer() {
     }
 
     setPrevVisibleLayers(new Set(visibleLayers));
-  }, [visibleLayers, map, policeStations, helipads, parkingZones, policeDeployments, infrastructure, permanentPoliceChauki, permanentWatchTower, temporaryWatchTower, tempPoliceSheds]);
+  }, [visibleLayers, map, policeStations, helipads, parkingZones, holdingAreaParsed, policeDeployments, infrastructure, permanentPoliceChauki, permanentWatchTower, temporaryWatchTower, tempPoliceSheds]);
 
   // ── Movement Scheme Layer ─────────────────────────────────
   const filteredMovement = useMemo(() => {
@@ -1513,6 +1527,43 @@ function DataLayerRenderer() {
           }}
           pointToLayer={emptyPointToLayer}
           onEachFeature={(f, l) => bindFeaturePopup(f, l, "trimbak-parking")}
+        />
+      )}
+
+      {/* Holding Area KML Layer */}
+      {visibleLayers.has("holding-area") && holdingAreaParsed && (
+        <GeoJSON
+          key={`holding-area-${geoKey}`}
+          data={holdingAreaParsed}
+          pointToLayer={(feature: any, latlng: any) => {
+            const props = feature?.properties || {};
+            const bg = "#ec4899"; // pink
+            const svg = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>`;
+            
+            const icon = new L.DivIcon({
+              className: "bg-transparent border-0",
+              html: `<div style="display:flex; flex-direction:column; align-items:center;">
+                      <div style="background:${bg}; color:white; border:3px solid white; border-radius:50%; width:32px; height:32px; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 10px rgba(0,0,0,0.4); z-index:10;">
+                        ${svg}
+                      </div>
+                      <div style="background:rgba(0,0,0,0.8); color:white; font-size:11px; font-weight:700; padding:2px 6px; border-radius:4px; border:1px solid rgba(255,255,255,0.2); white-space:nowrap; margin-top:4px; box-shadow:0 2px 6px rgba(0,0,0,0.5);">
+                        ${props.name || "Holding Area"}
+                      </div>
+                     </div>`,
+              iconSize: [120, 50],
+              iconAnchor: [60, 16],
+            });
+            return L.marker(latlng, { icon });
+          }}
+          onEachFeature={(feature, layer) => {
+            layer.on('click', () => {
+              selectFeature({
+                layerId: "holding-area",
+                properties: feature.properties,
+                geometry: feature.geometry
+              });
+            });
+          }}
         />
       )}
 

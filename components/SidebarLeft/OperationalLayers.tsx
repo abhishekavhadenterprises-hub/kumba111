@@ -77,7 +77,7 @@ export default function OperationalLayers() {
         { id: "temporary-watch-tower", name: t("layer.temp_watch"), icon: Eye, color: "text-violet-500", glow: "shadow-[0_0_10px_rgba(139,92,246,0.5)]", description: t("layer.temp_watch.desc") },
         { id: "inner-parking", kmlFolderId: "Inner Parking_5", name: t("layer.inner_parking"), icon: CircleParking, color: "text-orange-400", glow: "shadow-[0_0_10px_rgba(251,146,60,0.5)]", description: t("layer.inner_parking.desc") },
         { id: "outer-parking", kmlFolderId: "Outer Parking_3", name: t("layer.outer_parking"), icon: CircleParking, color: "text-yellow-500", glow: "shadow-[0_0_10px_rgba(234,179,8,0.5)]", description: t("layer.outer_parking.desc") },
-        { id: "holding-area", kmlFolderId: "Holding Area_13", name: t("layer.holding_area"), icon: Users, color: "text-pink-400", glow: "shadow-[0_0_10px_rgba(244,114,182,0.5)]", description: t("layer.holding_area.desc") },
+        { id: "holding-area", name: t("layer.holding_area"), icon: Users, color: "text-pink-400", glow: "shadow-[0_0_10px_rgba(244,114,182,0.5)]", description: t("layer.holding_area.desc") },
         { id: "main-temple", name: t("layer.main_temple"), icon: Flame, color: "text-orange-600", glow: "shadow-[0_0_10px_rgba(234,88,12,0.5)]", description: t("layer.main_temple.desc") },
         { id: "all-akhada", name: t("layer.all_akhada"), icon: Castle, color: "text-red-500", glow: "shadow-[0_0_10px_rgba(239,68,68,0.5)]", description: t("layer.all_akhada.desc") },
         { id: "other-temples", name: t("layer.other_temples"), icon: Flame, color: "text-orange-400", glow: "shadow-[0_0_10px_rgba(251,146,60,0.5)]", description: t("layer.other_temples.desc") },
@@ -175,7 +175,7 @@ export default function OperationalLayers() {
                           onClick={() => {
                             if (selectFeature) {
                               selectFeature({
-                                layerId: 'trimbak-parsed',
+                                layerId: layer.id === 'holding-area' ? 'holding-area' : 'trimbak-parsed',
                                 properties: { name: child.name },
                                 geometry: child.geometry || null
                               });
