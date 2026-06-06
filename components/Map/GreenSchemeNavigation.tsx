@@ -91,11 +91,11 @@ export default function GreenSchemeNavigation() {
           if (d <= THRESHOLD) {
             const content = `
               <div style="font-family: Inter,system-ui,sans-serif;padding:6px 12px;">
-                <div style="font-size:9px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700;color:#10b981;margin-bottom:3px;">
-                  ${wp.name}
-                </div>
-                <div style="font-size:15px;font-weight:800;color:#0f172a;line-height:1.2;">
+                <div style="font-size:9px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700;color:#10b981;margin-bottom:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:150px;">
                   Route: ${routeName}
+                </div>
+                <div style="font-size:15px;font-weight:800;color:#0f172a;line-height:1.2;text-transform:capitalize;">
+                  ${wp.name}
                 </div>
               </div>`;
             

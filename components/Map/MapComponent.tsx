@@ -23,7 +23,7 @@ import type { MapLayerId } from "@/lib/types";
 import GreenCorridorPopups from "./GreenCorridorPopups";
 import SaputaraPopups from "./SaputaraPopups";
 import GlobalAudioControls from "../UI/GlobalAudioControls";
-import { GREEN_CORRIDOR_TIMINGS } from "./green-corridor-timings";
+import { GREEN_CORRIDOR_TIMINGS, MOKHADA_TIMINGS } from "./green-corridor-timings";
 import { SAPUTARA_TIMINGS } from "./saputara-timings";
 const AKHADA_KML_MAPPING: Record<string, string[]> = {
   "mahanirvani": ["mahanirvani"],
@@ -3480,15 +3480,18 @@ function DataLayerRenderer() {
                           growLine={true}
                           showVehicle={true}
                           nativeHeading={-90}
-                          trackCamera={true} />
+                          trackCamera={true}
+                          keyframes={MOKHADA_TIMINGS}
+                        />
                       );
                     }
                     return null;
                   })}
 
                   {[
-                    { name: "Mokhada", lat: 19.9365, lng: 73.3404 },
-                    { name: "Amboli Phata", lat: 19.9500, lng: 73.4600 }
+                    { name: "Mokhada", lat: 19.91679270829372, lng: 73.35212709762762 },
+                    { name: "Gondebudruk", lat: 19.946708891087738, lng: 73.41493258178131 },
+                    { name: "Javar trimbukghat", lat: 19.973233994792015, lng: 73.44252871999613 }
                   ].map((village, idx) => {
                     const icon = L.divIcon({
                       className: "bg-transparent border-0 overflow-visible smooth-map-label",

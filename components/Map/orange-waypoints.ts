@@ -618,5 +618,20 @@ export const ORANGE_WAYPOINTS = [
     "name": "maviravni",
     "lat": 19.96635119715082,
     "lng": 73.66196698983194
+  },
+  {
+    "name": "Mokhada",
+    "lat": 19.91679270829372,
+    "lng": 73.35212709762762
+  },
+  {
+    "name": "Gondebudruk",
+    "lat": 19.946708891087738,
+    "lng": 73.41493258178131
+  },
+  {
+    "name": "Javar trimbukghat",
+    "lat": 19.973233994792015,
+    "lng": 73.44252871999613
   }
 ];

@@ -48,10 +48,10 @@ export default function GreenCorridorPopups() {
           const content = `
             <div style="font-family: Inter,system-ui,sans-serif;padding:6px 12px;">
               <div style="font-size:9px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700;color:#22c55e;margin-bottom:3px;">
-                ${currentTiming.popupName}
-              </div>
-              <div style="font-size:15px;font-weight:800;color:#0f172a;line-height:1.2;">
                 Green Corridor
+              </div>
+              <div style="font-size:15px;font-weight:800;color:#0f172a;line-height:1.2;text-transform:capitalize;">
+                ${currentTiming.popupName}
               </div>
             </div>`;
           
