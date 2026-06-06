@@ -23,7 +23,7 @@ import type { MapLayerId } from "@/lib/types";
 import GreenCorridorPopups from "./GreenCorridorPopups";
 import SaputaraPopups from "./SaputaraPopups";
 import GlobalAudioControls from "../UI/GlobalAudioControls";
-import { GREEN_CORRIDOR_TIMINGS, MOKHADA_TIMINGS } from "./green-corridor-timings";
+import { GREEN_CORRIDOR_TIMINGS, MOKHADA_TIMINGS, DHARAMPUR_TIMINGS } from "./green-corridor-timings";
 import { SAPUTARA_TIMINGS } from "./saputara-timings";
 const AKHADA_KML_MAPPING: Record<string, string[]> = {
   "mahanirvani": ["mahanirvani"],
@@ -3122,15 +3122,23 @@ function DataLayerRenderer() {
                           growLine={true}
                           showVehicle={true}
                           nativeHeading={-90}
-                          trackCamera={true} />
+                          trackCamera={true}
+                          keyframes={DHARAMPUR_TIMINGS}
+                        />
                       );
                     }
                     return null;
                   })}
 
                   {[
-                    { name: "Peth (Peint)", lat: 20.2584, lng: 73.5031 },
-                    { name: "Amboli Phata", lat: 19.9500, lng: 73.4600 }
+                    { name: "Peith", lat: 20.257792243510593, lng: 73.50588080688321 },
+                    { name: "Kotambhogath", lat: 20.250230345987934, lng: 73.54237940667902 },
+                    { name: "Karanjali", lat: 20.250573875512355, lng: 73.5847649619456 },
+                    { name: "Kohor", lat: 20.172401404260224, lng: 73.59334328740874 },
+                    { name: "Ghanshet", lat: 20.132707705792257, lng: 73.53265607675765 },
+                    { name: "Aamolon", lat: 20.129801011438058, lng: 73.51069765325185 },
+                    { name: "Chinchvad", lat: 20.098116286856634, lng: 73.48317755928242 },
+                    { name: "Vedunje", lat: 46.35864064949464, lng: 15.108531102507424 }
                   ].map((village, idx) => {
                     const icon = L.divIcon({
                       className: "bg-transparent border-0 overflow-visible smooth-map-label",

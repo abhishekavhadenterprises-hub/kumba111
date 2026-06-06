@@ -23,3 +23,16 @@ export const MOKHADA_TIMINGS: GreenCorridorTiming[] = [
   { time: 8, progress: 0.6921, subtitle: "Passing Javar trimbukghat...", popupName: "Javar trimbukghat" },
   { time: 20, progress: 1.0, subtitle: "Arriving at Trimbakeshwar...", popupName: "Trimbakeshwar" }
 ];
+
+export const DHARAMPUR_TIMINGS: GreenCorridorTiming[] = [
+  { time: 0, progress: 0.0, subtitle: "Starting...", popupName: "" },
+  { time: 4, progress: 0.0000, subtitle: "Passing Peith...", popupName: "Peith" },
+  { time: 5, progress: 0.0761, subtitle: "Passing Kotambhogath...", popupName: "Kotambhogath" },
+  { time: 6, progress: 0.1476, subtitle: "Passing Karanjali...", popupName: "Karanjali" },
+  { time: 7, progress: 0.3132, subtitle: "Passing Kohor...", popupName: "Kohor" },
+  { time: 8, progress: 0.4852, subtitle: "Passing Ghanshet...", popupName: "Ghanshet" },
+  { time: 9, progress: 0.5404, subtitle: "Passing Aamolon...", popupName: "Aamolon" },
+  { time: 10, progress: 0.6374, subtitle: "Passing Chinchvad...", popupName: "Chinchvad" },
+  { time: 11, progress: 0.7500, subtitle: "Passing Vedunje...", popupName: "Vedunje" },
+  { time: 25, progress: 1.0, subtitle: "Arriving at Trimbakeshwar...", popupName: "Trimbakeshwar" }
+];
