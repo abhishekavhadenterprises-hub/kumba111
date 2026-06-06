@@ -23,7 +23,7 @@ import type { MapLayerId } from "@/lib/types";
 import GreenCorridorPopups from "./GreenCorridorPopups";
 import SaputaraPopups from "./SaputaraPopups";
 import GlobalAudioControls from "../UI/GlobalAudioControls";
-import { GREEN_CORRIDOR_TIMINGS, MOKHADA_TIMINGS, DHARAMPUR_TIMINGS, PUNE_TIMINGS } from "./green-corridor-timings";
+import { GREEN_CORRIDOR_TIMINGS, MOKHADA_TIMINGS, DHARAMPUR_TIMINGS, PUNE_TIMINGS, DHULE_TIMINGS } from "./green-corridor-timings";
 import { SAPUTARA_TIMINGS } from "./saputara-timings";
 const AKHADA_KML_MAPPING: Record<string, string[]> = {
   "mahanirvani": ["mahanirvani"],
@@ -2557,16 +2557,27 @@ function DataLayerRenderer() {
                           growLine={true}
                           showVehicle={true}
                           nativeHeading={-90}
-                          trackCamera={true} />
+                          trackCamera={true}
+                          keyframes={DHULE_TIMINGS}
+                        />
                       );
                     }
                     return null;
                   })}
 
                   {[
-                    { name: "Dhule", lat: 20.8997, lng: 74.7697 },
-                    { name: "Malegaon", lat: 20.5500, lng: 74.5500 },
-                    { name: "Chandvad", lat: 20.3292, lng: 74.2444 }
+                    { name: "Malegaon", lat: 20.557713568933256, lng: 74.50873581172806 },
+                    { name: "Chandvad", lat: 20.333983399120612, lng: 74.24154068492135 },
+                    { name: "Pimpalgaon baswant", lat: 20.16484299948705, lng: 73.98802835992457 },
+                    { name: "Ojhar", lat: 20.099723895059544, lng: 73.92840527162342 },
+                    { name: "Aadgaon", lat: 20.033594254296442, lng: 73.86361938543439 },
+                    { name: "Shambhaji Nagar Naka", lat: 20.010779113448457, lng: 73.81039705466775 },
+                    { name: "Dwarka", lat: 19.993087318987737, lng: 73.8036885071721 },
+                    { name: "GANJMAL", lat: 19.995653649781524, lng: 73.78458321118097 },
+                    { name: "Navin cbs", lat: 19.994354365595324, lng: 73.80061606458447 },
+                    { name: "VED MANDIR", lat: 19.994601217205794, lng: 73.76964186594056 },
+                    { name: "Sathpur", lat: 19.98860362569022, lng: 73.72762967486904 },
+                    { name: "Pimpalgaon babula", lat: 19.9795028301811, lng: 73.70934401563672 }
                   ].map((village, idx) => {
                     const icon = L.divIcon({
                       className: "bg-transparent border-0 overflow-visible smooth-map-label",
