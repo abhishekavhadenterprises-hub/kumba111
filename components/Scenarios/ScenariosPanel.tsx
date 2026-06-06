@@ -238,7 +238,7 @@ export default function ScenariosPanel() {
                 (window as any).activeScenarioAudio.ontimeupdate = null;
                 (window as any).activeScenarioAudio.currentTime = 0;
               }
-              (window as any).activeScenarioAudio = new Audio('/audio/green nashik.mp3.mpeg');
+              (window as any).activeScenarioAudio = new Audio('/audio/green-corridor.mpeg');
 
               // Dispatch time update for syncing animations and subtitles
               (window as any).activeScenarioAudio.ontimeupdate = () => {
