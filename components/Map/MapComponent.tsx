@@ -23,7 +23,7 @@ import type { MapLayerId } from "@/lib/types";
 import GreenCorridorPopups from "./GreenCorridorPopups";
 import SaputaraPopups from "./SaputaraPopups";
 import GlobalAudioControls from "../UI/GlobalAudioControls";
-import { GREEN_CORRIDOR_TIMINGS, MOKHADA_TIMINGS, DHARAMPUR_TIMINGS, PUNE_TIMINGS, DHULE_TIMINGS, SAMBHAJI_TIMINGS } from "./green-corridor-timings";
+import { GREEN_CORRIDOR_TIMINGS, MOKHADA_TIMINGS, DHARAMPUR_TIMINGS, PUNE_TIMINGS, DHULE_TIMINGS, SAMBHAJI_TIMINGS, NASHIK_TIMINGS } from "./green-corridor-timings";
 import { SAPUTARA_TIMINGS } from "./saputara-timings";
 const AKHADA_KML_MAPPING: Record<string, string[]> = {
   "mahanirvani": ["mahanirvani"],
@@ -3039,6 +3039,7 @@ function DataLayerRenderer() {
                           showVehicle={true}
                           nativeHeading={-90}
                           trackCamera={true}
+                          keyframes={NASHIK_TIMINGS}
                         />
                       );
                     }
@@ -3046,9 +3047,11 @@ function DataLayerRenderer() {
                   })}
 
                   {[
-                    { name: "Nashik City boundary", lat: 19.9620, lng: 73.7540 },
-                    { name: "Khambale", lat: 19.9575, lng: 73.6190 },
-                    { name: "Anjaneri", lat: 19.9388, lng: 73.5786 }
+                    { name: "Ved mandir", lat: 19.99483182554669, lng: 73.77338889932037 },
+                    { name: "Satpur", lat: 19.99127222272728, lng: 73.73448150327012 },
+                    { name: "Satpura", lat: 19.989800364748046, lng: 73.73316414537807 },
+                    { name: "Papya nursery", lat: 19.986695117512692, lng: 73.7244889067395 },
+                    { name: "Mahirvani", lat: 19.96681772991122, lng: 73.66185098608045 }
                   ].map((village, idx) => {
                     const icon = L.divIcon({
                       className: "bg-transparent border-0 overflow-visible smooth-map-label",

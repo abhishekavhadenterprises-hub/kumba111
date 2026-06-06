@@ -803,5 +803,15 @@ export const ORANGE_WAYPOINTS = [
     "name": "Nandur naka",
     "lat": 19.99700833481528,
     "lng": 73.84368521194784
+  },
+  {
+    "name": "Satpura",
+    "lat": 19.989800364748046,
+    "lng": 73.73316414537807
+  },
+  {
+    "name": "Papya nursery",
+    "lat": 19.986695117512692,
+    "lng": 73.7244889067395
   }
 ];

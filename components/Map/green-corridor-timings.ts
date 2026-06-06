@@ -83,3 +83,13 @@ export const SAMBHAJI_TIMINGS: GreenCorridorTiming[] = [
   { time: 19, progress: 0.9091, subtitle: "Passing pimpalgao baswant...", popupName: "pimpalgao baswant" },
   { time: 38.687, progress: 1.0, subtitle: "Arriving at Trimbakeshwar...", popupName: "Trimbakeshwar" }
 ];
+
+export const NASHIK_TIMINGS: GreenCorridorTiming[] = [
+  { time: 0, progress: 0.0, subtitle: "Starting...", popupName: "" },
+  { time: 7, progress: 0.0407, subtitle: "Passing Ved mandir...", popupName: "Ved mandir" },
+  { time: 8, progress: 0.2078, subtitle: "Passing Satpur...", popupName: "Satpur" },
+  { time: 9, progress: 0.2100, subtitle: "Passing Satpura...", popupName: "Satpura" },
+  { time: 10, progress: 0.2562, subtitle: "Passing Papya nursery...", popupName: "Papya nursery" },
+  { time: 11, progress: 0.5428, subtitle: "Passing Mahirvani...", popupName: "Mahirvani" },
+  { time: 43.311, progress: 1.0, subtitle: "Arriving at Trimbakeshwar...", popupName: "Trimbakeshwar" }
+];
