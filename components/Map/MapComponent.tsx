@@ -23,7 +23,7 @@ import type { MapLayerId } from "@/lib/types";
 import GreenCorridorPopups from "./GreenCorridorPopups";
 import SaputaraPopups from "./SaputaraPopups";
 import GlobalAudioControls from "../UI/GlobalAudioControls";
-import { GREEN_CORRIDOR_TIMINGS, MOKHADA_TIMINGS, DHARAMPUR_TIMINGS } from "./green-corridor-timings";
+import { GREEN_CORRIDOR_TIMINGS, MOKHADA_TIMINGS, DHARAMPUR_TIMINGS, PUNE_TIMINGS } from "./green-corridor-timings";
 import { SAPUTARA_TIMINGS } from "./saputara-timings";
 const AKHADA_KML_MAPPING: Record<string, string[]> = {
   "mahanirvani": ["mahanirvani"],
@@ -2439,16 +2439,22 @@ function DataLayerRenderer() {
                           growLine={true}
                           showVehicle={true}
                           nativeHeading={-90}
-                          trackCamera={true} />
+                          trackCamera={true}
+                          keyframes={PUNE_TIMINGS}
+                        />
                       );
                     }
                     return null;
                   })}
 
                   {[
-                    { name: "Pune", lat: 18.5204, lng: 73.8567 },
-                    { name: "Sangamner", lat: 19.5678, lng: 74.2115 },
-                    { name: "Sinnar", lat: 19.8531, lng: 74.0006 }
+                    { name: "Sinnar", lat: 19.846431482301394, lng: 73.98987701847359 },
+                    { name: "Sindhe", lat: 19.91555179869075, lng: 73.89747888064888 },
+                    { name: "Palse", lat: 19.92656794671314, lng: 73.87574350467034 },
+                    { name: "Nashik road", lat: 19.949, lng: 73.836 },
+                    { name: "Navin CBS", lat: 19.9945534371095, lng: 73.80047822510002 },
+                    { name: "Sathpur", lat: 19.990034294389442, lng: 73.73005327363552 },
+                    { name: "Mahiravni", lat: 19.96635119715082, lng: 73.66196698983194 }
                   ].map((village, idx) => {
                     const icon = L.divIcon({
                       className: "bg-transparent border-0 overflow-visible smooth-map-label",

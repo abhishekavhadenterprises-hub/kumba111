@@ -36,3 +36,15 @@ export const DHARAMPUR_TIMINGS: GreenCorridorTiming[] = [
   { time: 11, progress: 0.7500, subtitle: "Passing Vedunje...", popupName: "Vedunje" },
   { time: 25, progress: 1.0, subtitle: "Arriving at Trimbakeshwar...", popupName: "Trimbakeshwar" }
 ];
+
+export const PUNE_TIMINGS: GreenCorridorTiming[] = [
+  { time: 0, progress: 0.0, subtitle: "Starting...", popupName: "" },
+  { time: 5, progress: 0.5900, subtitle: "Passing Sinnar...", popupName: "Sinnar" },
+  { time: 6, progress: 0.7694, subtitle: "Passing Sindhe...", popupName: "Sindhe" },
+  { time: 7, progress: 0.8064, subtitle: "Passing Palse...", popupName: "Palse" },
+  { time: 8, progress: 0.8765, subtitle: "Passing Nashik road...", popupName: "Nashik road" },
+  { time: 9, progress: 0.9681, subtitle: "Passing Navin CBS...", popupName: "Navin CBS" },
+  { time: 10, progress: 0.9960, subtitle: "Passing Sathpur...", popupName: "Sathpur" },
+  { time: 11, progress: 0.9990, subtitle: "Passing Mahiravni...", popupName: "Mahiravni" },
+  { time: 25, progress: 1.0, subtitle: "Arriving at Trimbakeshwar...", popupName: "Trimbakeshwar" }
+];
