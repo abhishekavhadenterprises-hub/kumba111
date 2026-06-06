@@ -65,3 +65,21 @@ export const DHULE_TIMINGS: GreenCorridorTiming[] = [
   { time: 16, progress: 0.9739, subtitle: "Passing Pimpalgaon babula...", popupName: "Pimpalgaon babula" },
   { time: 35.866, progress: 1.0, subtitle: "Arriving at Trimbakeshwar...", popupName: "Trimbakeshwar" }
 ];
+
+export const SAMBHAJI_TIMINGS: GreenCorridorTiming[] = [
+  { time: 0, progress: 0.0, subtitle: "Starting...", popupName: "" },
+  { time: 6, progress: 0.2984, subtitle: "Passing Vaijapur...", popupName: "Vaijapur" },
+  { time: 7, progress: 0.4235, subtitle: "Passing andarsul...", popupName: "andarsul" },
+  { time: 8, progress: 0.4581, subtitle: "Passing Yeola...", popupName: "Yeola" },
+  { time: 9, progress: 0.5892, subtitle: "Passing Venchur...", popupName: "Venchur" },
+  { time: 10, progress: 0.6607, subtitle: "Passing niphad...", popupName: "niphad" },
+  { time: 11, progress: 0.7145, subtitle: "Passing chandori...", popupName: "chandori" },
+  { time: 12, progress: 0.8410, subtitle: "Passing nandur naka...", popupName: "nandur naka" },
+  { time: 13, progress: 0.8513, subtitle: "Passing dwarka...", popupName: "dwarka" },
+  { time: 14, progress: 0.8600, subtitle: "Passing ganjmal...", popupName: "ganjmal" },
+  { time: 16, progress: 0.8677, subtitle: "Passing navin cbs...", popupName: "navin cbs" },
+  { time: 17, progress: 0.8792, subtitle: "Passing ved mandir...", popupName: "ved mandir" },
+  { time: 18, progress: 0.8989, subtitle: "Passing satpur...", popupName: "satpur" },
+  { time: 19, progress: 0.9091, subtitle: "Passing pimpalgao baswant...", popupName: "pimpalgao baswant" },
+  { time: 38.687, progress: 1.0, subtitle: "Arriving at Trimbakeshwar...", popupName: "Trimbakeshwar" }
+];

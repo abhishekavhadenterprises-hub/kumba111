@@ -29,6 +29,7 @@ const GREEN_AUDIO_MAP: Record<string, string> = {
   "Dharampur Peth Karanjali Kohor Waghera Amboli Trimabkeshwar - In and Out": "/audio/green Dharampur peth.mp3.mpeg",
   "Javhar Mokhada Amboli Trimabkeswar - In and Out": "/audio/green javar mokhada.mp3.mpeg",
   "Mumbai Igatpuri Vaitarana Phata Saturli Ahurli Pegalwadi Trimabakehswar - In and Out": "/audio/green mumbai.mp3.mpeg",
+  "Chh Sambhaji nagar Yeola Niffad Nashik Trimbak - In and Out": "/audio/green chh.sambhajinagar.mp3 (2).mpeg",
 };
 
 export default function GreenSchemeNavigation() {
