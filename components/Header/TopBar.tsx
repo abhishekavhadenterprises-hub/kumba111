@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { Search, MapPin, Loader2, Shield, Clock, Languages, ChevronDown } from "lucide-react";
+import { Search, MapPin, Loader2, Clock, Languages, ChevronDown } from "lucide-react";
+import Image from "next/image";
 import { useDashboard } from "@/lib/context/dashboard-context";
 import { useLanguage } from "@/lib/context/language-context";
 import { Language } from "@/lib/i18n/translations";
@@ -133,8 +134,15 @@ export default function TopBar() {
     <div className="relative w-full h-14 bg-transparent border-b border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.1)] flex items-center justify-between px-3 md:px-5 z-[2000] gap-2 md:gap-0">
       {/* Left: Branding */}
       <div className="flex items-center gap-2 md:gap-3 flex-shrink-0">
-        <div className="w-9 h-9 bg-gradient-to-br from-orange-500/20 to-red-500/20 text-[#D4AF37] rounded-lg flex items-center justify-center border border-white/10 shadow-[0_0_12px_rgba(249,115,22,0.1)]">
-          <Shield className="w-5 h-5" />
+        <div className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden flex-shrink-0">
+          <Image
+            src="/images/kumbh-logo.png"
+            alt="Sinhastha Kumbh Mela Logo"
+            width={40}
+            height={40}
+            className="object-contain"
+            priority
+          />
         </div>
         <div className="flex flex-col justify-center">
           <h1 className="text-white/95 font-extrabold text-[12px] md:text-[13px] leading-tight tracking-wide drop-shadow-md">

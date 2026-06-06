@@ -5,6 +5,7 @@ import { Route, ChevronUp, ChevronDown, Eye, EyeOff, X, Maximize2 } from "lucide
 import { useDashboard } from "@/lib/context/dashboard-context";
 import { useLanguage } from "@/lib/context/language-context";
 import { PROCESSION_GROUPS } from "@/lib/data/schedule";
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
 export default function SchemeControl() {
   const { showLabels, toggleLabels, selectedProcessionRoute, setSelectedProcessionRoute, setLayerVisible, selectFeature, activeOverlay, setActiveOverlay } = useDashboard();
@@ -101,14 +102,32 @@ export default function SchemeControl() {
                 {selectedProcessionRoute ? PROCESSION_GROUPS.find(r => r.id === selectedProcessionRoute)?.label : "R3 Core-1 Plan"}
               </div>
 
-              <div className="w-full h-full flex items-center justify-center overflow-auto">
-                <img
-                  src={imgSrc}
-                  alt="Procession Map"
-                  onError={handleImgError}
-                  className="w-full h-full object-cover filter drop-shadow-2xl origin-center"
-                  style={{ transform: 'scale(1.2)' }}
-                />
+              <div className="w-full h-full bg-[#f8f9fa] flex items-center justify-center cursor-move">
+                <TransformWrapper
+                  initialScale={1}
+                  minScale={1}
+                  maxScale={8}
+                  centerOnInit={true}
+                  limitToBounds={true}
+                >
+                  {({ zoomIn, zoomOut, resetTransform }) => (
+                    <>
+                      <div className="absolute top-14 left-3 flex flex-col gap-2 z-20">
+                        <button onClick={() => zoomIn()} className="w-8 h-8 bg-white border border-gray-200 rounded-lg shadow-sm flex items-center justify-center text-gray-700 hover:bg-gray-50">+</button>
+                        <button onClick={() => zoomOut()} className="w-8 h-8 bg-white border border-gray-200 rounded-lg shadow-sm flex items-center justify-center text-gray-700 hover:bg-gray-50">-</button>
+                        <button onClick={() => resetTransform()} className="w-8 h-8 bg-white border border-gray-200 rounded-lg shadow-sm flex items-center justify-center text-gray-700 hover:bg-gray-50 text-[10px] font-bold">R</button>
+                      </div>
+                      <TransformComponent wrapperStyle={{ width: "100%", height: "100%" }} contentStyle={{ width: "100%", height: "100%" }}>
+                        <img
+                          src={imgSrc}
+                          alt="Procession Map"
+                          onError={handleImgError}
+                          className="w-full h-full object-contain drop-shadow-xl"
+                        />
+                      </TransformComponent>
+                    </>
+                  )}
+                </TransformWrapper>
               </div>
             </div>
 
