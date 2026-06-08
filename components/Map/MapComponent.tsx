@@ -3033,7 +3033,7 @@ function DataLayerRenderer() {
                           key={`nashik-anim-${idx}-${geoKey}`}
                           feature={f}
                           color="#3b82f6"
-                          duration={180}
+                          duration={43.311}
                           loop={false}
                           growLine={true}
                           showVehicle={true}
@@ -3047,11 +3047,10 @@ function DataLayerRenderer() {
                   })}
 
                   {[
-                    { name: "Ved mandir", lat: 19.99483182554669, lng: 73.77338889932037 },
-                    { name: "Satpur", lat: 19.99127222272728, lng: 73.73448150327012 },
-                    { name: "Satpura", lat: 19.989800364748046, lng: 73.73316414537807 },
-                    { name: "Papya nursery", lat: 19.986695117512692, lng: 73.7244889067395 },
-                    { name: "Mahirvani", lat: 19.96681772991122, lng: 73.66185098608045 }
+                    { name: "Vedmandir chauk", lat: 19.994956177943404, lng: 73.77395726406573 },
+                    { name: "Pappya nursery", lat: 19.986271693086493, lng: 73.7243601862281 },
+                    { name: "Satpur", lat: 19.983548620642487, lng: 73.71850402254314 },
+                    { name: "Mahiravani", lat: 19.965936358493618, lng: 73.66050787018283 }
                   ].map((village, idx) => {
                     const icon = L.divIcon({
                       className: "bg-transparent border-0 overflow-visible smooth-map-label",
@@ -3265,6 +3264,7 @@ function DataLayerRenderer() {
             const renderAnim = (feat: any, keySuffix: string) => {
               const isRouteASambhaji = activeRouteName === "Route A - In Chh Sambhaji Nagar - Sinnar - Pandhurli VTC Phata - Sarul Phata - Outer Parking - Trimbak";
               const isSaputara = activeRouteName === "Saputara Vani Dindori Nashik Trimbak - In and Out";
+              const isOrangeNashik = activeRouteName === "Nashik - Laddha Inner Parking - Trimabkeshwar - In and Out";
               
               let duration = 180;
               let keyframes = undefined;
@@ -3274,6 +3274,9 @@ function DataLayerRenderer() {
               } else if (isSaputara) {
                 duration = 56.451;
                 keyframes = ORANGE_SAPUTARA_TIMINGS;
+              } else if (isOrangeNashik) {
+                duration = 43.311;
+                keyframes = NASHIK_TIMINGS;
               }
 
               return (

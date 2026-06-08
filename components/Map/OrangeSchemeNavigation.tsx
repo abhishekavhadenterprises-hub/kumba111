@@ -9,8 +9,6 @@ export const ORANGE_SCHEME_ROUTES = [
   "Nashik - Laddha Inner Parking - Trimabkeshwar - In and Out",
   "Route A - In Chh Sambhaji Nagar - Sinnar - Pandhurli VTC Phata - Sarul Phata - Outer Parking - Trimbak",
   "Route B - Chh Sambhaji Nagar - Sinnar - Pnadhurli VTC Phata Sarul Phata - Outer Parking - Trimbak Outer Parking - Belgaon Dhaga Sarul Phata VTC Phata - Pandhurli Sinnar Chh Sambhaji Nagar",
-  "Route A - In Chh Sambhaji Nagar - Sinnar - Pandhurli VTC Phata - Sarul Phata - Outer Parking - Trimbak_red",
-  "Route B - Chh Sambhaji Nagar - Sinnar - Pnadhurli VTC Phata Sarul Phata - Outer Parking - Trimbak Outer Parking - Belgaon Dhaga Sarul Phata VTC Phata - Pandhurli Sinnar Chh Sambhaji Nagar_red",
   "Dhule Malegaon Nashik Trimbak - In and Out",
   "NAndurbar Stanaa Sogras phata Nashik Trimbak - In & Out",
   "Saputara Vani Dindori Nashik Trimbak - In and Out",
@@ -109,9 +107,9 @@ export default function OrangeSchemeNavigation() {
                   Route: ${routeName}
                 </div>
               </div>`;
-            
+
             if (popupRef.current) map.closePopup(popupRef.current);
-            
+
             popupRef.current = L.popup({
               autoPan: false,
               closeButton: false,
@@ -123,14 +121,14 @@ export default function OrangeSchemeNavigation() {
               .openOn(map);
 
             (popupRef.current as any)._waypointName = wp.name;
-            
+
             setTimeout(() => {
               if (popupRef.current && (popupRef.current as any)._waypointName === wp.name) {
                 map.closePopup(popupRef.current);
                 popupRef.current = null;
               }
             }, 3000);
-            
+
             return;
           }
         }
@@ -211,13 +209,9 @@ export default function OrangeSchemeNavigation() {
   }
   const nextRouteName = hasNext ? ORANGE_SCHEME_ROUTES[nextIndex] : "";
 
-  // Helper to format route name cleanly
+  // Helper to format route name cleanly (remove trailing "_red" or brackets if any)
   const formatRouteName = (name: string) => {
-    let cleanName = name.replace(/ \[\d+:LineString\]/g, "");
-    if (cleanName.toLowerCase().endsWith('_red')) {
-      cleanName = cleanName.replace(/_red$/i, "") + " (Return)";
-    }
-    return cleanName.trim();
+    return name.replace(/_red$/, "").replace(/ \[\d+:LineString\]/g, "");
   };
 
   return (
