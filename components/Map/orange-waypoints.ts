@@ -803,8 +803,7 @@ export const ORANGE_WAYPOINTS = [
     "name": "Devargaon phata",
     "lat": 20.01345358042573,
     "lng": 73.79619037452913
-  }
-
+  },
   { name: "Vedmandir chauk", lat: 19.994956177943404, lng: 73.77395726406573 },
   { name: "Pappya nursery", lat: 19.986271693086493, lng: 73.7243601862281 },
   { name: "Satpur", lat: 19.983548620642487, lng: 73.71850402254314 },
