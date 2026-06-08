@@ -23,7 +23,7 @@ import type { MapLayerId } from "@/lib/types";
 import GreenCorridorPopups from "./GreenCorridorPopups";
 import SaputaraPopups from "./SaputaraPopups";
 import GlobalAudioControls from "../UI/GlobalAudioControls";
-import { GREEN_CORRIDOR_TIMINGS, MOKHADA_TIMINGS, DHARAMPUR_TIMINGS, PUNE_TIMINGS, DHULE_TIMINGS, SAMBHAJI_TIMINGS, NASHIK_TIMINGS } from "./green-corridor-timings";
+import { GREEN_CORRIDOR_TIMINGS, MOKHADA_TIMINGS, DHARAMPUR_TIMINGS, PUNE_TIMINGS, DHULE_TIMINGS, SAMBHAJI_TIMINGS, NASHIK_TIMINGS, ORANGE_SAMBHAJI_TIMINGS } from "./green-corridor-timings";
 import { SAPUTARA_TIMINGS } from "./saputara-timings";
 const AKHADA_KML_MAPPING: Record<string, string[]> = {
   "mahanirvani": ["mahanirvani"],
@@ -3262,9 +3262,23 @@ function DataLayerRenderer() {
             const isRed = activeRouteName.includes('_red');
             const routeColor = isRed ? "#ef4444" : "#f97316";
 
-            const renderAnim = (feat: any, keySuffix: string) => (
-              <AnimatedRoute key={`orange-unified-anim-0-${geoKey}-${keySuffix}`} feature={feat} color={routeColor} duration={180} loop={false} growLine={true} showVehicle={true} nativeHeading={-90} trackCamera={true} />
-            );
+            const renderAnim = (feat: any, keySuffix: string) => {
+              const isRouteASambhaji = activeRouteName === "Route A - In Chh Sambhaji Nagar - Sinnar - Pandhurli VTC Phata - Sarul Phata - Outer Parking - Trimbak";
+              return (
+                <AnimatedRoute 
+                  key={`orange-unified-anim-0-${geoKey}-${keySuffix}`} 
+                  feature={feat} 
+                  color={routeColor} 
+                  duration={isRouteASambhaji ? 92 : 180} 
+                  loop={false} 
+                  growLine={true} 
+                  showVehicle={true} 
+                  nativeHeading={-90} 
+                  trackCamera={true} 
+                  keyframes={isRouteASambhaji ? ORANGE_SAMBHAJI_TIMINGS : undefined}
+                />
+              );
+            };
 
             let animBlock = null;
             if (feature.geometry?.type === "LineString" || feature.geometry?.type === "MultiLineString") {
@@ -3279,24 +3293,43 @@ function DataLayerRenderer() {
               animBlock = renderAnim({ ...feature, geometry: { type: "LineString", coordinates: combinedCoordinates } }, 'merged');
             }
 
-            // Define Route B waypoints
+            // Define Route waypoints
+            const isRouteA = activeRouteName === "Route A - In Chh Sambhaji Nagar - Sinnar - Pandhurli VTC Phata - Sarul Phata - Outer Parking - Trimbak";
             const isRouteB = activeRouteName.includes("Route B - Chh Sambhaji Nagar");
-            const routeBWaypoints = isRouteB ? [
-              { name: "Chatrapati Sambhaji Nagar", lat: 19.9789245299406, lng: 75.35579595238246 },
-              { name: "Anantpur", lat: 19.946579201301113, lng: 75.01998399773511 },
-              { name: "Khambale", lat: 19.796362785799015, lng: 74.1203296310643 },
-              { name: "Sinner", lat: 19.830216165986013, lng: 73.98203390426283 },
-              { name: "Pandhurli", lat: 19.83101903104337, lng: 73.85620666659858 },
-              { name: "Sakur", lat: 19.800418165154262, lng: 73.76708288901372 },
-              { name: "Belgaon Kure", lat: 19.830088966146135, lng: 73.70927753638274 },
-              { name: "Vilholi", lat: 19.92215925717486, lng: 73.71497386976914 },
-              { name: "Belgaon Dhaga", lat: 19.9638762489475, lng: 73.69379931393429 }
-            ] : [];
+            
+            let routeWaypoints: any[] = [];
+            if (isRouteA) {
+              routeWaypoints = [
+                { name: "vaijapur", lat: 19.925415841324543, lng: 74.72870513852669 },
+                { name: "yeola", lat: 20.042927064774602, lng: 74.48330461540917 },
+                { name: "vinchur", lat: 20.105454325823345, lng: 74.23607747135334 },
+                { name: "shivre", lat: 18.289897809058704, lng: 74.0834786808124 },
+                { name: "nandur madhymeshwar", lat: 20.0132650443444, lng: 74.15329163766903 },
+                { name: "sinnar", lat: 19.847875103633218, lng: 73.98892883508867 },
+                { name: "Bhatwadi", lat: 19.82527796159001, lng: 73.98140192374856 },
+                { name: "ghorwad", lat: 19.821248584842177, lng: 73.88355153852939 },
+                { name: "sakor phata", lat: 19.79195181896892, lng: 73.78677521126677 },
+                { name: "vtc phata", lat: 19.847667325579017, lng: 73.68168778270051 },
+                { name: "rajur bahula", lat: 19.90822261882204, lng: 73.70277863333483 }
+              ];
+            } else if (isRouteB) {
+              routeWaypoints = [
+                { name: "Chatrapati Sambhaji Nagar", lat: 19.9789245299406, lng: 75.35579595238246 },
+                { name: "Anantpur", lat: 19.946579201301113, lng: 75.01998399773511 },
+                { name: "Khambale", lat: 19.796362785799015, lng: 74.1203296310643 },
+                { name: "Sinner", lat: 19.830216165986013, lng: 73.98203390426283 },
+                { name: "Pandhurli", lat: 19.83101903104337, lng: 73.85620666659858 },
+                { name: "Sakur", lat: 19.800418165154262, lng: 73.76708288901372 },
+                { name: "Belgaon Kure", lat: 19.830088966146135, lng: 73.70927753638274 },
+                { name: "Vilholi", lat: 19.92215925717486, lng: 73.71497386976914 },
+                { name: "Belgaon Dhaga", lat: 19.9638762489475, lng: 73.69379931393429 }
+              ];
+            }
 
             return (
               <>
                 {animBlock}
-                {routeBWaypoints.map((village, idx) => {
+                {routeWaypoints.map((village, idx) => {
                   const icon = L.divIcon({
                     className: "bg-transparent border-0 overflow-visible",
                     html: `<div class="group" style="position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; transform: translate(-50%, -100%); padding-bottom: 12px; cursor: pointer;">

@@ -93,3 +93,19 @@ export const NASHIK_TIMINGS: GreenCorridorTiming[] = [
   { time: 11, progress: 0.5428, subtitle: "Passing Mahirvani...", popupName: "Mahirvani" },
   { time: 43.311, progress: 1.0, subtitle: "Arriving at Trimbakeshwar...", popupName: "Trimbakeshwar" }
 ];
+
+export const ORANGE_SAMBHAJI_TIMINGS: GreenCorridorTiming[] = [
+  { time: 0, progress: 0.0, subtitle: "Starting...", popupName: "" },
+  { time: 11, progress: 0.0000, subtitle: "Passing vaijapur...", popupName: "vaijapur" },
+  { time: 12, progress: 0.0235, subtitle: "Passing yeola...", popupName: "yeola" },
+  { time: 13, progress: 0.2189, subtitle: "Passing vinchur...", popupName: "vinchur" },
+  { time: 14, progress: 0.2800, subtitle: "Passing shivre...", popupName: "shivre" },
+  { time: 15, progress: 0.3476, subtitle: "Passing nandur madhymeshwar...", popupName: "nandur madhymeshwar" },
+  { time: 16, progress: 0.5506, subtitle: "Passing sinnar...", popupName: "sinnar" },
+  { time: 17, progress: 0.5677, subtitle: "Passing Bhatwadi...", popupName: "Bhatwadi" },
+  { time: 18, progress: 0.6527, subtitle: "Passing ghorwad...", popupName: "ghorwad" },
+  { time: 19, progress: 0.7482, subtitle: "Passing sakor phata...", popupName: "sakor phata" },
+  { time: 20, progress: 0.8614, subtitle: "Passing vtc phata...", popupName: "vtc phata" },
+  { time: 21, progress: 0.9120, subtitle: "Passing rajur bahula...", popupName: "rajur bahula" },
+  { time: 91.951, progress: 1.0, subtitle: "Arriving at Trimbakeshwar...", popupName: "Trimbakeshwar" }
+];
