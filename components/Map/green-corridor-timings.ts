@@ -26,14 +26,14 @@ export const MOKHADA_TIMINGS: GreenCorridorTiming[] = [
 
 export const DHARAMPUR_TIMINGS: GreenCorridorTiming[] = [
   { time: 0, progress: 0.0, subtitle: "Starting...", popupName: "" },
-  { time: 4, progress: 0.0000, subtitle: "Passing Peith...", popupName: "Peith" },
-  { time: 5, progress: 0.0761, subtitle: "Passing Kotambhogath...", popupName: "Kotambhogath" },
-  { time: 6, progress: 0.1476, subtitle: "Passing Karanjali...", popupName: "Karanjali" },
-  { time: 7, progress: 0.3132, subtitle: "Passing Kohor...", popupName: "Kohor" },
-  { time: 8, progress: 0.4852, subtitle: "Passing Ghanshet...", popupName: "Ghanshet" },
-  { time: 9, progress: 0.5404, subtitle: "Passing Aamolon...", popupName: "Aamolon" },
-  { time: 10, progress: 0.6374, subtitle: "Passing Chinchvad...", popupName: "Chinchvad" },
-  { time: 11, progress: 0.7500, subtitle: "Passing Vedunje...", popupName: "Vedunje" },
+  { time: 7, progress: 0.0000, subtitle: "Passing Peith...", popupName: "Peith" },
+  { time: 8, progress: 0.0366, subtitle: "Passing Kutambhi ghat...", popupName: "Kutambhi ghat" },
+  { time: 9, progress: 0.1487, subtitle: "Passing Karanjali...", popupName: "Karanjali" },
+  { time: 10, progress: 0.3124, subtitle: "Passing Kohor...", popupName: "Kohor" },
+  { time: 11, progress: 0.4872, subtitle: "Passing Ghanseth...", popupName: "Ghanseth" },
+  { time: 12, progress: 0.5361, subtitle: "Passing Amlonphata...", popupName: "Amlonphata" },
+  { time: 13, progress: 0.6369, subtitle: "Passing Chinchvad...", popupName: "Chinchvad" },
+  { time: 14, progress: 0.8544, subtitle: "Passing Verunchi...", popupName: "Verunchi" },
   { time: 32.13, progress: 1.0, subtitle: "Arriving at Trimbakeshwar...", popupName: "Trimbakeshwar" }
 ];
 
@@ -86,10 +86,10 @@ export const SAMBHAJI_TIMINGS: GreenCorridorTiming[] = [
 
 export const NASHIK_TIMINGS: GreenCorridorTiming[] = [
   { time: 0, progress: 0.0, subtitle: "Starting...", popupName: "" },
-  { time: 7, progress: 0.0407, subtitle: "Passing Vedmandir chauk...", popupName: "Vedmandir chauk" },
-  { time: 8, progress: 0.2562, subtitle: "Passing Pappya nursery...", popupName: "Pappya nursery" },
-  { time: 10, progress: 0.2789, subtitle: "Passing Satpur...", popupName: "Satpur" },
-  { time: 11, progress: 0.5428, subtitle: "Passing Mahiravani...", popupName: "Mahiravani" },
+  { time: 6, progress: 0.0407, subtitle: "Passing ved mandir...", popupName: "ved mandir" },
+  { time: 8, progress: 0.2562, subtitle: "Passing satpur...", popupName: "satpur" },
+  { time: 9, progress: 0.2600, subtitle: "Passing Paipaya Nursery...", popupName: "Paipaya Nursery" },
+  { time: 10, progress: 0.5510, subtitle: "Passing Mahiravni...", popupName: "Mahiravni" },
   { time: 43.311, progress: 1.0, subtitle: "Arriving at Trimbakeshwar...", popupName: "Trimbakeshwar" }
 ];
 
@@ -138,4 +138,20 @@ export const ORANGE_DHULE_TIMINGS: GreenCorridorTiming[] = [
   { time: 15, progress: 0.8761, subtitle: "Passing satpur...", popupName: "satpur" },
   { time: 16, progress: 0.8945, subtitle: "Passing pimpalgoan bahula...", popupName: "pimpalgoan bahula" },
   { time: 51.879, progress: 1.0, subtitle: "Arriving at Trimbakeshwar...", popupName: "Trimbakeshwar" }
+];
+
+export const ORANGE_NANDURBAR_TIMINGS: GreenCorridorTiming[] = [
+  { time: 0, progress: 0.0, subtitle: "Starting...", popupName: "" },
+  { time: 5, progress: 0.0000, subtitle: "Passing Satana...", popupName: "Satana" },
+  { time: 6, progress: 0.1053, subtitle: "Passing Devla...", popupName: "Devla" },
+  { time: 7, progress: 0.2643, subtitle: "Passing Mangur phata...", popupName: "Mangur phata" },
+  { time: 10, progress: 0.4233, subtitle: "Passing Kokangaon...", popupName: "Kokangaon" },
+  { time: 11, progress: 0.4554, subtitle: "Passing Mohadi...", popupName: "Mohadi" },
+  { time: 12, progress: 0.6086, subtitle: "Passing Dindori...", popupName: "Dindori" },
+  { time: 13, progress: 0.6902, subtitle: "Passing Umralebudruk...", popupName: "Umralebudruk" },
+  { time: 14, progress: 0.8200, subtitle: "Passing Vilvandi...", popupName: "Vilvandi" },
+  { time: 15, progress: 0.9527, subtitle: "Passing Dhundegaon...", popupName: "Dhundegaon" },
+  { time: 16, progress: 0.9755, subtitle: "Passing Kashpidam...", popupName: "Kashpidam" },
+  { time: 18, progress: 1.0000, subtitle: "Passing Rohile...", popupName: "Rohile" },
+  { time: 51.226, progress: 1.0, subtitle: "Arriving at Trimbakeshwar...", popupName: "Trimbakeshwar" }
 ];

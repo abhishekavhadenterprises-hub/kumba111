@@ -44,6 +44,7 @@ export default function OrangeSchemeNavigation() {
   const isOrangeSchemeActive = activeKmlFolders.some(id => typeof id === 'string' && id.includes("Orange Scheme - Parvani Days"));
 
   const popupRef = useRef<L.Popup | null>(null);
+  const lastPopupName = useRef<string | null>(null);
 
   const currentRouteName = selectedFeature?.properties?.name;
   const currentRouteIndex = currentRouteName ? ORANGE_SCHEME_ROUTES.indexOf(currentRouteName) : -1;
@@ -95,16 +96,28 @@ export default function OrangeSchemeNavigation() {
         const vehiclePos = L.latLng(lat, lng);
         const THRESHOLD = 1000; // Increased to 1000m to ensure detection at high animation speeds
 
+        let closestWp = null;
+        let minDistance = THRESHOLD;
+
         for (const wp of ORANGE_WAYPOINTS) {
           const d = map.distance(vehiclePos, L.latLng(wp.lat, wp.lng));
-          if (d <= THRESHOLD) {
+          if (d < minDistance) {
+            minDistance = d;
+            closestWp = wp;
+          }
+        }
+
+        if (closestWp) {
+          if (lastPopupName.current !== closestWp.name) {
+            lastPopupName.current = closestWp.name;
+
             const content = `
               <div style="font-family: Inter,system-ui,sans-serif;padding:6px 12px;">
-                <div style="font-size:9px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700;color:#10b981;margin-bottom:3px;">
-                  ${wp.name}
+                <div style="font-size:9px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700;color:#f97316;margin-bottom:3px;">
+                  Orange Scheme
                 </div>
-                <div style="font-size:15px;font-weight:800;color:#0f172a;line-height:1.2;">
-                  Route: ${routeName}
+                <div style="font-size:15px;font-weight:800;color:#0f172a;line-height:1.2;text-transform:capitalize;">
+                  ${closestWp.name}
                 </div>
               </div>`;
 
@@ -116,20 +129,18 @@ export default function OrangeSchemeNavigation() {
               offset: [0, -12],
               className: "route-checkpoint-popup"
             })
-              .setLatLng(L.latLng(wp.lat, wp.lng))
+              .setLatLng(L.latLng(closestWp.lat, closestWp.lng))
               .setContent(content)
               .openOn(map);
 
-            (popupRef.current as any)._waypointName = wp.name;
+            (popupRef.current as any)._waypointName = closestWp.name;
 
             setTimeout(() => {
-              if (popupRef.current && (popupRef.current as any)._waypointName === wp.name) {
+              if (popupRef.current && (popupRef.current as any)._waypointName === closestWp.name) {
                 map.closePopup(popupRef.current);
                 popupRef.current = null;
               }
             }, 3000);
-
-            return;
           }
         }
       };

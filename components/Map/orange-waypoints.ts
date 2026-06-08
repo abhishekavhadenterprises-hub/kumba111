@@ -799,21 +799,30 @@ export const ORANGE_WAYPOINTS = [
     "lat": 20.028505629312747,
     "lng": 73.80181463548493
   },
-  {
-    "name": "Devargaon phata",
-    "lat": 20.01345358042573,
-    "lng": 73.79619037452913
-  },
-  { name: "Vedmandir chauk", lat: 19.994956177943404, lng: 73.77395726406573 },
-  { name: "Pappya nursery", lat: 19.986271693086493, lng: 73.7243601862281 },
-  { name: "Satpur", lat: 19.983548620642487, lng: 73.71850402254314 },
-  { name: "Mahiravani", lat: 19.965936358493618, lng: 73.66050787018283 }
-,
+  { name: "ved mandir", lat: 19.994911474188232, lng: 73.77385992370343 },
+  { name: "Devargaon phata", lat: 20.01345358042573, lng: 73.79619037452913 },
+  { name: "ved mandir", lat: 19.994911474188232, lng: 73.77385992370343 },
+  { name: "satpur", lat: 19.986674152937017, lng: 73.72515609029598 },
+  { name: "Paipaya Nursery", lat: 19.98638566827129, lng: 73.7245224458656 },
+  { name: "Mahiravni", lat: 19.965916744744845, lng: 73.65894791288554 },
   { name: "malegon", lat: 20.55195517857929, lng: 74.51544692811446 },
   { name: "changvad", lat: 20.332778307979204, lng: 74.2396638123999 },
   { name: "pimpalgoan baswant", lat: 20.16527757859883, lng: 73.98792063343252 },
   { name: "ozar", lat: 20.09959041326941, lng: 73.92814810406013 },
   { name: "aadgoan", lat: 20.034821554719183, lng: 73.86219241409577 },
   { name: "sambhajinagar naka", lat: 20.010970830134855, lng: 73.81041806247903 },
+  { name: "ganjmal", lat: 19.997, lng: 73.784 },
+  { name: "cbs", lat: 19.99669221575027, lng: 73.7791695225953 },
   { name: "pimpalgoan bahula", lat: 19.979522580397244, lng: 73.70938411232886 }
+,
+  { name: "Mangur phata", lat: 20.297, lng: 74.074 },
+  { name: "Kokangaon", lat: 20.134741822483704, lng: 73.96810337077422 },
+  { name: "Mohadi", lat: 20.104735681854645, lng: 73.93574107055497 },
+  { name: "Umralebudruk", lat: 20.19600944789465, lng: 73.71641021455567 },
+  { name: "Kashpidam", lat: 20.07037719318295, lng: 73.5956174681224 }
+,
+  { name: "Kutambhi ghat", lat: 20.256042125083514, lng: 73.53249988047979 },
+  { name: "Ghanseth", lat: 20.131538176026737, lng: 73.53195868963482 },
+  { name: "Amlonphata", lat: 20.13024641780377, lng: 73.51106662790994 },
+  { name: "Verunchi", lat: 20.019651726707874, lng: 73.49021964285528 }
 ];

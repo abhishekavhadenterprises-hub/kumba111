@@ -23,7 +23,7 @@ import type { MapLayerId } from "@/lib/types";
 import GreenCorridorPopups from "./GreenCorridorPopups";
 import SaputaraPopups from "./SaputaraPopups";
 import GlobalAudioControls from "../UI/GlobalAudioControls";
-import { GREEN_CORRIDOR_TIMINGS, MOKHADA_TIMINGS, DHARAMPUR_TIMINGS, PUNE_TIMINGS, DHULE_TIMINGS, SAMBHAJI_TIMINGS, NASHIK_TIMINGS, ORANGE_SAMBHAJI_TIMINGS, ORANGE_SAPUTARA_TIMINGS, ORANGE_DHULE_TIMINGS } from "./green-corridor-timings";
+import { GREEN_CORRIDOR_TIMINGS, MOKHADA_TIMINGS, DHARAMPUR_TIMINGS, PUNE_TIMINGS, DHULE_TIMINGS, SAMBHAJI_TIMINGS, NASHIK_TIMINGS, ORANGE_SAMBHAJI_TIMINGS, ORANGE_SAPUTARA_TIMINGS, ORANGE_DHULE_TIMINGS, ORANGE_NANDURBAR_TIMINGS } from "./green-corridor-timings";
 import { SAPUTARA_TIMINGS } from "./saputara-timings";
 const AKHADA_KML_MAPPING: Record<string, string[]> = {
   "mahanirvani": ["mahanirvani"],
@@ -3046,10 +3046,10 @@ function DataLayerRenderer() {
                   })}
 
                   {[
-                    { name: "Vedmandir chauk", lat: 19.994956177943404, lng: 73.77395726406573 },
-                    { name: "Pappya nursery", lat: 19.986271693086493, lng: 73.7243601862281 },
-                    { name: "Satpur", lat: 19.983548620642487, lng: 73.71850402254314 },
-                    { name: "Mahiravani", lat: 19.965936358493618, lng: 73.66050787018283 }
+                    { name: "ved mandir", lat: 19.994911474188232, lng: 73.77385992370343 },
+                    { name: "satpur", lat: 19.986674152937017, lng: 73.72515609029598 },
+                    { name: "Paipaya Nursery", lat: 19.98638566827129, lng: 73.7245224458656 },
+                    { name: "Mahiravni", lat: 19.965916744744845, lng: 73.65894791288554 }
                   ].map((village, idx) => {
                     const icon = L.divIcon({
                       className: "bg-transparent border-0 overflow-visible smooth-map-label",
@@ -3265,6 +3265,8 @@ function DataLayerRenderer() {
               const isSaputara = activeRouteName === "Saputara Vani Dindori Nashik Trimbak - In and Out";
               const isOrangeNashik = activeRouteName === "Nashik - Laddha Inner Parking - Trimabkeshwar - In and Out";
               const isOrangeDhule = activeRouteName === "Dhule Malegaon Nashik Trimbak - In and Out";
+              const isOrangeNandurbar = activeRouteName === "NAndurbar Stanaa Sogras phata Nashik Trimbak - In & Out";
+              const isOrangeDharampur = activeRouteName === "Dharampur Peth Karanjali Kohor Waghera Amboli Trimabkeshwar - In and Out";
               
               let duration = 180;
               let keyframes = undefined;
@@ -3280,6 +3282,12 @@ function DataLayerRenderer() {
               } else if (isOrangeDhule) {
                 duration = 51.879;
                 keyframes = ORANGE_DHULE_TIMINGS;
+              } else if (isOrangeNandurbar) {
+                duration = 51.226;
+                keyframes = ORANGE_NANDURBAR_TIMINGS;
+              } else if (isOrangeDharampur) {
+                duration = 32.13;
+                keyframes = DHARAMPUR_TIMINGS;
               }
 
               return (
