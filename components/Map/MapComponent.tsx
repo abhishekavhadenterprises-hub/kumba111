@@ -3265,7 +3265,7 @@ function DataLayerRenderer() {
               const isSaputara = activeRouteName === "Saputara Vani Dindori Nashik Trimbak - In and Out";
               const isOrangeNashik = activeRouteName === "Nashik - Laddha Inner Parking - Trimabkeshwar - In and Out";
               const isOrangeDhule = activeRouteName === "Dhule Malegaon Nashik Trimbak - In and Out";
-              const isOrangeNandurbar = activeRouteName === "NAndurbar Stanaa Sogras phata Nashik Trimbak - In & Out";
+              const isOrangeNandurbar = activeRouteName === "In Route Nandurbar Satana Sogras Phata Agra Mumbai - Janore Ramshej Dugaon Rohile Phaata Talwade - Trimbak";
               const isOrangeDharampur = activeRouteName === "Dharampur Peth Karanjali Kohor Waghera Amboli Trimabkeshwar - In and Out";
               
               let duration = 180;
