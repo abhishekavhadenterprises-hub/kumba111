@@ -15,6 +15,7 @@ import OrangeSchemeNavigation from "@/components/Map/OrangeSchemeNavigation";
 import RedSchemeNavigation from "@/components/Map/RedSchemeNavigation";
 import GlobalScenarioNavigation from "@/components/Map/GlobalScenarioNavigation";
 import FullscreenVideo from "@/components/Video/FullscreenVideo";
+import FullscreenPlan from "@/components/UI/FullscreenPlan";
 
 // Dynamically import map to avoid SSR issues
 const MapComponent = dynamic(() => import("@/components/Map/MapComponent"), {
@@ -184,6 +185,7 @@ function DashboardContent() {
       
       {/* Fullscreen Overlays */}
       <FullscreenVideo />
+      <FullscreenPlan />
     </main>
   );
 }

@@ -31,7 +31,7 @@ interface LayerItem {
 export default function OperationalLayers() {
   const [expandedLayers, setExpandedLayers] = useState<string[]>([]);
   const [hierarchy, setHierarchy] = useState<KmlNode[]>([]);
-  const { visibleLayers, toggleLayer, activeKmlFolders, toggleKmlFolder, showAllLayers, hideAllLayers, selectFeature } = useDashboard();
+  const { visibleLayers, toggleLayer, activeKmlFolders, toggleKmlFolder, showAllLayers, hideAllLayers, selectFeature, setIsPlanFullscreen } = useDashboard();
   const { t } = useLanguage();
 
   useEffect(() => {
@@ -92,6 +92,22 @@ export default function OperationalLayers() {
       {/* Header */}
       <div className="flex items-center justify-between mb-4 px-2 pb-2 border-b border-white/10">
         <h2 className="text-white/90 font-medium text-lg tracking-tight">{t("map.layers")}</h2>
+      </div>
+
+      <div className="px-2 mb-6">
+        <button 
+          onClick={() => setIsPlanFullscreen(true)}
+          className="w-full flex items-center gap-3 p-3 bg-gradient-to-r from-blue-500/20 to-purple-500/20 hover:from-blue-500/30 hover:to-purple-500/30 border border-blue-500/30 rounded-xl transition-all shadow-[0_4px_20px_rgba(59,130,246,0.15)] group"
+        >
+          <div className="w-8 h-8 rounded-lg bg-blue-500/20 flex items-center justify-center border border-blue-500/40 group-hover:scale-105 transition-transform">
+            <Activity className="w-4 h-4 text-blue-400" />
+          </div>
+          <div className="text-left flex-1">
+            <div className="text-[13px] text-white font-bold tracking-tight group-hover:text-blue-100 transition-colors">Core-1 CAD Plan</div>
+            <div className="text-[11px] text-blue-200/70 font-medium">View detailed engineering SVG</div>
+          </div>
+          <Play className="w-4 h-4 text-blue-400 opacity-50 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
+        </button>
       </div>
 
       {/* Layer groups */}
