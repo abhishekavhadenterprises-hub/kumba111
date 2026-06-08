@@ -23,7 +23,7 @@ import type { MapLayerId } from "@/lib/types";
 import GreenCorridorPopups from "./GreenCorridorPopups";
 import SaputaraPopups from "./SaputaraPopups";
 import GlobalAudioControls from "../UI/GlobalAudioControls";
-import { GREEN_CORRIDOR_TIMINGS, MOKHADA_TIMINGS, DHARAMPUR_TIMINGS, PUNE_TIMINGS, DHULE_TIMINGS, SAMBHAJI_TIMINGS, NASHIK_TIMINGS, ORANGE_SAMBHAJI_TIMINGS, ORANGE_SAPUTARA_TIMINGS } from "./green-corridor-timings";
+import { GREEN_CORRIDOR_TIMINGS, MOKHADA_TIMINGS, DHARAMPUR_TIMINGS, PUNE_TIMINGS, DHULE_TIMINGS, SAMBHAJI_TIMINGS, NASHIK_TIMINGS, ORANGE_SAMBHAJI_TIMINGS, ORANGE_SAPUTARA_TIMINGS, ORANGE_DHULE_TIMINGS } from "./green-corridor-timings";
 import { SAPUTARA_TIMINGS } from "./saputara-timings";
 const AKHADA_KML_MAPPING: Record<string, string[]> = {
   "mahanirvani": ["mahanirvani"],
@@ -2564,13 +2564,13 @@ function DataLayerRenderer() {
                           key={`dhule-anim-${idx}-${geoKey}`}
                           feature={f}
                           color="#3b82f6"
-                          duration={90}
+                          duration={51.879}
                           loop={false}
                           growLine={true}
                           showVehicle={true}
                           nativeHeading={-90}
                           trackCamera={true}
-                          keyframes={DHULE_TIMINGS}
+                          keyframes={ORANGE_DHULE_TIMINGS}
                         />
                       );
                     }
@@ -2578,18 +2578,17 @@ function DataLayerRenderer() {
                   })}
 
                   {[
-                    { name: "Malegaon", lat: 20.557713568933256, lng: 74.50873581172806 },
-                    { name: "Chandvad", lat: 20.333983399120612, lng: 74.24154068492135 },
-                    { name: "Pimpalgaon baswant", lat: 20.16484299948705, lng: 73.98802835992457 },
-                    { name: "Ojhar", lat: 20.099723895059544, lng: 73.92840527162342 },
-                    { name: "Aadgaon", lat: 20.033594254296442, lng: 73.86361938543439 },
-                    { name: "Shambhaji Nagar Naka", lat: 20.010779113448457, lng: 73.81039705466775 },
-                    { name: "Dwarka", lat: 19.993087318987737, lng: 73.8036885071721 },
-                    { name: "GANJMAL", lat: 19.995653649781524, lng: 73.78458321118097 },
-                    { name: "Navin cbs", lat: 19.994354365595324, lng: 73.80061606458447 },
-                    { name: "VED MANDIR", lat: 19.994601217205794, lng: 73.76964186594056 },
-                    { name: "Sathpur", lat: 19.98860362569022, lng: 73.72762967486904 },
-                    { name: "Pimpalgaon babula", lat: 19.9795028301811, lng: 73.70934401563672 }
+                    { name: "malegon", lat: 20.55195517857929, lng: 74.51544692811446 },
+                    { name: "changvad", lat: 20.332778307979204, lng: 74.2396638123999 },
+                    { name: "pimpalgoan baswant", lat: 20.16527757859883, lng: 73.98792063343252 },
+                    { name: "ozar", lat: 20.09959041326941, lng: 73.92814810406013 },
+                    { name: "aadgoan", lat: 20.034821554719183, lng: 73.86219241409577 },
+                    { name: "sambhajinagar naka", lat: 20.010970830134855, lng: 73.81041806247903 },
+                    { name: "ganjmal", lat: 19.997, lng: 73.784 },
+                    { name: "cbs", lat: 19.99669221575027, lng: 73.7791695225953 },
+                    { name: "vedmandir", lat: 19.99490162322187, lng: 73.77381098569472 },
+                    { name: "satpur", lat: 19.99079087926602, lng: 73.73288220372946 },
+                    { name: "pimpalgoan bahula", lat: 19.979522580397244, lng: 73.70938411232886 }
                   ].map((village, idx) => {
                     const icon = L.divIcon({
                       className: "bg-transparent border-0 overflow-visible smooth-map-label",
@@ -3265,6 +3264,7 @@ function DataLayerRenderer() {
               const isRouteASambhaji = activeRouteName === "Route A - In Chh Sambhaji Nagar - Sinnar - Pandhurli VTC Phata - Sarul Phata - Outer Parking - Trimbak";
               const isSaputara = activeRouteName === "Saputara Vani Dindori Nashik Trimbak - In and Out";
               const isOrangeNashik = activeRouteName === "Nashik - Laddha Inner Parking - Trimabkeshwar - In and Out";
+              const isOrangeDhule = activeRouteName === "Dhule Malegaon Nashik Trimbak - In and Out";
               
               let duration = 180;
               let keyframes = undefined;
@@ -3277,6 +3277,9 @@ function DataLayerRenderer() {
               } else if (isOrangeNashik) {
                 duration = 43.311;
                 keyframes = NASHIK_TIMINGS;
+              } else if (isOrangeDhule) {
+                duration = 51.879;
+                keyframes = ORANGE_DHULE_TIMINGS;
               }
 
               return (

@@ -808,4 +808,12 @@ export const ORANGE_WAYPOINTS = [
   { name: "Pappya nursery", lat: 19.986271693086493, lng: 73.7243601862281 },
   { name: "Satpur", lat: 19.983548620642487, lng: 73.71850402254314 },
   { name: "Mahiravani", lat: 19.965936358493618, lng: 73.66050787018283 }
+,
+  { name: "malegon", lat: 20.55195517857929, lng: 74.51544692811446 },
+  { name: "changvad", lat: 20.332778307979204, lng: 74.2396638123999 },
+  { name: "pimpalgoan baswant", lat: 20.16527757859883, lng: 73.98792063343252 },
+  { name: "ozar", lat: 20.09959041326941, lng: 73.92814810406013 },
+  { name: "aadgoan", lat: 20.034821554719183, lng: 73.86219241409577 },
+  { name: "sambhajinagar naka", lat: 20.010970830134855, lng: 73.81041806247903 },
+  { name: "pimpalgoan bahula", lat: 19.979522580397244, lng: 73.70938411232886 }
 ];
