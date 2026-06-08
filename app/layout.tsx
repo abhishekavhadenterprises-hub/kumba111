@@ -3,7 +3,6 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import "leaflet/dist/leaflet.css";
 import "./globals.css";
 import { LanguageProvider } from "@/lib/context/language-context";
-import { DevTools } from "@/components/DevTools";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -36,7 +35,6 @@ export default function RootLayout({
         <LanguageProvider>
           {children}
         </LanguageProvider>
-        <DevTools />
       </body>
     </html>
   );

@@ -109,3 +109,18 @@ export const ORANGE_SAMBHAJI_TIMINGS: GreenCorridorTiming[] = [
   { time: 21, progress: 0.9120, subtitle: "Passing rajur bahula...", popupName: "rajur bahula" },
   { time: 91.951, progress: 1.0, subtitle: "Arriving at Trimbakeshwar...", popupName: "Trimbakeshwar" }
 ];
+
+export const ORANGE_SAPUTARA_TIMINGS: GreenCorridorTiming[] = [
+  { time: 0, progress: 0, subtitle: "Starting...", popupName: "" },
+  { time: 5, progress: 0, subtitle: "Passing Saputara...", popupName: "Saputara" },
+  { time: 6, progress: 0.1084, subtitle: "Passing Vani...", popupName: "Vani" },
+  { time: 7, progress: 0.1883, subtitle: "Passing Lakhmapur phata...", popupName: "Lakhmapur phata" },
+  { time: 8, progress: 0.2682, subtitle: "Passing Dindori...", popupName: "Dindori" },
+  { time: 13, progress: 0.6679, subtitle: "Passing Umrale budruk...", popupName: "Umrale budruk" },
+  { time: 14, progress: 0.7632, subtitle: "Passing Vilvande...", popupName: "Vilvande" },
+  { time: 15, progress: 0.85, subtitle: "Passing Dhundegaon...", popupName: "Dhundegaon" },
+  { time: 16, progress: 0.88, subtitle: "Passing Kashpidharna...", popupName: "Kashpidharna" },
+  { time: 18, progress: 0.92, subtitle: "Passing Rohile phata...", popupName: "Rohile phata" },
+  { time: 19, progress: 0.95, subtitle: "Passing Devargaon phata...", popupName: "Devargaon phata" },
+  { time: 56.451, progress: 1, subtitle: "Arriving at Trimbakeshwar...", popupName: "Trimbakeshwar" }
+];

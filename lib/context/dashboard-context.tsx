@@ -67,10 +67,6 @@ interface DashboardContextValue {
   // Video State
   isVideoFullscreen: boolean;
   setIsVideoFullscreen: (val: boolean) => void;
-
-  // Plan State
-  isPlanFullscreen: boolean;
-  setIsPlanFullscreen: (val: boolean) => void;
 }
 
 const DashboardContext = createContext<DashboardContextValue | undefined>(undefined);
@@ -93,7 +89,6 @@ export function DashboardProvider({ children }: { children: ReactNode }) {
   const [selectedProcessionRoute, setSelectedProcessionRoute] = useState<string | null>(null);
   const [activeOverlay, setActiveOverlay] = useState<string | null>(null);
   const [isVideoFullscreen, setIsVideoFullscreen] = useState<boolean>(true);
-  const [isPlanFullscreen, setIsPlanFullscreen] = useState<boolean>(false);
 
   const toggleLabels = useCallback(() => setShowLabels((prev) => !prev), []);
 
@@ -211,8 +206,6 @@ export function DashboardProvider({ children }: { children: ReactNode }) {
         setActiveOverlay,
         isVideoFullscreen,
         setIsVideoFullscreen,
-        isPlanFullscreen,
-        setIsPlanFullscreen,
       }}
     >
       {children}

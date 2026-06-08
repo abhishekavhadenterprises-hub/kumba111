@@ -23,7 +23,7 @@ import type { MapLayerId } from "@/lib/types";
 import GreenCorridorPopups from "./GreenCorridorPopups";
 import SaputaraPopups from "./SaputaraPopups";
 import GlobalAudioControls from "../UI/GlobalAudioControls";
-import { GREEN_CORRIDOR_TIMINGS, MOKHADA_TIMINGS, DHARAMPUR_TIMINGS, PUNE_TIMINGS, DHULE_TIMINGS, SAMBHAJI_TIMINGS, NASHIK_TIMINGS, ORANGE_SAMBHAJI_TIMINGS } from "./green-corridor-timings";
+import { GREEN_CORRIDOR_TIMINGS, MOKHADA_TIMINGS, DHARAMPUR_TIMINGS, PUNE_TIMINGS, DHULE_TIMINGS, SAMBHAJI_TIMINGS, NASHIK_TIMINGS, ORANGE_SAMBHAJI_TIMINGS, ORANGE_SAPUTARA_TIMINGS } from "./green-corridor-timings";
 import { SAPUTARA_TIMINGS } from "./saputara-timings";
 const AKHADA_KML_MAPPING: Record<string, string[]> = {
   "mahanirvani": ["mahanirvani"],
@@ -3264,18 +3264,30 @@ function DataLayerRenderer() {
 
             const renderAnim = (feat: any, keySuffix: string) => {
               const isRouteASambhaji = activeRouteName === "Route A - In Chh Sambhaji Nagar - Sinnar - Pandhurli VTC Phata - Sarul Phata - Outer Parking - Trimbak";
+              const isSaputara = activeRouteName === "Saputara Vani Dindori Nashik Trimbak - In and Out";
+              
+              let duration = 180;
+              let keyframes = undefined;
+              if (isRouteASambhaji) {
+                duration = 92;
+                keyframes = ORANGE_SAMBHAJI_TIMINGS;
+              } else if (isSaputara) {
+                duration = 56.451;
+                keyframes = ORANGE_SAPUTARA_TIMINGS;
+              }
+
               return (
                 <AnimatedRoute 
                   key={`orange-unified-anim-0-${geoKey}-${keySuffix}`} 
                   feature={feat} 
                   color={routeColor} 
-                  duration={isRouteASambhaji ? 92 : 180} 
+                  duration={duration} 
                   loop={false} 
                   growLine={true} 
                   showVehicle={true} 
                   nativeHeading={-90} 
                   trackCamera={true} 
-                  keyframes={isRouteASambhaji ? ORANGE_SAMBHAJI_TIMINGS : undefined}
+                  keyframes={keyframes}
                 />
               );
             };

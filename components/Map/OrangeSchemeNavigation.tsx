@@ -211,9 +211,13 @@ export default function OrangeSchemeNavigation() {
   }
   const nextRouteName = hasNext ? ORANGE_SCHEME_ROUTES[nextIndex] : "";
 
-  // Helper to format route name cleanly (remove trailing "_red" or brackets if any)
+  // Helper to format route name cleanly
   const formatRouteName = (name: string) => {
-    return name.replace(/_red$/, "").replace(/ \[\d+:LineString\]/g, "");
+    let cleanName = name.replace(/ \[\d+:LineString\]/g, "");
+    if (cleanName.toLowerCase().endsWith('_red')) {
+      cleanName = cleanName.replace(/_red$/i, "") + " (Return)";
+    }
+    return cleanName.trim();
   };
 
   return (

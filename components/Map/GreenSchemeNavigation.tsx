@@ -7,7 +7,6 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 export const GREEN_SCHEME_ROUTES = [
   "Nashik - Laddha Inner Parking - Trimabkeshwar - In and Out",
   "Pune Sangmner Sinnar Nashik Trimabkeshwar - In and Out",
-  "Route A - In Chh Sambhaji Nagar - Sinnar - Pandhurli VTC Phata - Sarul Phata - Outer Parking - Trimbak",
   "Chh Sambhaji nagar Yeola Niffad Nashik Trimbak - In and Out",
   "Dhule Malegaon Nashik Trimbak - In and Out",
   "NAndurbar Stanaa Sogras phata Nashik Trimbak - In & Out",
